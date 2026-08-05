@@ -7,32 +7,41 @@ toc: false
 
 ::: {.photo-entry}
 
+::: {.photo-media}
+![](images/activity-ickda-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the dementia meta-analysis poster at IC-KDA + ASAD 2025"}
+:::
+
+::: {.photo-body}
 ### IC-KDA + ASAD 2025 {.photo-title}
 
 ::: {.photo-date}
 May 2025 · Seoul
 :::
 
-![](images/activity-ickda-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the dementia meta-analysis poster at IC-KDA + ASAD 2025" .photo-img}
-
-Presenting the systematic review and meta-analysis of digital cognitive training
-interventions for dementia, which received the Best Poster Award.
-[Read about the project →](project-dementia-meta.qmd)
+- Presented the systematic review and meta-analysis of digital cognitive
+  training interventions for dementia
+- **Best Poster Award**
+- [Read about the project →](project-dementia-meta.qmd)
+:::
 
 :::
 
 ::: {.photo-entry}
 
+::: {.photo-media}
+![](images/activity-kss-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the neural Granger causality poster at the Korean Statistical Society Summer Conference"}
+:::
+
+::: {.photo-body}
 ### Korean Statistical Society Summer Conference 2025 {.photo-title}
 
 ::: {.photo-date}
 June 2025 · Gyeongju
 :::
 
-![](images/activity-kss-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the neural Granger causality poster at the Korean Statistical Society Summer Conference" .photo-img}
-
-Presenting the neural Granger causality analysis of solar radiation data.
-[Read about the project →](project-granger.qmd)
+- Presented the neural Granger causality analysis of solar radiation data
+- [Read about the project →](project-granger.qmd)
+:::
 
 :::
 
@@ -40,18 +49,23 @@ Presenting the neural Granger causality analysis of solar radiation data.
 
 ::: {.photo-entry}
 
+::: {.photo-media}
+![](images/activity-unlv-2025.jpg){fig-alt="Group photograph of the summer research programme participants at the Don and Carolyn Ahern Student Commons, UNLV"}
+:::
+
+::: {.photo-body}
 ### University of Nevada, Las Vegas {.photo-title}
 
 ::: {.photo-date}
 June – July 2025 · Las Vegas, Nevada
 :::
 
-![](images/activity-unlv-2025.jpg){fig-alt="Group photograph of the summer research programme participants at the Don and Carolyn Ahern Student Commons, UNLV" .photo-img}
-
-Summer research program in machine learning and data science, supervised by
-Dr. Mingon Kang: coursework and assessment alongside a four-person team project
-on deep neural networks for electronic health record data.
-[Read about the project →](project-ehr-mortality.qmd)
+- Summer research program in machine learning and data science, supervised by
+  Dr. Mingon Kang
+- Coursework and assessment alongside a four-person team project on deep neural
+  networks for electronic health record data
+- [Read about the project →](project-ehr-mortality.qmd)
+:::
 
 :::
 
@@ -65,15 +79,20 @@ events. A line each is enough, and photographs are welcome.
 
 ::: {.photo-entry}
 
+::: {.photo-media}
+![](images/FILENAME.jpg){fig-alt="Short description for screen readers"}
+:::
+
+::: {.photo-body}
 ### Event or place name {.photo-title}
 
 ::: {.photo-date}
 Month Year · City
 :::
 
-![](images/FILENAME.jpg){fig-alt="Short description for screen readers" .photo-img}
-
-One or two sentences about what this was.
+- What you did
+- [Read about the project →](SOMEPAGE.qmd)
+:::
 
 :::
 

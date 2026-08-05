@@ -220,13 +220,40 @@ img.profile-img {
 
 /* ----------------------------- Activity photos ---------------------------- */
 
-/* One entry per row: heading, date line, photograph, then a short description. */
+/* One entry per row: photograph on the left, text beside it on the right. */
 .photo-entry {
-  margin: 2.5rem 0 3.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 2.25rem 0 3rem 0;
 }
 
-.photo-entry h3.photo-title {
-  font-size: 1.35rem;
+.photo-media {
+  flex: 0 0 300px;
+  max-width: 300px;
+}
+
+.photo-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+}
+
+.photo-media figure,
+.photo-media p {
+  margin: 0;
+}
+
+.photo-body {
+  flex: 1 1 300px;
+  min-width: 0;
+}
+
+.photo-body h3.photo-title {
+  font-size: 1.3rem;
   margin-top: 0;
   margin-bottom: 0.2rem;
 }
@@ -235,29 +262,30 @@ img.profile-img {
   color: var(--ink-muted);
   font-size: 0.95rem;
   letter-spacing: 0.01em;
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
 }
 
-.photo-entry img {
-  display: block;
-  max-height: 520px;
-  width: auto;
-  max-width: 100%;
-  border: 1px solid var(--rule);
-  border-radius: 2px;
+.photo-body ul {
+  padding-left: 1.1rem;
+  margin-bottom: 0;
 }
 
-.photo-entry figure {
-  margin: 0 0 1rem 0;
+.photo-body li {
+  margin-bottom: 0.4rem;
 }
 
 @media (max-width: 575.98px) {
-  .photo-entry h3.photo-title {
-    font-size: 1.15rem;
+  .photo-entry {
+    gap: 1.25rem;
   }
 
-  .photo-entry img {
-    max-height: 400px;
+  .photo-media {
+    flex: 0 0 100%;
+    max-width: 260px;
+  }
+
+  .photo-body h3.photo-title {
+    font-size: 1.15rem;
   }
 }
 
