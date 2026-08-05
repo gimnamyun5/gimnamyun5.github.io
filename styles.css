@@ -295,8 +295,8 @@ a.icon-link:focus {
 }
 
 .photo-media {
-  flex: 0 0 440px;
-  max-width: 440px;
+  flex: 0 0 380px;
+  max-width: 380px;
 }
 
 .photo-media img {
