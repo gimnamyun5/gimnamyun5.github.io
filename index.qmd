@@ -55,7 +55,18 @@ March 2021 – February 2027 (expected)
 - **Jun 2025 – Jul 2025**: Visiting Student Researcher, University of Nevada,
   Las Vegas
 
-Projects are described on the [Research](research.qmd) page.
+## Teaching experience
+
+- **PLACEHOLDER: term and year**: Teaching Assistant, PLACEHOLDER: course title,
+  Department of Statistics, Jeonbuk National University
+
+<!-- PLACEHOLDER: if you want a line describing the work, the earlier draft read:
+     reviewed lecture notes, problem sets and solutions before release, and
+     answered students' questions on introductory statistical theory. -->
+
+## Awards
+
+- **PLACEHOLDER: year**: PLACEHOLDER: award or scholarship name, granting body
 
 ## Research interests
 
@@ -72,5 +83,3 @@ Projects are described on the [Research](research.qmd) page.
 - **Visiting student researcher** — University of Nevada, Las Vegas, June – July 2025
 - PLACEHOLDER: add other activities — student societies, seminars, volunteering,
   competitions, or anything else you would want a reader to know.
-
-Photographs are on the [Activities &amp; Photos](activities.qmd) page.

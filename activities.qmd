@@ -10,8 +10,6 @@ title: "Activities & Photos"
 ![Korean Statistical Society Summer Conference 2025, June 2025 — presenting the neural Granger causality analysis of solar radiation data.](images/activity-kss-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the neural Granger causality poster at the Korean Statistical Society Summer Conference"}
 :::
 
-Both projects are described in full on the [Research](research.qmd) page.
-
 ## Research visits
 
 **University of Nevada, Las Vegas** — Visiting Student Researcher \

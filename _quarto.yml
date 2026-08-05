@@ -16,6 +16,8 @@ website:
         text: Home
       - href: research.qmd
         text: Research
+      - href: publications.qmd
+        text: Publications
       - href: activities.qmd
         text: "Activities & Photos"
       - href: contact.qmd

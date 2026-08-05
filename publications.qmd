@@ -1,0 +1,31 @@
+---
+title: "Publications"
+---
+
+## Manuscripts in preparation
+
+1. **Kim, N.-Y.** PLACEHOLDER: co-authors. Cross-country transfer learning for
+   ICU admission prediction. *In preparation.*
+   PLACEHOLDER: confirm the working title and author list.
+
+## Conference presentations
+
+1. Sung, J., & **Kim, N.-Y.** (2025, May). Effectiveness of digital cognitive
+   training interventions for dementia: a systematic review and meta-analysis.
+   Poster presented at *IC-KDA + ASAD 2025*, PLACEHOLDER: location.
+   PROSPERO CRD42025631806.
+
+2. Lee, M., Lee, S., Cho, Y., **Kim, N.-Y.**, Kim, G., & Lee, Y. (2025, June).
+   Deep learning-based neural Granger causality for solar radiation data. Poster
+   presented at the *Korean Statistical Society Summer Conference 2025*,
+   PLACEHOLDER: location.
+
+<!-- PLACEHOLDER: once co-author permission is confirmed, the poster PDFs can be
+     placed in files/ and linked from each entry like this:
+
+     [Poster (PDF)](files/poster_2025_dementia-meta-analysis.pdf) -->
+
+## Journal articles
+
+PLACEHOLDER: none yet. Delete this section, or leave it as a heading you will
+fill in later.
