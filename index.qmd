@@ -30,10 +30,12 @@ developed — across hospitals, across countries, and across populations — and
 understanding when apparent predictive gains are artifacts of data collection
 rather than genuine signal.
 
+::: {.profile-links}
 [CV](cv.qmd){.btn .btn-outline-dark .btn-sm role="button"}
 [GitHub](https://github.com/gimnamyun5){.btn .btn-outline-dark .btn-sm role="button"}
 [LinkedIn](https://www.linkedin.com/in/namyoon-kim-3b7b32416/){.btn .btn-outline-dark .btn-sm role="button"}
 <a href="mailto:namyoon2000@jbnu.ac.kr" class="btn btn-outline-dark btn-sm" role="button">Email</a>
+:::
 
 <!-- The email button is written as raw HTML on purpose: a Markdown mailto link
      would be rewritten by Pandoc's email obfuscation and would lose its
