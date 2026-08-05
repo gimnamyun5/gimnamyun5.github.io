@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "namyoon-site",
+      "runtimeExecutable": "C:\\Program Files\\Quarto\\bin\\quarto.exe",
+      "runtimeArgs": ["preview", "--port", "4321", "--host", "127.0.0.1", "--no-browser"],
+      "port": 4321
+    }
+  ]
+}

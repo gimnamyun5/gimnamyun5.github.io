@@ -1,0 +1,58 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Nam-Yoon Kim"
+  description: "Undergraduate Researcher in Statistics — biostatistics, machine learning for healthcare, and statistical network analysis."
+  site-url: "https://namyoon-kim.github.io/"
+  repo-url: "https://github.com/Namyoon-Kim/Namyoon-Kim.github.io"
+  favicon: images/favicon.png                           # PLACEHOLDER: add a favicon or delete this line
+
+  navbar:
+    pinned: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: cv.qmd
+        text: CV
+      - href: teaching.qmd
+        text: Teaching
+      - href: contact.qmd
+        text: Contact
+    right:
+      - icon: github
+        href: https://github.com/Namyoon-Kim
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/namyoon-kim-3b7b32416/
+        aria-label: LinkedIn
+      - icon: envelope
+        href: "mailto:namyoon2000@jbnu.ac.kr"
+        aria-label: Email
+
+  page-footer:
+    left: "© 2026 Nam-Yoon Kim"
+    right: "Built with [Quarto](https://quarto.org)"
+    border: true
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    toc-title: "On this page"
+    anchor-sections: true
+    smooth-scroll: false
+    link-external-newwindow: true
+    email-obfuscation: javascript
+    grid:
+      body-width: 900px
+
+execute:
+  freeze: auto
+
+editor: source

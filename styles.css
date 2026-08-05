@@ -1,0 +1,326 @@
+/* ---------------------------------------------------------------------------
+   Nam-Yoon Kim — academic website
+   Minimal serif-headed, restrained academic styling layered over Bootstrap
+   (Quarto's "cosmo" theme). No animation, no bright accent colors.
+   --------------------------------------------------------------------------- */
+
+:root {
+  --ink:        #1a1a1a;   /* body text */
+  --ink-muted:  #5a5a5a;   /* secondary text */
+  --rule:       #e0e0e0;   /* hairline rules */
+  --link:       #1f3a5f;   /* deep navy, the only accent */
+  --link-hover: #0d1f36;
+  --surface:    #f7f7f5;   /* very light warm grey for inset blocks */
+}
+
+/* ------------------------------- Typography ------------------------------- */
+
+body {
+  color: var(--ink);
+  font-size: 1.02rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar-brand,
+.title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+}
+
+h1.title {
+  font-size: 2.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: var(--ink-muted);
+  font-size: 1.08rem;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 1.45rem;
+  margin-top: 2.4rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+h3 {
+  font-size: 1.15rem;
+  margin-top: 1.8rem;
+}
+
+h4 {
+  font-size: 1.02rem;
+  margin-top: 1.4rem;
+}
+
+p, li {
+  color: var(--ink);
+}
+
+/* --------------------------------- Links ---------------------------------- */
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 58, 95, 0.25);
+}
+
+a:hover,
+a:focus {
+  color: var(--link-hover);
+  border-bottom-color: var(--link-hover);
+}
+
+/* Links that are already visually distinct should not be underlined. */
+.navbar a,
+.nav-link,
+.btn,
+.toc a,
+.sidebar a,
+.footer a,
+h1 a, h2 a, h3 a, h4 a,
+a.anchorjs-link {
+  border-bottom: none;
+}
+
+/* --------------------------------- Navbar --------------------------------- */
+
+.navbar {
+  border-bottom: 1px solid var(--rule);
+  background-color: #ffffff !important;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.15rem;
+  color: var(--ink) !important;
+}
+
+.navbar .nav-link {
+  color: var(--ink-muted) !important;
+  font-size: 0.95rem;
+  padding-left: 0.85rem !important;
+  padding-right: 0.85rem !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--ink) !important;
+}
+
+/* -------------------------------- Buttons --------------------------------- */
+
+.btn {
+  border-radius: 2px;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  padding: 0.4rem 1rem;
+  margin: 0.25rem 0.4rem 0.25rem 0;
+  box-shadow: none !important;
+}
+
+.btn-outline-dark {
+  border-color: #b8b8b8;
+  color: var(--ink);
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:focus {
+  background-color: var(--ink);
+  border-color: var(--ink);
+  color: #ffffff;
+}
+
+/* ------------------------------ Measure/width ----------------------------- */
+
+/* Pages without a table of contents (Home, Contact) otherwise stretch the full
+   width of the content area, which gives an uncomfortably long line length.
+   On pages that do have a TOC the column is already narrower, so this is inert. */
+main.content,
+main#quarto-document-content {
+  max-width: 900px;
+}
+
+/* ------------------------- Home page profile block ------------------------ */
+
+.profile-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2.25rem;
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.profile-photo {
+  flex: 0 0 220px;
+  max-width: 220px;
+}
+
+.profile-photo img,
+img.profile-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  background-color: var(--surface);
+}
+
+.profile-text {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.profile-text p:first-child {
+  margin-top: 0;
+}
+
+.affiliation {
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* --------------------------- Research page bits --------------------------- */
+
+.project-meta {
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+  margin: -0.35rem 0 1.1rem 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 2.75rem 0;
+  opacity: 1;
+}
+
+/* ------------------------------ CV page bits ------------------------------ */
+
+.cv-download {
+  margin: 0.5rem 0 1.75rem 0;
+}
+
+/* --------------------------- Callouts and tables -------------------------- */
+
+.callout {
+  border-radius: 2px;
+}
+
+.callout.callout-style-simple {
+  background-color: var(--surface);
+}
+
+table {
+  font-size: 0.95rem;
+}
+
+/* Wide content must scroll inside itself, never the page body. */
+.table-responsive,
+pre {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+pre {
+  background-color: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  font-size: 0.88rem;
+}
+
+/* ----------------------------- Table of contents -------------------------- */
+
+#TOC,
+.sidebar nav[role="doc-toc"] {
+  font-size: 0.88rem;
+}
+
+#TOC a,
+.sidebar nav[role="doc-toc"] a {
+  color: var(--ink-muted);
+}
+
+#TOC a:hover,
+.sidebar nav[role="doc-toc"] a:hover,
+#TOC a.active,
+.sidebar nav[role="doc-toc"] a.active {
+  color: var(--ink);
+}
+
+/* --------------------------------- Footer --------------------------------- */
+
+.nav-footer {
+  border-top: 1px solid var(--rule);
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nav-footer a {
+  color: var(--ink-muted);
+}
+
+/* --------------------------------- Mobile --------------------------------- */
+
+@media (max-width: 767.98px) {
+  body {
+    font-size: 1rem;
+  }
+
+  h1.title {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .profile-block {
+    gap: 1.5rem;
+  }
+
+  .profile-photo {
+    flex: 0 0 160px;
+    max-width: 160px;
+    margin: 0 auto;
+  }
+
+  .profile-text {
+    flex: 1 1 100%;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* --------------------------------- Print ---------------------------------- */
+
+@media print {
+  .navbar,
+  .nav-footer,
+  #TOC,
+  .sidebar,
+  .btn {
+    display: none !important;
+  }
+
+  a {
+    border-bottom: none;
+    color: var(--ink);
+  }
+}

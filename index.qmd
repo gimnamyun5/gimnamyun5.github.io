@@ -1,0 +1,66 @@
+---
+title: "Nam-Yoon Kim"
+subtitle: "Undergraduate Researcher in Statistics"
+toc: false
+---
+
+::: {.profile-block}
+
+::: {.profile-photo}
+<!-- PLACEHOLDER: replace images/profile.jpg with a professional profile photograph
+     (square crop, roughly 600×600 px, works well). -->
+![](images/profile.jpg){fig-alt="Portrait of Nam-Yoon Kim" class="profile-img"}
+:::
+
+::: {.profile-text}
+
+::: {.affiliation}
+Department of Statistics, Jeonbuk National University (JBNU) · Jeonju, South Korea
+:::
+
+I am an undergraduate researcher in Statistics at Jeonbuk National University,
+preparing to apply to PhD programs in Statistics and Biostatistics. My work sits
+at the intersection of statistical methodology and health data science.
+
+My current interests include **biostatistics**, **machine learning for healthcare**,
+**electronic health records (EHR)**, **clinical prediction modeling**, and
+**statistical network analysis**. I am particularly interested in methods that
+remain reliable when they are moved outside the setting in which they were
+developed — across hospitals, across countries, and across populations — and in
+understanding when apparent predictive gains are artifacts of data collection
+rather than genuine signal.
+
+[CV](cv.qmd){.btn .btn-outline-dark .btn-sm role="button"}
+[GitHub](https://github.com/Namyoon-Kim){.btn .btn-outline-dark .btn-sm role="button"}
+[LinkedIn](https://www.linkedin.com/in/namyoon-kim-3b7b32416/){.btn .btn-outline-dark .btn-sm role="button"}
+<a href="mailto:namyoon2000@jbnu.ac.kr" class="btn btn-outline-dark btn-sm" role="button">Email</a>
+
+<!-- The email button is written as raw HTML on purpose: a Markdown mailto link
+     would be rewritten by Pandoc's email obfuscation and would lose its
+     button styling. -->
+
+:::
+
+:::
+
+## Research interests
+
+- **Biostatistics** — study design and inference for observational health data
+- **Machine learning for healthcare** — evaluation, calibration, and generalization
+- **Electronic health records** — multi-site and multi-country EHR data
+- **Clinical prediction modeling** — transfer learning and target adaptation
+- **Statistical network analysis** — community detection in heterogeneous networks
+
+See the [Research](research.qmd) page for current projects.
+
+## Education
+
+**B.S. in Statistics** — Jeonbuk National University (JBNU), Jeonju, South Korea \
+March 2021 – February 2027 (expected) \
+PLACEHOLDER: relevant coursework, honors, or GPA (optional)
+
+## News
+
+- **PLACEHOLDER (YYYY-MM)** — PLACEHOLDER: e.g., poster accepted at a conference.
+- **PLACEHOLDER (YYYY-MM)** — PLACEHOLDER: e.g., started a new research project.
+- **PLACEHOLDER (YYYY-MM)** — PLACEHOLDER: e.g., began teaching assistantship.

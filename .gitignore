@@ -1,0 +1,34 @@
+# Quarto build output
+/_site/
+/.quarto/
+/_freeze/
+*_files/
+*_cache/
+
+# Quarto local previews and logs
+.quarto-preview.log
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+**/*.quarto_ipynb

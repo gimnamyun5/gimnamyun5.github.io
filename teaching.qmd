@@ -1,0 +1,46 @@
+---
+title: "Teaching"
+---
+
+## Teaching Assistant
+
+**PLACEHOLDER: Course title** — PLACEHOLDER: Department, Institution \
+PLACEHOLDER: term and year (e.g., Spring 2026) \
+PLACEHOLDER: instructor of record
+
+Responsibilities:
+
+- **Review of instructional materials covering introductory statistical theory.**
+  Read through lecture notes, problem sets, and solutions before release,
+  checking derivations, notation, and worked examples for correctness and
+  internal consistency across the course. PLACEHOLDER: name the specific topics
+  covered (e.g., probability distributions, estimation, hypothesis testing,
+  linear regression).
+
+- **Responses to students' questions and clarification of statistical concepts.**
+  Answered questions in office hours and on the course forum, working through the
+  reasoning behind results rather than only the final answers, and identifying
+  recurring points of confusion to report back to the instructor.
+  PLACEHOLDER: note the format (in person, online, or both) and approximate
+  class size.
+
+- PLACEHOLDER: any additional duties (e.g., grading, running review sessions,
+  preparing supplementary examples, holding exam preparation sessions).
+
+## Teaching interests
+
+PLACEHOLDER: courses you would be prepared to assist with or teach in a PhD
+program — e.g., introductory probability and statistics, statistical computing
+in R, regression analysis, biostatistics for health sciences.
+
+## Teaching philosophy
+
+PLACEHOLDER: two or three sentences. A useful frame for a statistics course is
+what you want students to be able to do independently — for instance, decide
+which assumptions a method actually requires, and recognize when a result should
+not be trusted — and how your teaching is organized around that.
+
+## Feedback
+
+PLACEHOLDER: teaching evaluation scores or representative student comments, if
+you have them and are comfortable sharing. Remove this section otherwise.

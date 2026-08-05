@@ -1,0 +1,13 @@
+# Normalize text files to LF in the repository so the Linux GitHub Actions
+# runner and a Windows working copy agree.
+* text=auto eol=lf
+
+# Never apply line-ending conversion to binary assets.
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.woff binary
+*.woff2 binary
