@@ -1,163 +1,122 @@
 ---
 title: "Research"
-subtitle: "Current and previous projects"
+subtitle: "Projects and presentations"
 ---
 
-My research concerns statistical and machine-learning methods for health data,
-with an emphasis on whether models built in one setting remain trustworthy in
-another, and on inference for structure in large, heterogeneous networks.
+My research applies statistical and machine-learning methods to health data, with
+an emphasis on prediction from electronic health records and on whether models
+built in one setting remain trustworthy in another.
 
 ---
 
 ## 1. Cross-Country Transfer Learning for ICU Admission Prediction
 
 ::: {.project-meta}
-PLACEHOLDER: status (e.g., ongoing, manuscript in preparation) · PLACEHOLDER: role (e.g., lead author) · PLACEHOLDER: advisor / collaborators
+In progress · Manuscript in preparation · PLACEHOLDER: start date – present · PLACEHOLDER: lab / advisor
 :::
 
-### Research question
+Predicting whether a patient will require admission to an intensive care unit,
+using electronic health record data from several countries. The central question
+is how far a model trained on one country's records transfers to another, and how
+much data from the target country is needed to close the gap that remains.
 
-PLACEHOLDER: State the question precisely. For example: to what extent does a
-clinical prediction model for ICU admission, trained on electronic health record
-data from one country, transfer to patient populations in other countries, and
-how much target-domain data is required to recover performance?
+**Data** — Multi-country electronic health records.
+PLACEHOLDER: name the source databases, countries, cohort sizes, and the outcome
+definition used for ICU admission.
 
-### Data
+**Methods** — TabPFN, a prior-fitted transformer for tabular data, as the primary
+predictive model, evaluated against PLACEHOLDER: baseline comparators. Training in
+a source country with evaluation in held-out target countries, followed by target
+adaptation using PLACEHOLDER: adaptation strategy. Sensitivity of the reported
+gains to label noise is assessed separately, and results are checked for
+reproducibility across repeated splits and random seeds.
 
-- Multi-country **electronic health record** data.
-- PLACEHOLDER: name the source cohorts/databases, countries, and date ranges.
-- PLACEHOLDER: cohort size, inclusion and exclusion criteria, outcome definition.
-- PLACEHOLDER: predictor set (demographics, vitals, laboratory values, etc.) and
-  the observation window used for feature construction.
-- PLACEHOLDER: data-access conditions (e.g., credentialed access, data use agreement).
+**Findings** — PLACEHOLDER: in progress. Add the headline transfer result, the
+amount of target data required before adaptation matched a model trained directly
+on the target country, and what the label-noise analysis implied.
 
-### Methods
-
-- **TabPFN-based clinical prediction** — a prior-fitted transformer for tabular
-  data, used as the primary predictive model.
-- PLACEHOLDER: baseline comparators (e.g., regularized logistic regression,
-  gradient-boosted trees) and hyperparameter protocol.
-- **Cross-country generalization** — training in a source country and evaluating
-  in held-out target countries.
-- **Target adaptation** — PLACEHOLDER: describe the adaptation strategy
-  (e.g., fine-tuning, in-context adaptation, reweighting) and the sample-size
-  schedule used to characterize how performance improves with target data.
-- **Label-noise analysis** — PLACEHOLDER: describe how label noise was
-  characterized and how sensitivity to it was assessed.
-- **Reproducibility analysis** — PLACEHOLDER: seeds, repeated splits, variance
-  across runs, and the computational environment recorded.
-- PLACEHOLDER: evaluation metrics (e.g., AUROC, AUPRC, calibration measures) and
-  uncertainty quantification (e.g., bootstrap confidence intervals).
-
-### Main findings
-
-- PLACEHOLDER: headline result on cross-country transfer.
-- PLACEHOLDER: how much target-country data was needed before adaptation matched
-  a model trained directly on the target country.
-- PLACEHOLDER: what the label-noise analysis implied about the reliability of the
-  reported gains.
-- PLACEHOLDER: limitations and what they mean for deployment.
-
-### Materials
-
-- **GitHub repository:** PLACEHOLDER — <https://github.com/gimnamyun5/REPOSITORY>
-- **Poster / manuscript:** PLACEHOLDER — add a link, or place the file in `files/`
-  and link it as `files/FILENAME.pdf`
+**Materials** — PLACEHOLDER: GitHub repository · manuscript in preparation
 
 ---
 
-## 2. Community Detection in Heterogeneous Networks
+## 2. Survival Prediction from Electronic Health Records
 
 ::: {.project-meta}
-PLACEHOLDER: status · PLACEHOLDER: role · PLACEHOLDER: advisor / collaborators
+Research internship · PLACEHOLDER: start date – end date · PLACEHOLDER: institution / lab · PLACEHOLDER: supervisor
 :::
 
-### Research question
+PLACEHOLDER: one or two sentences stating the clinical question — which patient
+population, which survival outcome, and over what time horizon.
 
-PLACEHOLDER: State the question precisely. For example: how should the number of
-communities be selected by recursive bipartitioning when the degree distribution
-is strongly heterogeneous, and do spectral stopping rules calibrated under
-homogeneous models remain valid in that regime?
+**Data** — Electronic health records.
+PLACEHOLDER: source database, cohort definition, sample size, follow-up period,
+and how censoring was handled.
 
-### Data
+**Methods** — PLACEHOLDER: survival models used (e.g., Cox proportional hazards,
+random survival forests, penalized regression), how the proportional-hazards
+assumption was checked, and the evaluation metrics (e.g., concordance index,
+time-dependent AUC, calibration).
 
-- **Wikipedia MUSAE** network data.
-- PLACEHOLDER: which MUSAE subgraphs were used, with node and edge counts.
-- PLACEHOLDER: preprocessing (largest connected component, deduplication,
-  treatment of self-loops and multi-edges).
-- PLACEHOLDER: any node attributes or labels used for external validation.
+**Findings** — PLACEHOLDER: which predictors mattered, how well the model
+discriminated and calibrated, and the main limitation.
 
-### Methods
-
-- **Recursive bipartitioning** — repeatedly splitting a network into two parts and
-  recursing, in place of estimating the number of communities in one step.
-- **Tracy–Widom stopping rule** — testing the leading eigenvalue of a normalized
-  adjacency matrix against its Tracy–Widom null distribution to decide whether a
-  candidate split is real.
-- **Degree-aware stopping rule** — PLACEHOLDER: describe the proposed correction
-  and the degree-correction model (e.g., degree-corrected stochastic block model)
-  it is built on.
-- **Analysis of heterogeneous degree distributions** — PLACEHOLDER: describe the
-  simulation design used to vary degree heterogeneity and the metrics used to
-  compare recovered partitions (e.g., normalized mutual information, adjusted
-  Rand index).
-
-### Main findings
-
-- PLACEHOLDER: how the Tracy–Widom rule behaved as degree heterogeneity increased
-  (e.g., direction and size of the error in the estimated number of communities).
-- PLACEHOLDER: what the degree-aware rule corrected, and at what cost.
-- PLACEHOLDER: results on the Wikipedia MUSAE networks.
-- PLACEHOLDER: limitations and open questions.
-
-### Materials
-
-- **GitHub repository:** PLACEHOLDER — <https://github.com/gimnamyun5/REPOSITORY>
-- **Poster / manuscript:** PLACEHOLDER — add a link, or place the file in `files/`
-  and link it as `files/FILENAME.pdf`
+**Materials** — PLACEHOLDER: GitHub repository · report
 
 ---
 
-## 3. Previous Research
-
-### Granger causality analysis involving weather data
+## 3. Digital Interventions for Dementia: A Meta-Analysis
 
 ::: {.project-meta}
-PLACEHOLDER: dates · PLACEHOLDER: role · PLACEHOLDER: advisor / course or program
+Poster · PLACEHOLDER: conference name · PLACEHOLDER: date · PLACEHOLDER: location
 :::
 
-- **Research question:** PLACEHOLDER — state the temporal question, including the
-  outcome series and the weather series hypothesized to precede it.
-- **Data:** PLACEHOLDER — sources, geographic coverage, time span, sampling
-  frequency, and handling of missing observations.
-- **Methods:** Granger causality testing. PLACEHOLDER — stationarity checks and
-  differencing, lag-order selection, VAR specification, multiple-testing
-  correction, and any robustness checks.
-- **Main findings:** PLACEHOLDER — direction and strength of evidence, plus a
-  clear statement of what Granger causality does and does not establish here.
-- **GitHub repository:** PLACEHOLDER — <https://github.com/gimnamyun5/REPOSITORY>
-- **Poster / manuscript:** PLACEHOLDER
+A meta-analysis of the effect of digital interventions on outcomes in dementia.
+PLACEHOLDER: state the review question in PICO form — the population, the class of
+digital intervention, the comparator, and the primary outcome.
 
-### Review of digital interventions for dementia
+**Data** — PLACEHOLDER: databases searched, search dates and terms, inclusion and
+exclusion criteria, and the number of records screened and studies finally included.
+
+**Methods** — PLACEHOLDER: effect measure used (e.g., standardized mean
+difference), fixed- or random-effects model, heterogeneity assessment
+(e.g., *I*²), risk-of-bias tool, and any subgroup or publication-bias analysis.
+
+**Findings** — PLACEHOLDER: pooled effect estimate with confidence interval, the
+degree of heterogeneity, and how confident the evidence base allows you to be.
+
+**Materials** — PLACEHOLDER: poster PDF · GitHub repository
+
+---
+
+## 4. Granger Causality Analysis of Solar Irradiance Data
 
 ::: {.project-meta}
-PLACEHOLDER: dates · PLACEHOLDER: role · PLACEHOLDER: advisor / course or program
+Poster · PLACEHOLDER: conference name · PLACEHOLDER: date · PLACEHOLDER: location
 :::
 
-- **Research question:** PLACEHOLDER — state the review question, ideally in
-  PICO form (population, intervention, comparator, outcome).
-- **Data:** PLACEHOLDER — databases searched, search dates, search terms,
-  inclusion and exclusion criteria, and the number of records screened and included.
-- **Methods:** PLACEHOLDER — screening procedure, data extraction, risk-of-bias
-  assessment, and whether evidence was synthesized narratively or by meta-analysis.
-- **Main findings:** PLACEHOLDER — summary of effects, consistency of evidence,
-  and quality of the included studies.
-- **GitHub repository:** PLACEHOLDER — <https://github.com/gimnamyun5/REPOSITORY>
-- **Poster / manuscript:** PLACEHOLDER
+A time-series study testing whether solar irradiance carries predictive
+information about PLACEHOLDER: the outcome series, beyond what that series'
+own past already explains.
+
+**Data** — Solar irradiance measurements.
+PLACEHOLDER: data source, geographic coverage, time span, sampling frequency, and
+how missing observations were handled.
+
+**Methods** — Granger causality testing within a vector autoregression.
+PLACEHOLDER: stationarity checks and differencing, lag-order selection criterion,
+and any correction for multiple testing.
+
+**Findings** — PLACEHOLDER: direction and strength of the evidence, together with
+a statement of what Granger causality does and does not establish here.
+
+**Materials** — PLACEHOLDER: poster PDF · GitHub repository
+
+<!-- The community-detection project is parked in _parked-community-detection.qmd
+     until it is further along. Paste it back in here when ready. -->
 
 ---
 
 ::: {.callout-note appearance="simple"}
-Code and materials for these projects are available on request while
-repositories are being prepared for public release.
+Code and materials for these projects are available on request while repositories
+are being prepared for public release.
 :::

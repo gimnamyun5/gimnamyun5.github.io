@@ -1,0 +1,28 @@
+PARKED SECTION — NOT PUBLISHED
+
+Quarto ignores files whose names begin with an underscore, so nothing here is
+rendered or deployed. When the community-detection project is far enough along,
+paste the block below back into `research.qmd` and renumber the sections.
+
+---
+
+## 5. Community Detection in Heterogeneous Networks
+
+::: {.project-meta}
+In progress · PLACEHOLDER: dates · PLACEHOLDER: advisor
+:::
+
+How the number of communities should be selected by recursive bipartitioning when
+the degree distribution is strongly heterogeneous, and whether spectral stopping
+rules calibrated under homogeneous models remain valid in that regime.
+
+**Data** — Wikipedia MUSAE network data. PLACEHOLDER: subgraphs used, node and
+edge counts, preprocessing.
+
+**Methods** — Recursive bipartitioning with a Tracy-Widom stopping rule, compared
+against a degree-aware alternative built on a degree-corrected stochastic block
+model. PLACEHOLDER: simulation design and partition-recovery metrics.
+
+**Findings** — PLACEHOLDER.
+
+**Materials** — PLACEHOLDER.
