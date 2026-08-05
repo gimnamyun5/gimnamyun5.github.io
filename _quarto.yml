@@ -11,7 +11,7 @@ website:
 
   navbar:
     pinned: true
-    left:
+    right:
       - href: index.qmd
         text: Home
       - href: about.qmd
@@ -22,16 +22,6 @@ website:
         text: Research
       - href: publications.qmd
         text: Publications
-    right:
-      - icon: github
-        href: https://github.com/gimnamyun5
-        aria-label: GitHub
-      - icon: linkedin
-        href: https://www.linkedin.com/in/namyoon-kim-3b7b32416/
-        aria-label: LinkedIn
-      - icon: envelope
-        href: "mailto:namyoon2000@jbnu.ac.kr"
-        aria-label: Email
 
   page-footer:
     left: "© 2026 Nam-Yoon Kim"
