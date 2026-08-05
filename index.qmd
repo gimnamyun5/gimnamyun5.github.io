@@ -48,6 +48,14 @@ and network models as readily as into hospital records.
 **B.S. in Statistics**, minor in Mathematics — Jeonbuk National University (JBNU) \
 March 2021 – February 2027 (expected)
 
+## Research interests
+
+- Biostatistics
+- Statistical machine learning
+- Clinical prediction modeling
+- Statistical network analysis
+- Time series and causal discovery
+
 ## Research experience
 
 - **Feb 2026 – present**: Undergraduate Researcher, Statistical Learning Across
@@ -83,11 +91,3 @@ Jeonbuk National University · Fall 2024
 - **President's Award for Academic Excellence** — Jeonbuk National University, 2025
 - **Full Merit-Based Scholarship** — Jeonbuk National University, every semester
   from Fall 2024 to Spring 2026
-
-## Research interests
-
-- Biostatistics
-- Statistical machine learning
-- Clinical prediction modeling
-- Statistical network analysis
-- Time series and causal discovery
