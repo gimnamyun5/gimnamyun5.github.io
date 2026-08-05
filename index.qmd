@@ -7,16 +7,10 @@ toc: false
 ::: {.profile-block}
 
 ::: {.profile-photo}
-<!-- PLACEHOLDER: replace images/profile.jpg with a professional profile photograph
-     (square crop, roughly 600×600 px, works well). -->
 ![](images/profile.jpg){fig-alt="Portrait of Nam-Yoon Kim" class="profile-img"}
 :::
 
 ::: {.profile-text}
-
-::: {.affiliation}
-Department of Statistics, Jeonbuk National University (JBNU)
-:::
 
 I am an undergraduate researcher at Jeonbuk National University, majoring in
 Statistics with a minor in Mathematics, and applying to PhD programs in
@@ -35,7 +29,7 @@ and network models as readily as into hospital records.
      rather keep the page purely professional. -->
 
 ::: {.profile-links}
-[CV](cv.qmd){.btn .btn-outline-dark .btn-sm role="button"}
+[CV (PDF)](files/NamYoon_Kim_CV.pdf){.btn .btn-outline-dark .btn-sm role="button" target="_blank"}
 [GitHub](https://github.com/gimnamyun5){.btn .btn-outline-dark .btn-sm role="button"}
 [LinkedIn](https://www.linkedin.com/in/namyoon-kim-3b7b32416/){.btn .btn-outline-dark .btn-sm role="button"}
 <a href="mailto:namyoon2000@jbnu.ac.kr" class="btn btn-outline-dark btn-sm" role="button">Email</a>
@@ -49,6 +43,36 @@ and network models as readily as into hospital records.
 
 :::
 
+## Education
+
+**B.S. in Statistics**, minor in Mathematics — Jeonbuk National University (JBNU) \
+March 2021 – February 2027 (expected)
+
+**Visiting Student** — University of Nevada, Las Vegas \
+UNLV summer research program (EIP) · Four weeks, June – July 2025 \
+Credit-bearing program in machine learning and data science, combining coursework
+with a team research project.
+
+## Research experience
+
+**Cross-country transfer learning for ICU admission prediction** — ongoing \
+Transfer of a TabPFN-based clinical prediction model across countries, with target
+adaptation and a label-noise analysis.
+
+**Deep neural networks for mortality prediction from EHR** — UNLV, 2025 \
+Compared interpolation schemes and network architectures on irregularly sampled
+vital-sign sequences from a Brazilian cancer center.
+
+**Neural Granger causality for solar radiation data** — JBNU, 2025 \
+Applied component-wise MLP and LSTM models to a year of hourly meteorological
+observations, benchmarked against a linear VAR.
+
+**Digital cognitive training for dementia: a meta-analysis** — 2025 \
+PROSPERO-registered systematic review and meta-analysis of eleven randomized
+controlled trials.
+
+Full descriptions are on the [Research](research.qmd) page.
+
 ## Research interests
 
 - Biostatistics
@@ -57,25 +81,12 @@ and network models as readily as into hospital records.
 - Statistical network analysis
 - Time series and causal discovery
 
-See the [Research](research.qmd) page for current projects.
-
-## Education
-
-**B.S. in Statistics**, minor in Mathematics — Jeonbuk National University (JBNU) \
-March 2021 – February 2027 (expected)
-
 ## Activities
 
-::: {.activity-photos layout-ncol=2}
-![Poster presentation, IC-KDA + ASAD 2025, May 2025](images/activity-ickda-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the dementia meta-analysis poster at IC-KDA + ASAD 2025"}
+- **Poster presentation** — IC-KDA + ASAD 2025, May 2025
+- **Poster presentation** — Korean Statistical Society Summer Conference 2025, June 2025
+- **Visiting student** — UNLV summer research program, June – July 2025
+- PLACEHOLDER: add other activities — student societies, seminars, volunteering,
+  competitions, or anything else you would want a reader to know.
 
-![Poster presentation, Korean Statistical Society Summer Conference, June 2025](images/activity-kss-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the neural Granger causality poster at the Korean Statistical Society Summer Conference"}
-:::
-
-<!-- PLACEHOLDER: replace the two files above with the conference photographs.
-     Save them as images/activity-ickda-2025.jpg and images/activity-kss-2025.jpg.
-     Portrait orientation is fine; they are displayed side by side. -->
-
-<!-- A News section can go here once there is something to announce - a poster
-     accepted, a preprint posted, a new position. Left out for now: three empty
-     bullet points read worse than no section at all. -->
+Photographs are on the [Activities &amp; Photos](activities.qmd) page.

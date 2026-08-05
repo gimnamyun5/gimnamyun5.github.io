@@ -31,4 +31,4 @@ Jeonju, South Korea
 
 ## CV
 
-A PDF copy of my curriculum vitae is available on the [CV](cv.qmd) page.
+[Download CV (PDF)](files/NamYoon_Kim_CV.pdf){.btn .btn-outline-dark .btn-sm role="button" target="_blank"}

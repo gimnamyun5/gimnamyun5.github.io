@@ -10,8 +10,7 @@ GitHub Pages via GitHub Actions.
 ├── _quarto.yml                  # site configuration: navbar, theme, footer
 ├── index.qmd                    # Home
 ├── research.qmd                 # Research
-├── cv.qmd                       # CV (links to files/NamYoon_Kim_CV.pdf)
-├── teaching.qmd                 # Teaching
+├── activities.qmd               # Activities & Photos
 ├── contact.qmd                  # Contact
 ├── styles.css                   # custom styling layered over the cosmo theme
 ├── files/                       # PDFs (CV, posters, manuscripts)
@@ -65,8 +64,7 @@ already filled in. What remains is research and CV content:
 | --- | --- |
 | `index.qmd` | news items, coursework/honors |
 | `research.qmd` | research questions, data, methods, findings, repo and poster links |
-| `cv.qmd` | experience, publications, skills, awards |
-| `teaching.qmd` | course title, term, instructor, topics |
+| `activities.qmd` | further activities and photographs |
 | `contact.qmd` | Google Scholar / ORCID links (or delete those lines) |
 
 ## Files to add

@@ -16,10 +16,8 @@ website:
         text: Home
       - href: research.qmd
         text: Research
-      - href: cv.qmd
-        text: CV
-      - href: teaching.qmd
-        text: Teaching
+      - href: activities.qmd
+        text: Activities
       - href: contact.qmd
         text: Contact
     right:

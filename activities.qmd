@@ -1,0 +1,45 @@
+---
+title: "Activities & Photos"
+---
+
+## Conference presentations
+
+::: {.activity-photos layout-ncol=2}
+![IC-KDA + ASAD 2025, May 2025 — presenting the systematic review and meta-analysis of digital cognitive training interventions for dementia.](images/activity-ickda-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the dementia meta-analysis poster at IC-KDA + ASAD 2025"}
+
+![Korean Statistical Society Summer Conference 2025, June 2025 — presenting the neural Granger causality analysis of solar radiation data.](images/activity-kss-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the neural Granger causality poster at the Korean Statistical Society Summer Conference"}
+:::
+
+Both projects are described in full on the [Research](research.qmd) page.
+
+## Research visits
+
+**University of Nevada, Las Vegas** — UNLV summer research program (EIP) \
+Four weeks, June – July 2025
+
+A credit-bearing program in machine learning and data science: coursework and
+assessment alongside a four-person team project on deep neural networks for
+electronic health record data, supervised by Dr. Mingon Kang.
+
+PLACEHOLDER: add a photograph from the program if you have one. Save it as
+`images/activity-unlv-2025.jpg` and tell me — I will place it here.
+
+## Other activities
+
+PLACEHOLDER: anything else worth showing — student statistics society, seminars
+or reading groups, data competitions, volunteering, tutoring, or departmental
+events. A line each is enough, and photographs are welcome.
+
+<!-- To add a photograph, save it under images/ and copy this pattern:
+
+![Caption describing what is happening.](images/FILENAME.jpg){fig-alt="Short description for screen readers"}
+
+For two side by side, wrap them:
+
+::: {.activity-photos layout-ncol=2}
+![Caption one.](images/FIRST.jpg)
+
+![Caption two.](images/SECOND.jpg)
+:::
+
+Send me the photographs at any size - I will resize them for the web. -->

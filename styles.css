@@ -165,16 +165,16 @@ main#quarto-document-content {
 }
 
 .profile-photo {
-  flex: 0 0 220px;
-  max-width: 220px;
+  flex: 0 0 260px;
+  max-width: 260px;
 }
 
+/* No forced aspect ratio and no cover cropping: a portrait photograph would
+   otherwise be squared off, taking the top of the head with it. */
 .profile-photo img,
 img.profile-img {
   width: 100%;
   height: auto;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
   border: 1px solid var(--rule);
   border-radius: 2px;
   background-color: var(--surface);
@@ -356,8 +356,8 @@ pre {
   }
 
   .profile-photo {
-    flex: 0 0 160px;
-    max-width: 160px;
+    flex: 0 0 200px;
+    max-width: 200px;
     margin: 0 auto;
   }
 
