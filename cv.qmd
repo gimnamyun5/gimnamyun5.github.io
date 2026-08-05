@@ -29,8 +29,8 @@ PLACEHOLDER: start date – present
   electronic health records, using TabPFN with target-domain adaptation, and
   assessing sensitivity of the results to label noise.
 
-**Research Intern** — UNLV EIP, University of Nevada, Las Vegas \
-PLACEHOLDER: start date – end date
+**Undergraduate Researcher** — UNLV EIP (Project 4), University of Nevada, Las Vegas \
+June – July 2025
 
 - Predicted patient mortality from irregularly sampled EHR vital-sign sequences
   in a four-person team, comparing linear and non-linear interpolation across CNN

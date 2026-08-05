@@ -42,11 +42,11 @@ on the target country, and what the label-noise analysis implied.
 ## 2. Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series
 
 ::: {.project-meta}
-Research internship · Team project ("Deep Patient", 4 members) · UNLV EIP, Project 4 · PLACEHOLDER: dates · PLACEHOLDER: faculty supervisor
+Research project · UNLV EIP, Project 4 · June – July 2025 · Team of four ("Deep Patient") · PLACEHOLDER: faculty supervisor
 :::
 
-A research internship at the University of Nevada, Las Vegas, predicting patient
-mortality from short sequences of routinely recorded vital signs. The practical
+A one-month research project at the University of Nevada, Las Vegas, predicting
+patient mortality from short sequences of routinely recorded vital signs. The practical
 obstacle in this data is that vital signs are not recorded on a regular schedule:
 the interval between measurements varies from patient to patient, so the series
 must be placed on a common time grid before any sequence model can be applied.
