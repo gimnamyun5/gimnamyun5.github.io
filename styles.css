@@ -287,8 +287,8 @@ a.icon-link:focus {
 }
 
 .photo-media {
-  flex: 0 0 220px;
-  max-width: 220px;
+  flex: 0 0 265px;
+  max-width: 265px;
 }
 
 .photo-media img {
@@ -338,13 +338,15 @@ a.icon-link:focus {
     gap: 1rem;
   }
 
+  /* The photograph is deliberately smaller here than on a wide screen: past
+     roughly 140px the text column gets too narrow to read comfortably. */
   .photo-media {
-    flex: 0 0 145px;
-    max-width: 145px;
+    flex: 0 0 140px;
+    max-width: 140px;
   }
 
   .photo-body {
-    flex: 1 1 150px;
+    flex: 1 1 140px;
   }
 
   .photo-body h3.photo-title {
