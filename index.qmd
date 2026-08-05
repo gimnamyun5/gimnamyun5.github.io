@@ -49,7 +49,7 @@ rather than genuine signal.
 - **Machine learning for healthcare** — evaluation, calibration, and generalization
 - **Electronic health records** — multi-site and multi-country EHR data
 - **Clinical prediction modeling** — transfer learning and target adaptation
-- **Survival analysis** — time-to-event outcomes in observational cohorts
+- **Evidence synthesis** — systematic review and meta-analysis of clinical trials
 - **Statistical network analysis** — community detection in heterogeneous networks
 
 See the [Research](research.qmd) page for current projects.

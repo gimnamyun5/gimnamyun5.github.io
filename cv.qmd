@@ -22,20 +22,28 @@ probability theory, statistical computing, machine learning, survival analysis.
 
 ## Research experience
 
-**Undergraduate Researcher** — PLACEHOLDER: Lab / Department, Institution \
-PLACEHOLDER: start – end (or "present")
+**Undergraduate Researcher** — PLACEHOLDER: Lab / Department, Jeonbuk National University \
+PLACEHOLDER: start date – present
 
-- PLACEHOLDER: cross-country transfer learning for ICU admission prediction using
-  multi-country electronic health record data.
-- PLACEHOLDER: community detection in heterogeneous networks via recursive
-  bipartitioning.
-- PLACEHOLDER: one line on your specific contribution and the tools used.
+- Cross-country transfer learning for ICU admission prediction from multi-country
+  electronic health records, using TabPFN with target-domain adaptation, and
+  assessing sensitivity of the results to label noise.
 
-**PLACEHOLDER: Previous research position** — PLACEHOLDER: Lab / Institution \
+**Research Intern** — UNLV EIP, University of Nevada, Las Vegas \
+PLACEHOLDER: start date – end date
+
+- Predicted patient mortality from irregularly sampled EHR vital-sign sequences
+  in a four-person team, comparing linear and non-linear interpolation across CNN
+  and LSTM architectures; responsible for the linear-interpolation + LSTM arm.
+
+**Undergraduate Research Assistant** — Department of Statistics, Jeonbuk National University \
 PLACEHOLDER: dates
 
-- PLACEHOLDER: Granger causality analysis involving weather data.
-- PLACEHOLDER: review of digital interventions for dementia.
+- Applied neural Granger causality (component-wise MLP and LSTM) to a year of
+  hourly meteorological observations to identify predictors of solar radiation,
+  benchmarked against a linear VAR.
+- Co-authored a PROSPERO-registered systematic review and meta-analysis of
+  randomized trials of digital cognitive training in dementia.
 
 ## Teaching
 
@@ -55,10 +63,15 @@ If you have none yet, state "In preparation" items or remove this section.
 
 ## Conference presentations and posters
 
-PLACEHOLDER: e.g.
+1. Sung, J., & **Kim, N.-Y.** (2025). Effectiveness of digital cognitive training
+   interventions for dementia: a systematic review and meta-analysis. Poster
+   presented at *IC-KDA + ASAD 2025*. PLACEHOLDER: date and location.
 
-1. **Kim, N.-Y.** (YEAR). Title of the poster. *Conference name*, City, Country.
-   PLACEHOLDER: link to the poster file in `files/`.
+2. Lee, M., Lee, S., Cho, Y., **Kim, N.-Y.**, Kim, G., & Lee, Y. (PLACEHOLDER: year).
+   Deep learning-based neural Granger causality for solar radiation data. Poster
+   presented at PLACEHOLDER: conference name, location.
+
+PLACEHOLDER: confirm author order and add links to the poster files in `files/`.
 
 ## Skills
 

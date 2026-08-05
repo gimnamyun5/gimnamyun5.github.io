@@ -39,75 +39,118 @@ on the target country, and what the label-noise analysis implied.
 
 ---
 
-## 2. Survival Prediction from Electronic Health Records
+## 2. Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series
 
 ::: {.project-meta}
-Research internship · PLACEHOLDER: start date – end date · PLACEHOLDER: institution / lab · PLACEHOLDER: supervisor
+Research internship · Team project ("Deep Patient", 4 members) · UNLV EIP, Project 4 · PLACEHOLDER: dates · PLACEHOLDER: faculty supervisor
 :::
 
-PLACEHOLDER: one or two sentences stating the clinical question — which patient
-population, which survival outcome, and over what time horizon.
+A research internship at the University of Nevada, Las Vegas, predicting patient
+mortality from short sequences of routinely recorded vital signs. The practical
+obstacle in this data is that vital signs are not recorded on a regular schedule:
+the interval between measurements varies from patient to patient, so the series
+must be placed on a common time grid before any sequence model can be applied.
+The project was designed around that choice — two interpolation schemes crossed
+with two network architectures, compared on the same cohort.
 
-**Data** — Electronic health records.
-PLACEHOLDER: source database, cohort definition, sample size, follow-up period,
-and how censoring was handled.
+**Data** — Electronic health records from a cancer center in Brazil. Static
+features (age, sex, ICU admission status), six vital signs — heart rate,
+respiratory rate, blood pressure, oxygen saturation, body temperature and blood
+glucose — observed at five consecutive time points (*t* through *t*−4) for 30
+time-varying features, plus delta features encoding the change in each vital sign
+between successive points. The outcome was patient mortality, coded as survived
+or deceased. After preprocessing, the analysis set comprised 1,682 patients per
+class, reshaped to 16,820 × 7 across the five time steps.
 
-**Methods** — PLACEHOLDER: survival models used (e.g., Cox proportional hazards,
-random survival forests, penalized regression), how the proportional-hazards
-assumption was checked, and the evaluation metrics (e.g., concordance index,
-time-dependent AUC, calibration).
+**Methods** — Irregular measurement intervals were resolved by interpolating onto
+the median observed interval, using either linear or non-linear interpolation.
+Each interpolation was paired with a convolutional network and with an LSTM,
+giving a 2 × 2 comparison; features were standardized and the classes were
+balanced. My assignment within the team was the linear-interpolation + LSTM arm.
+Models were compared on F1 score, with accuracy and AUC reported alongside, and
+training length was set by the epoch at which validation loss began to rise.
 
-**Findings** — PLACEHOLDER: which predictors mattered, how well the model
-discriminated and calibrated, and the main limitation.
+**Findings** — The convolutional models outperformed the recurrent ones on every
+metric. The best configuration, a CNN on linearly interpolated data, reached
+accuracy 0.773, F1 0.762 and AUC 0.853; the LSTM arms reached accuracy 0.671–0.684,
+F1 0.638–0.656 and AUC 0.735–0.744. Interpolation scheme mattered far less than
+architecture: within each architecture the two interpolation methods differed by
+roughly one point of F1. The comparison is limited to a single cohort, and
+external validation on an independent dataset was identified as the necessary
+next step rather than completed.
 
-**Materials** — PLACEHOLDER: GitHub repository · report
+**Materials** — PLACEHOLDER: GitHub repository · presentation slides (internal)
 
 ---
 
-## 3. Digital Interventions for Dementia: A Meta-Analysis
+## 3. Digital Cognitive Training Interventions for Dementia: A Systematic Review and Meta-Analysis
 
 ::: {.project-meta}
-Poster · PLACEHOLDER: conference name · PLACEHOLDER: date · PLACEHOLDER: location
+Poster · IC-KDA + ASAD 2025 · PLACEHOLDER: date · PLACEHOLDER: location · with Jiyoun Sung (College of Pharmacy, Seoul National University)
 :::
 
-A meta-analysis of the effect of digital interventions on outcomes in dementia.
-PLACEHOLDER: state the review question in PICO form — the population, the class of
-digital intervention, the comparator, and the primary outcome.
+A systematic review and meta-analysis of randomized controlled trials asking
+whether digital cognitive training — programs delivered remotely through
+software, mobile applications or games — improves cognitive and depressive
+outcomes in patients with dementia. The protocol was preregistered with PROSPERO
+(CRD42025631806).
 
-**Data** — PLACEHOLDER: databases searched, search dates and terms, inclusion and
-exclusion criteria, and the number of records screened and studies finally included.
+**Data** — PubMed, Embase and Cochrane, searched under a PRISMA-based strategy for
+English-language randomized controlled trials published through December 2024.
+Of 466 records identified, 147 duplicates were removed, 319 screened and 22
+assessed in full text, leaving 11 studies covering 1,352 participants (636
+intervention, 716 control; mean age approximately 83 in both arms). Patients with
+mild cognitive impairment or subjective cognitive decline were excluded.
 
-**Methods** — PLACEHOLDER: effect measure used (e.g., standardized mean
-difference), fixed- or random-effects model, heterogeneity assessment
-(e.g., *I*²), risk-of-bias tool, and any subgroup or publication-bias analysis.
+**Methods** — Pooled mean differences under a fixed-effect inverse-variance model,
+computed separately for the two outcomes with enough analyzable data: the
+Mini-Mental State Examination (4 studies) and the Geriatric Depression Scale
+(3 studies). Heterogeneity was assessed with *I*².
 
-**Findings** — PLACEHOLDER: pooled effect estimate with confidence interval, the
-degree of heterogeneity, and how confident the evidence base allows you to be.
+**Findings** — Digital cognitive training improved MMSE scores by a mean
+difference of 3.94 (95% CI 2.38 to 5.49, *p* < 0.00001) and reduced GDS scores by
+1.52 (95% CI −2.68 to −0.37, *p* = 0.01), with moderate heterogeneity in both
+(*I*² = 34% and 39%). The evidence base is small — eleven trials, and only three
+to four contributing to each pooled estimate — so the effects are best read as
+supportive rather than conclusive.
 
-**Materials** — PLACEHOLDER: poster PDF · GitHub repository
+**Materials** — PLACEHOLDER: poster PDF · PROSPERO record CRD42025631806
 
 ---
 
-## 4. Granger Causality Analysis of Solar Irradiance Data
+## 4. Deep Learning-based Neural Granger Causality for Solar Radiation Data
 
 ::: {.project-meta}
-Poster · PLACEHOLDER: conference name · PLACEHOLDER: date · PLACEHOLDER: location
+Poster · PLACEHOLDER: conference name · PLACEHOLDER: date · PLACEHOLDER: location · Department of Statistics, Jeonbuk National University
 :::
 
-A time-series study testing whether solar irradiance carries predictive
-information about PLACEHOLDER: the outcome series, beyond what that series'
-own past already explains.
+Classical Granger causality tests rest on a linear vector autoregression, which
+limits what they can detect in meteorological series where the relationships are
+not linear. This project applied neural Granger causality, following Tank et al.
+(2021), to ask which meteorological variables carry predictive information about
+solar radiation, and whether the neural formulation recovers relationships the
+linear test misses.
 
-**Data** — Solar irradiance measurements.
-PLACEHOLDER: data source, geographic coverage, time span, sampling frequency, and
-how missing observations were handled.
+**Data** — Hourly observations for Jeonju over the whole of 2023 (8,760 records)
+from the Korea Automated Synoptic Observing System: precipitation, temperature,
+humidity, solar radiation, wind speed and total cloud cover.
 
-**Methods** — Granger causality testing within a vector autoregression.
-PLACEHOLDER: stationarity checks and differencing, lag-order selection criterion,
-and any correction for multiple testing.
+**Methods** — Component-wise MLP and component-wise LSTM models, which fit an
+independent network per output variable and read Granger non-causality off the
+first-layer weights under a sparsity penalty — sparse group lasso for the cMLP,
+group lasso for the cLSTM. A linear VAR at the 0.005 level served as the baseline.
+Inputs were min-max scaled, a lag of *k* = 12 was used, and the procedure was
+repeated over 50 bootstrap samples so that each candidate relationship could be
+summarized by how often it was detected.
 
-**Findings** — PLACEHOLDER: direction and strength of the evidence, together with
-a statement of what Granger causality does and does not establish here.
+**Findings** — With solar radiation as the target, temperature was identified in
+every replication by all three methods, and humidity was the next most consistent.
+The methods diverged on the variables that behave less like continuous
+measurements: precipitation was detected in 37% of replications by the VAR but
+79% and 97% by the cMLP and cLSTM, and cloud cover showed the same ordering. The
+neural models therefore appear better suited to nonlinear structure in continuous
+variables, but the results come from a single lag setting and these models are
+sensitive to hyperparameters, so their robustness is not established.
 
 **Materials** — PLACEHOLDER: poster PDF · GitHub repository
 
