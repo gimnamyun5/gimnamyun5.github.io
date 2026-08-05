@@ -20,6 +20,13 @@ PLACEHOLDER: minor or concentration, honors, GPA (optional)
 Selected coursework: PLACEHOLDER — e.g., mathematical statistics, linear models,
 probability theory, statistical computing, machine learning, survival analysis.
 
+**Visiting Student** — University of Nevada, Las Vegas, NV, USA \
+UNLV EIP · June – July 2025
+
+Credit-bearing summer program combining coursework with a team research project
+on deep neural networks for electronic health record data.
+PLACEHOLDER: courses taken and credits earned.
+
 ## Research experience
 
 **Undergraduate Researcher** — PLACEHOLDER: Lab / Department, Jeonbuk National University \
