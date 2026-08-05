@@ -79,14 +79,14 @@ already filled in. What remains is research and CV content:
 
 ## Publishing to GitHub Pages
 
-1. Create a GitHub repository named exactly `Namyoon-Kim.github.io` and push this
+1. Create a GitHub repository named exactly `gimnamyun5.github.io` and push this
    project to the `main` branch. It must be **public** for GitHub Pages to serve
    it on a free account.
 2. In the repository, go to **Settings → Pages** and set **Source** to
    **GitHub Actions**.
 3. Push to `main`. The workflow in `.github/workflows/publish.yml` renders the
    site and deploys it.
-4. The site appears at <https://namyoon-kim.github.io/>.
+4. The site appears at <https://gimnamyun5.github.io/>.
 
 `site-url` in `_quarto.yml` is already set to that address. If you rename the
 repository, update `site-url` and `repo-url` to match.

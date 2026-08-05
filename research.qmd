@@ -60,7 +60,7 @@ how much target-domain data is required to recover performance?
 
 ### Materials
 
-- **GitHub repository:** PLACEHOLDER — <https://github.com/Namyoon-Kim/REPOSITORY>
+- **GitHub repository:** PLACEHOLDER — <https://github.com/gimnamyun5/REPOSITORY>
 - **Poster / manuscript:** PLACEHOLDER — add a link, or place the file in `files/`
   and link it as `files/FILENAME.pdf`
 
@@ -112,7 +112,7 @@ homogeneous models remain valid in that regime?
 
 ### Materials
 
-- **GitHub repository:** PLACEHOLDER — <https://github.com/Namyoon-Kim/REPOSITORY>
+- **GitHub repository:** PLACEHOLDER — <https://github.com/gimnamyun5/REPOSITORY>
 - **Poster / manuscript:** PLACEHOLDER — add a link, or place the file in `files/`
   and link it as `files/FILENAME.pdf`
 
@@ -135,7 +135,7 @@ PLACEHOLDER: dates · PLACEHOLDER: role · PLACEHOLDER: advisor / course or prog
   correction, and any robustness checks.
 - **Main findings:** PLACEHOLDER — direction and strength of evidence, plus a
   clear statement of what Granger causality does and does not establish here.
-- **GitHub repository:** PLACEHOLDER — <https://github.com/Namyoon-Kim/REPOSITORY>
+- **GitHub repository:** PLACEHOLDER — <https://github.com/gimnamyun5/REPOSITORY>
 - **Poster / manuscript:** PLACEHOLDER
 
 ### Review of digital interventions for dementia
@@ -152,7 +152,7 @@ PLACEHOLDER: dates · PLACEHOLDER: role · PLACEHOLDER: advisor / course or prog
   assessment, and whether evidence was synthesized narratively or by meta-analysis.
 - **Main findings:** PLACEHOLDER — summary of effects, consistency of evidence,
   and quality of the included studies.
-- **GitHub repository:** PLACEHOLDER — <https://github.com/Namyoon-Kim/REPOSITORY>
+- **GitHub repository:** PLACEHOLDER — <https://github.com/gimnamyun5/REPOSITORY>
 - **Poster / manuscript:** PLACEHOLDER
 
 ---

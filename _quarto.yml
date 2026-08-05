@@ -5,8 +5,8 @@ project:
 website:
   title: "Nam-Yoon Kim"
   description: "Undergraduate Researcher in Statistics — biostatistics, machine learning for healthcare, and statistical network analysis."
-  site-url: "https://namyoon-kim.github.io/"
-  repo-url: "https://github.com/Namyoon-Kim/Namyoon-Kim.github.io"
+  site-url: "https://gimnamyun5.github.io/"
+  repo-url: "https://github.com/gimnamyun5/gimnamyun5.github.io"
   favicon: images/favicon.png                           # PLACEHOLDER: add a favicon or delete this line
 
   navbar:
@@ -24,7 +24,7 @@ website:
         text: Contact
     right:
       - icon: github
-        href: https://github.com/Namyoon-Kim
+        href: https://github.com/gimnamyun5
         aria-label: GitHub
       - icon: linkedin
         href: https://www.linkedin.com/in/namyoon-kim-3b7b32416/
