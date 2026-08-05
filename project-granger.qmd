@@ -1,0 +1,57 @@
+---
+title: "Deep Learning-based Neural Granger Causality for Solar Radiation Data"
+---
+
+::: {.project-meta}
+Poster · Korean Statistical Society Summer Conference 2025 · June 2025, Gyeongju · Faculty-led short-term project, Department of Statistics, Jeonbuk National University
+:::
+
+Classical Granger causality tests rest on a linear vector autoregression, which
+limits what they can detect in meteorological series where the relationships are
+not linear. This project applied neural Granger causality, following Tank et al.
+(2021), to ask which meteorological variables carry predictive information about
+solar radiation, and whether the neural formulation recovers relationships the
+linear test misses.
+
+## Data
+
+Hourly observations for Jeonju over the whole of 2023 (8,760 records) from the
+Korea Automated Synoptic Observing System: precipitation, temperature, humidity,
+solar radiation, wind speed and total cloud cover.
+
+## Methods
+
+Component-wise MLP and component-wise LSTM models, which fit an independent
+network per output variable and read Granger non-causality off the first-layer
+weights under a sparsity penalty — sparse group lasso for the cMLP, group lasso
+for the cLSTM. A linear VAR at the 0.005 level served as the baseline. Inputs
+were min-max scaled, a lag of *k* = 12 was used, and the procedure was repeated
+over 50 bootstrap samples so that each candidate relationship could be summarized
+by how often it was detected.
+
+## Findings
+
+| Predictor of solar radiation | VAR | cMLP | cLSTM |
+|---|---|---|---|
+| Temperature | 1.00 | 1.00 | 1.00 |
+| Humidity | 0.74 | 0.93 | 1.00 |
+| Wind speed | 0.74 | 0.72 | 0.97 |
+| Cloud cover | 0.60 | 0.65 | 0.79 |
+| Precipitation | 0.37 | 0.79 | 0.97 |
+
+: Proportion of 50 replications in which each variable was identified as a Granger cause of solar radiation {.striped}
+
+Temperature was identified in every replication by all three methods, and
+humidity was the next most consistent. The methods diverged on the variables that
+behave less like continuous measurements: precipitation was detected in 37% of
+replications by the VAR but 79% and 97% by the cMLP and cLSTM, and cloud cover
+showed the same ordering. The neural models therefore appear better suited to
+nonlinear structure in continuous variables, but the results come from a single
+lag setting and these models are sensitive to hyperparameters, so their
+robustness is not established.
+
+## Materials
+
+PLACEHOLDER: poster PDF · GitHub repository
+
+[← All research](research.qmd){.back-link}

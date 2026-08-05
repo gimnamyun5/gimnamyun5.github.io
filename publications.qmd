@@ -12,13 +12,13 @@ title: "Publications"
 
 1. Sung, J., & **Kim, N.-Y.** (2025, May). Effectiveness of digital cognitive
    training interventions for dementia: a systematic review and meta-analysis.
-   Poster presented at *IC-KDA + ASAD 2025*, PLACEHOLDER: location.
+   Poster presented at *IC-KDA + ASAD 2025*, Seoul, South Korea.
    **Best Poster Award.** PROSPERO CRD42025631806.
 
 2. Lee, M., Lee, S., Cho, Y., **Kim, N.-Y.**, Kim, G., & Lee, Y. (2025, June).
    Deep learning-based neural Granger causality for solar radiation data. Poster
    presented at the *Korean Statistical Society Summer Conference 2025*,
-   PLACEHOLDER: location.
+   Gyeongju, South Korea.
 
 <!-- PLACEHOLDER: once co-author permission is confirmed, the poster PDFs can be
      placed in files/ and linked from each entry like this:

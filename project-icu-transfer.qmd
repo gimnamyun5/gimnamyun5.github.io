@@ -1,0 +1,39 @@
+---
+title: "Cross-Country Transfer Learning for ICU Admission Prediction"
+---
+
+::: {.project-meta}
+In progress · Manuscript in preparation · Feb 2026 – present · Statistical Learning Across Biomedicine (S-LAB), Jeonbuk National University
+:::
+
+Predicting whether a patient will require admission to an intensive care unit,
+using electronic health record data from several countries. The central question
+is how far a model trained on one country's records transfers to another, and how
+much data from the target country is needed to close the gap that remains.
+
+## Data
+
+Multi-country electronic health records.
+PLACEHOLDER: name the source databases, countries, cohort sizes, and the outcome
+definition used for ICU admission.
+
+## Methods
+
+TabPFN, a prior-fitted transformer for tabular data, as the primary predictive
+model, evaluated against PLACEHOLDER: baseline comparators. Training in a source
+country with evaluation in held-out target countries, followed by target
+adaptation using PLACEHOLDER: adaptation strategy. Sensitivity of the reported
+gains to label noise is assessed separately, and results are checked for
+reproducibility across repeated splits and random seeds.
+
+## Findings
+
+PLACEHOLDER: in progress. Add the headline transfer result, the amount of target
+data required before adaptation matched a model trained directly on the target
+country, and what the label-noise analysis implied.
+
+## Materials
+
+PLACEHOLDER: GitHub repository · manuscript in preparation
+
+[← All research](research.qmd){.back-link}

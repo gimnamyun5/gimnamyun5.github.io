@@ -1,26 +1,59 @@
 ---
 title: "Activities & Photos"
+toc: false
 ---
 
 ## Conference presentations
 
-::: {.activity-photos layout-ncol=2}
-![IC-KDA + ASAD 2025, May 2025 — presenting the systematic review and meta-analysis of digital cognitive training interventions for dementia.](images/activity-ickda-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the dementia meta-analysis poster at IC-KDA + ASAD 2025"}
+::: {.photo-entry}
 
-![Korean Statistical Society Summer Conference 2025, June 2025 — presenting the neural Granger causality analysis of solar radiation data.](images/activity-kss-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the neural Granger causality poster at the Korean Statistical Society Summer Conference"}
+### IC-KDA + ASAD 2025 {.photo-title}
+
+::: {.photo-date}
+May 2025 · Seoul
+:::
+
+![](images/activity-ickda-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the dementia meta-analysis poster at IC-KDA + ASAD 2025" .photo-img}
+
+Presenting the systematic review and meta-analysis of digital cognitive training
+interventions for dementia, which received the Best Poster Award.
+[Read about the project →](project-dementia-meta.qmd)
+
+:::
+
+::: {.photo-entry}
+
+### Korean Statistical Society Summer Conference 2025 {.photo-title}
+
+::: {.photo-date}
+June 2025 · Gyeongju
+:::
+
+![](images/activity-kss-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the neural Granger causality poster at the Korean Statistical Society Summer Conference" .photo-img}
+
+Presenting the neural Granger causality analysis of solar radiation data.
+[Read about the project →](project-granger.qmd)
+
 :::
 
 ## Research visits
 
-**University of Nevada, Las Vegas** — Visiting Student Researcher \
-June – July 2025
+::: {.photo-entry}
 
-A summer research program in machine learning and data science: coursework and
-assessment alongside a four-person team project on deep neural networks for
-electronic health record data, supervised by Dr. Mingon Kang.
+### University of Nevada, Las Vegas {.photo-title}
 
-PLACEHOLDER: add a photograph from the program if you have one. Save it as
-`images/activity-unlv-2025.jpg` and tell me — I will place it here.
+::: {.photo-date}
+June – July 2025 · Las Vegas, Nevada
+:::
+
+![](images/activity-unlv-2025.jpg){fig-alt="Group photograph of the summer research programme participants at the Don and Carolyn Ahern Student Commons, UNLV" .photo-img}
+
+Summer research program in machine learning and data science, supervised by
+Dr. Mingon Kang: coursework and assessment alongside a four-person team project
+on deep neural networks for electronic health record data.
+[Read about the project →](project-ehr-mortality.qmd)
+
+:::
 
 ## Other activities
 
@@ -28,16 +61,20 @@ PLACEHOLDER: anything else worth showing — student statistics society, seminar
 or reading groups, data competitions, volunteering, tutoring, or departmental
 events. A line each is enough, and photographs are welcome.
 
-<!-- To add a photograph, save it under images/ and copy this pattern:
+<!-- To add another entry, copy this block and change the four parts:
 
-![Caption describing what is happening.](images/FILENAME.jpg){fig-alt="Short description for screen readers"}
+::: {.photo-entry}
 
-For two side by side, wrap them:
+### Event or place name {.photo-title}
 
-::: {.activity-photos layout-ncol=2}
-![Caption one.](images/FIRST.jpg)
-
-![Caption two.](images/SECOND.jpg)
+::: {.photo-date}
+Month Year · City
 :::
 
-Send me the photographs at any size - I will resize them for the web. -->
+![](images/FILENAME.jpg){fig-alt="Short description for screen readers" .photo-img}
+
+One or two sentences about what this was.
+
+:::
+
+Send me photographs at any size - I will resize them for the web. -->

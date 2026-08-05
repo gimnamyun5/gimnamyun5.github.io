@@ -1,0 +1,62 @@
+---
+title: "Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series"
+---
+
+::: {.project-meta}
+Research project · University of Nevada, Las Vegas · June – July 2025 · Team of four ("Deep Patient") · Faculty: Dr. Mingon Kang
+:::
+
+A team research project carried out during a summer research program at the
+University of Nevada, Las Vegas, predicting patient mortality from short
+sequences of routinely recorded vital signs. The practical obstacle in this data
+is that vital signs are not recorded on a regular schedule: the interval between
+measurements varies from patient to patient, so the series must be placed on a
+common time grid before any sequence model can be applied. The project was
+designed around that choice — two interpolation schemes crossed with two network
+architectures, compared on the same cohort.
+
+## Data
+
+Electronic health records from a cancer center in Brazil. Static features (age,
+sex, ICU admission status), six vital signs — heart rate, respiratory rate,
+blood pressure, oxygen saturation, body temperature and blood glucose — observed
+at five consecutive time points (*t* through *t*−4) for 30 time-varying features,
+plus delta features encoding the change in each vital sign between successive
+points. The outcome was patient mortality, coded as survived or deceased. After
+preprocessing, the analysis set comprised 1,682 patients per class, reshaped to
+16,820 × 7 across the five time steps.
+
+## Methods
+
+Irregular measurement intervals were resolved by interpolating onto the median
+observed interval, using either linear or non-linear interpolation. Each
+interpolation was paired with a convolutional network and with an LSTM, giving a
+2 × 2 comparison; features were standardized and the classes were balanced. My
+assignment within the team was the linear-interpolation + LSTM arm. Models were
+compared on F1 score, with accuracy and AUC reported alongside, and training
+length was set by the epoch at which validation loss began to rise.
+
+## Findings
+
+The convolutional models outperformed the recurrent ones on every metric.
+
+| Configuration | Accuracy | F1 | AUC |
+|---|---|---|---|
+| CNN, linear interpolation | 0.773 | 0.762 | 0.853 |
+| CNN, non-linear interpolation | 0.765 | 0.761 | 0.834 |
+| LSTM, non-linear interpolation | 0.684 | 0.656 | 0.744 |
+| LSTM, linear interpolation | 0.671 | 0.638 | 0.735 |
+
+: Best result per configuration {.striped tbl-colwidths="[40,20,20,20]"}
+
+Interpolation scheme mattered far less than architecture: within each
+architecture the two interpolation methods differed by roughly one point of F1.
+The comparison is limited to a single cohort, and external validation on an
+independent dataset was identified as the necessary next step rather than
+completed.
+
+## Materials
+
+PLACEHOLDER: GitHub repository · presentation slides (internal)
+
+[← All research](research.qmd){.back-link}

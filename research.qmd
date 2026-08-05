@@ -1,6 +1,7 @@
 ---
 title: "Research"
 subtitle: "Projects and presentations"
+toc: false
 ---
 
 My research applies statistical and machine-learning methods to health data, with
@@ -9,186 +10,54 @@ built in one setting remain trustworthy in another.
 
 ::: {.project-index}
 
-[1. Cross-Country Transfer Learning for ICU Admission Prediction](#sec-icu){.project-index-title}
+[Cross-Country Transfer Learning for ICU Admission Prediction](project-icu-transfer.qmd){.project-index-title}
+
+::: {.project-index-meta}
+In progress · S-LAB, Jeonbuk National University · Feb 2026 – present
+:::
 
 Whether a clinical prediction model trained on one country's electronic health
 records still works in another, and how much data from the target country is
-needed to close the gap. In progress.
+needed to close the gap. TabPFN, with target adaptation and a label-noise
+analysis.
 
-[2. Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series](#sec-ehr){.project-index-title}
+[Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series](project-ehr-mortality.qmd){.project-index-title}
 
-Predicting patient mortality from irregularly sampled vital signs, comparing two
-interpolation schemes against two network architectures. A team project at the
-University of Nevada, Las Vegas.
+::: {.project-index-meta}
+University of Nevada, Las Vegas · June – July 2025
+:::
 
-[3. Digital Cognitive Training Interventions for Dementia](#sec-dementia){.project-index-title}
+Predicting patient mortality from irregularly sampled vital signs recorded at a
+Brazilian cancer center, crossing two interpolation schemes with two network
+architectures. The convolutional models won on every metric.
+
+[Digital Cognitive Training Interventions for Dementia](project-dementia-meta.qmd){.project-index-title}
+
+::: {.project-index-meta}
+Best Poster Award, IC-KDA + ASAD 2025 · May 2025, Seoul
+:::
 
 A PROSPERO-registered systematic review and meta-analysis of eleven randomized
 trials, asking whether remotely delivered cognitive training improves cognitive
-and depressive outcomes in dementia. Best Poster Award, IC-KDA + ASAD 2025.
+and depressive outcomes in dementia. It improved both, on a small evidence base.
 
-[4. Deep Learning-based Neural Granger Causality for Solar Radiation Data](#sec-granger){.project-index-title}
+[Deep Learning-based Neural Granger Causality for Solar Radiation Data](project-granger.qmd){.project-index-title}
+
+::: {.project-index-meta}
+Korean Statistical Society Summer Conference 2025 · June 2025, Gyeongju
+:::
 
 Which meteorological variables carry predictive information about solar
 radiation, and whether neural Granger causality recovers relationships that a
-linear vector autoregression misses.
+linear vector autoregression misses. It does, for the variables that behave least
+like continuous measurements.
 
 :::
-
----
-
-## 1. Cross-Country Transfer Learning for ICU Admission Prediction {#sec-icu}
-
-::: {.project-meta}
-In progress · Manuscript in preparation · PLACEHOLDER: start date – present · PLACEHOLDER: lab / advisor
-:::
-
-Predicting whether a patient will require admission to an intensive care unit,
-using electronic health record data from several countries. The central question
-is how far a model trained on one country's records transfers to another, and how
-much data from the target country is needed to close the gap that remains.
-
-**Data** — Multi-country electronic health records.
-PLACEHOLDER: name the source databases, countries, cohort sizes, and the outcome
-definition used for ICU admission.
-
-**Methods** — TabPFN, a prior-fitted transformer for tabular data, as the primary
-predictive model, evaluated against PLACEHOLDER: baseline comparators. Training in
-a source country with evaluation in held-out target countries, followed by target
-adaptation using PLACEHOLDER: adaptation strategy. Sensitivity of the reported
-gains to label noise is assessed separately, and results are checked for
-reproducibility across repeated splits and random seeds.
-
-**Findings** — PLACEHOLDER: in progress. Add the headline transfer result, the
-amount of target data required before adaptation matched a model trained directly
-on the target country, and what the label-noise analysis implied.
-
-**Materials** — PLACEHOLDER: GitHub repository · manuscript in preparation
-
----
-
-## 2. Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series {#sec-ehr}
-
-::: {.project-meta}
-Research project · University of Nevada, Las Vegas · June – July 2025 · Team of four ("Deep Patient") · Faculty: Dr. Mingon Kang
-:::
-
-A team research project carried out during a summer research program at the
-University of Nevada, Las Vegas, predicting patient mortality from short
-sequences of routinely recorded vital signs. The practical
-obstacle in this data is that vital signs are not recorded on a regular schedule:
-the interval between measurements varies from patient to patient, so the series
-must be placed on a common time grid before any sequence model can be applied.
-The project was designed around that choice — two interpolation schemes crossed
-with two network architectures, compared on the same cohort.
-
-**Data** — Electronic health records from a cancer center in Brazil. Static
-features (age, sex, ICU admission status), six vital signs — heart rate,
-respiratory rate, blood pressure, oxygen saturation, body temperature and blood
-glucose — observed at five consecutive time points (*t* through *t*−4) for 30
-time-varying features, plus delta features encoding the change in each vital sign
-between successive points. The outcome was patient mortality, coded as survived
-or deceased. After preprocessing, the analysis set comprised 1,682 patients per
-class, reshaped to 16,820 × 7 across the five time steps.
-
-**Methods** — Irregular measurement intervals were resolved by interpolating onto
-the median observed interval, using either linear or non-linear interpolation.
-Each interpolation was paired with a convolutional network and with an LSTM,
-giving a 2 × 2 comparison; features were standardized and the classes were
-balanced. My assignment within the team was the linear-interpolation + LSTM arm.
-Models were compared on F1 score, with accuracy and AUC reported alongside, and
-training length was set by the epoch at which validation loss began to rise.
-
-**Findings** — The convolutional models outperformed the recurrent ones on every
-metric. The best configuration, a CNN on linearly interpolated data, reached
-accuracy 0.773, F1 0.762 and AUC 0.853; the LSTM arms reached accuracy 0.671–0.684,
-F1 0.638–0.656 and AUC 0.735–0.744. Interpolation scheme mattered far less than
-architecture: within each architecture the two interpolation methods differed by
-roughly one point of F1. The comparison is limited to a single cohort, and
-external validation on an independent dataset was identified as the necessary
-next step rather than completed.
-
-**Materials** — PLACEHOLDER: GitHub repository · presentation slides (internal)
-
----
-
-## 3. Digital Cognitive Training Interventions for Dementia: A Systematic Review and Meta-Analysis {#sec-dementia}
-
-::: {.project-meta}
-Poster · **Best Poster Award** · IC-KDA + ASAD 2025 · May 2025 · PLACEHOLDER: location · Independent two-person collaboration with Jiyoun Sung (College of Pharmacy, Seoul National University)
-:::
-
-A systematic review and meta-analysis of randomized controlled trials asking
-whether digital cognitive training — programs delivered remotely through
-software, mobile applications or games — improves cognitive and depressive
-outcomes in patients with dementia. The protocol was preregistered with PROSPERO
-(CRD42025631806).
-
-**Data** — PubMed, Embase and Cochrane, searched under a PRISMA-based strategy for
-English-language randomized controlled trials published through December 2024.
-Of 466 records identified, 147 duplicates were removed, 319 screened and 22
-assessed in full text, leaving 11 studies covering 1,352 participants (636
-intervention, 716 control; mean age approximately 83 in both arms). Patients with
-mild cognitive impairment or subjective cognitive decline were excluded.
-
-**Methods** — Pooled mean differences under a fixed-effect inverse-variance model,
-computed separately for the two outcomes with enough analyzable data: the
-Mini-Mental State Examination (4 studies) and the Geriatric Depression Scale
-(3 studies). Heterogeneity was assessed with *I*².
-
-**Findings** — Digital cognitive training improved MMSE scores by a mean
-difference of 3.94 (95% CI 2.38 to 5.49, *p* < 0.00001) and reduced GDS scores by
-1.52 (95% CI −2.68 to −0.37, *p* = 0.01), with moderate heterogeneity in both
-(*I*² = 34% and 39%). The evidence base is small — eleven trials, and only three
-to four contributing to each pooled estimate — so the effects are best read as
-supportive rather than conclusive.
-
-**Materials** — PLACEHOLDER: poster PDF · PROSPERO record CRD42025631806
-
----
-
-## 4. Deep Learning-based Neural Granger Causality for Solar Radiation Data {#sec-granger}
-
-::: {.project-meta}
-Poster · Korean Statistical Society Summer Conference 2025 · June 2025 · PLACEHOLDER: location · Faculty-led short-term project, Department of Statistics, Jeonbuk National University
-:::
-
-Classical Granger causality tests rest on a linear vector autoregression, which
-limits what they can detect in meteorological series where the relationships are
-not linear. This project applied neural Granger causality, following Tank et al.
-(2021), to ask which meteorological variables carry predictive information about
-solar radiation, and whether the neural formulation recovers relationships the
-linear test misses.
-
-**Data** — Hourly observations for Jeonju over the whole of 2023 (8,760 records)
-from the Korea Automated Synoptic Observing System: precipitation, temperature,
-humidity, solar radiation, wind speed and total cloud cover.
-
-**Methods** — Component-wise MLP and component-wise LSTM models, which fit an
-independent network per output variable and read Granger non-causality off the
-first-layer weights under a sparsity penalty — sparse group lasso for the cMLP,
-group lasso for the cLSTM. A linear VAR at the 0.005 level served as the baseline.
-Inputs were min-max scaled, a lag of *k* = 12 was used, and the procedure was
-repeated over 50 bootstrap samples so that each candidate relationship could be
-summarized by how often it was detected.
-
-**Findings** — With solar radiation as the target, temperature was identified in
-every replication by all three methods, and humidity was the next most consistent.
-The methods diverged on the variables that behave less like continuous
-measurements: precipitation was detected in 37% of replications by the VAR but
-79% and 97% by the cMLP and cLSTM, and cloud cover showed the same ordering. The
-neural models therefore appear better suited to nonlinear structure in continuous
-variables, but the results come from a single lag setting and these models are
-sensitive to hyperparameters, so their robustness is not established.
-
-**Materials** — PLACEHOLDER: poster PDF · GitHub repository
-
-<!-- The community-detection project is parked in _parked-community-detection.qmd
-     until it is further along. Paste it back in here when ready. -->
-
----
 
 ::: {.callout-note appearance="simple"}
 Code and materials for these projects are available on request while repositories
 are being prepared for public release.
 :::
+
+<!-- The community-detection project is parked in _parked-community-detection.qmd
+     until it is further along. -->
