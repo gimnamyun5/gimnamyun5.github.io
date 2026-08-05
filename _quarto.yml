@@ -17,7 +17,7 @@ website:
       - href: research.qmd
         text: Research
       - href: activities.qmd
-        text: Activities
+        text: "Activities & Photos"
       - href: contact.qmd
         text: Contact
     right:
