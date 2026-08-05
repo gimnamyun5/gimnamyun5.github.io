@@ -21,11 +21,11 @@ Selected coursework: PLACEHOLDER — e.g., mathematical statistics, linear model
 probability theory, statistical computing, machine learning, survival analysis.
 
 **Visiting Student** — University of Nevada, Las Vegas, NV, USA \
-UNLV EIP · June – July 2025
+UNLV summer research program (EIP) · Four weeks, June – July 2025
 
-Credit-bearing summer program combining coursework with a team research project
-on deep neural networks for electronic health record data.
-PLACEHOLDER: courses taken and credits earned.
+Credit-bearing program in machine learning and data science, combining coursework
+and assessment with a team research project on deep neural networks for electronic
+health record data. PLACEHOLDER: courses taken and credits earned.
 
 ## Research experience
 
