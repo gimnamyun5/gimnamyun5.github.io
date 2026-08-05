@@ -65,16 +65,21 @@ p, li {
 
 /* --------------------------------- Links ---------------------------------- */
 
+/* The underline is drawn with text-decoration, not border-bottom. Using a border
+   here means every rule that suppresses the underline also erases the bottom
+   edge of any bordered element - which is what happened to the buttons. */
 a {
   color: var(--link);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(31, 58, 95, 0.25);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(31, 58, 95, 0.3);
+  text-underline-offset: 0.15em;
 }
 
 a:hover,
 a:focus {
   color: var(--link-hover);
-  border-bottom-color: var(--link-hover);
+  text-decoration-color: var(--link-hover);
 }
 
 /* Links that are already visually distinct should not be underlined. */
@@ -84,9 +89,10 @@ a:focus {
 .toc a,
 .sidebar a,
 .footer a,
+.nav-footer a,
 h1 a, h2 a, h3 a, h4 a,
 a.anchorjs-link {
-  border-bottom: none;
+  text-decoration: none;
 }
 
 /* --------------------------------- Navbar --------------------------------- */
@@ -341,7 +347,7 @@ pre {
   }
 
   a {
-    border-bottom: none;
+    text-decoration: none;
     color: var(--ink);
   }
 }
