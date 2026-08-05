@@ -87,7 +87,7 @@ next step rather than completed.
 ## 3. Digital Cognitive Training Interventions for Dementia: A Systematic Review and Meta-Analysis
 
 ::: {.project-meta}
-Poster · IC-KDA + ASAD 2025 · PLACEHOLDER: date · PLACEHOLDER: location · with Jiyoun Sung (College of Pharmacy, Seoul National University)
+Poster · IC-KDA + ASAD 2025 · May 2025 · PLACEHOLDER: location · with Jiyoun Sung (College of Pharmacy, Seoul National University)
 :::
 
 A systematic review and meta-analysis of randomized controlled trials asking
@@ -122,7 +122,7 @@ supportive rather than conclusive.
 ## 4. Deep Learning-based Neural Granger Causality for Solar Radiation Data
 
 ::: {.project-meta}
-Poster · PLACEHOLDER: conference name · PLACEHOLDER: date · PLACEHOLDER: location · Department of Statistics, Jeonbuk National University
+Poster · Korean Statistical Society Summer Conference 2025 · June 2025 · PLACEHOLDER: location · Department of Statistics, JBNU
 :::
 
 Classical Granger causality tests rest on a linear vector autoregression, which

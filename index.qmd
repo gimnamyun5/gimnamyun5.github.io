@@ -15,11 +15,12 @@ toc: false
 ::: {.profile-text}
 
 ::: {.affiliation}
-Department of Statistics, Jeonbuk National University (JBNU) · Jeonju, South Korea
+Department of Statistics · JBNU, Jeonju, South Korea
 :::
 
-I am an undergraduate researcher in Statistics at Jeonbuk National University,
-applying to PhD programs in Statistics and Biostatistics.
+I am an undergraduate researcher in Statistics at JBNU, majoring in Statistics
+with a minor in Mathematics, and applying to PhD programs in Statistics and
+Biostatistics.
 
 Most of my work so far has been on health data, but what pulls me into a problem
 is usually the statistical question rather than the subject area — whether a
@@ -60,8 +61,20 @@ See the [Research](research.qmd) page for current projects.
 
 ## Education
 
-**B.S. in Statistics** — Jeonbuk National University, Jeonju, South Korea \
+**B.S. in Statistics**, minor in Mathematics — JBNU, Jeonju, South Korea \
 March 2021 – February 2027 (expected)
+
+## Activities
+
+::: {.activity-photos layout-ncol=2}
+![Poster presentation, IC-KDA + ASAD 2025, May 2025](images/activity-ickda-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the dementia meta-analysis poster at IC-KDA + ASAD 2025"}
+
+![Poster presentation, Korean Statistical Society Summer Conference, June 2025](images/activity-kss-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the neural Granger causality poster at the Korean Statistical Society Summer Conference"}
+:::
+
+<!-- PLACEHOLDER: replace the two files above with the conference photographs.
+     Save them as images/activity-ickda-2025.jpg and images/activity-kss-2025.jpg.
+     Portrait orientation is fine; they are displayed side by side. -->
 
 <!-- A News section can go here once there is something to announce - a poster
      accepted, a preprint posted, a new position. Left out for now: three empty

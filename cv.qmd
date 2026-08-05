@@ -13,9 +13,9 @@ that file in a new tab. Keep the summary below in step with the PDF.
 
 ## Education
 
-**B.S. in Statistics** — Department of Statistics, Jeonbuk National University (JBNU) \
+**B.S. in Statistics**, minor in Mathematics — Jeonbuk National University (JBNU) \
 Jeonju, South Korea · March 2021 – February 2027 (expected) \
-PLACEHOLDER: minor or concentration, honors, GPA (optional)
+PLACEHOLDER: honors or GPA (optional)
 
 Selected coursework: PLACEHOLDER — e.g., mathematical statistics, linear models,
 probability theory, statistical computing, machine learning, survival analysis.
@@ -71,15 +71,17 @@ If you have none yet, state "In preparation" items or remove this section.
 
 ## Conference presentations and posters
 
-1. Sung, J., & **Kim, N.-Y.** (2025). Effectiveness of digital cognitive training
-   interventions for dementia: a systematic review and meta-analysis. Poster
-   presented at *IC-KDA + ASAD 2025*. PLACEHOLDER: date and location.
+1. Sung, J., & **Kim, N.-Y.** (2025, May). Effectiveness of digital cognitive
+   training interventions for dementia: a systematic review and meta-analysis.
+   Poster presented at *IC-KDA + ASAD 2025*, PLACEHOLDER: location.
 
-2. Lee, M., Lee, S., Cho, Y., **Kim, N.-Y.**, Kim, G., & Lee, Y. (PLACEHOLDER: year).
+2. Lee, M., Lee, S., Cho, Y., **Kim, N.-Y.**, Kim, G., & Lee, Y. (2025, June).
    Deep learning-based neural Granger causality for solar radiation data. Poster
-   presented at PLACEHOLDER: conference name, location.
+   presented at the *Korean Statistical Society Summer Conference 2025*,
+   PLACEHOLDER: location.
 
-PLACEHOLDER: confirm author order and add links to the poster files in `files/`.
+PLACEHOLDER: add links to the poster files in `files/` once co-author permission
+is confirmed.
 
 ## Skills
 

@@ -218,6 +218,42 @@ img.profile-img {
   border-bottom: 1px solid var(--rule);
 }
 
+/* ----------------------------- Activity photos ---------------------------- */
+
+/* Portrait conference photographs would otherwise run to nearly 600px tall and
+   dominate the home page, so cap the height and let the width follow. */
+.activity-photos img {
+  max-height: 380px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+}
+
+.activity-photos figure {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.activity-photos figcaption {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  margin-top: 0.5rem;
+}
+
+/* Stack the two photographs on narrow screens rather than squeezing them. */
+@media (max-width: 575.98px) {
+  .activity-photos .quarto-layout-cell {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+  }
+
+  .activity-photos img {
+    max-height: 320px;
+  }
+}
+
 /* --------------------------- Research page bits --------------------------- */
 
 .project-meta {
