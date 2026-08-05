@@ -12,16 +12,11 @@ toc: false
 :::
 
 ::: {.photo-body}
-### IC-KDA + ASAD 2025 {.photo-title}
+### 2025. 05. {.photo-title}
 
-::: {.photo-date}
-May 2025 · Seoul
-:::
-
-- Presented the systematic review and meta-analysis of digital cognitive
-  training interventions for dementia
+- Poster presentation, **IC-KDA + ASAD 2025 @ Seoul**
 - **Best Poster Award**
-- [Read about the project →](project-dementia-meta.qmd)
+- [About the project →](project-dementia-meta.qmd)
 :::
 
 :::
@@ -33,14 +28,10 @@ May 2025 · Seoul
 :::
 
 ::: {.photo-body}
-### Korean Statistical Society Summer Conference 2025 {.photo-title}
+### 2025. 06. {.photo-title}
 
-::: {.photo-date}
-June 2025 · Gyeongju
-:::
-
-- Presented the neural Granger causality analysis of solar radiation time series
-- [Read about the project →](project-granger.qmd)
+- Poster presentation, **Korean Statistical Society Summer Conference @ Gyeongju**
+- [About the project →](project-granger.qmd)
 :::
 
 :::
@@ -54,17 +45,11 @@ June 2025 · Gyeongju
 :::
 
 ::: {.photo-body}
-### University of Nevada, Las Vegas {.photo-title}
+### 2025. 06. – 07. {.photo-title}
 
-::: {.photo-date}
-June – July 2025 · Las Vegas, Nevada
-:::
-
-- Summer research program in machine learning and data science, supervised by
-  Dr. Mingon Kang
-- Coursework and assessment alongside a four-person team project on deep neural
-  networks for electronic health record data
-- [Read about the project →](project-ehr-mortality.qmd)
+- Summer research program, **University of Nevada, Las Vegas**
+- Supervised by Dr. Mingon Kang
+- [About the project →](project-ehr-mortality.qmd)
 :::
 
 :::
@@ -75,7 +60,7 @@ PLACEHOLDER: anything else worth showing — student statistics society, seminar
 or reading groups, data competitions, volunteering, tutoring, or departmental
 events. A line each is enough, and photographs are welcome.
 
-<!-- To add another entry, copy this block and change the four parts:
+<!-- To add another entry, copy this block and change the three parts:
 
 ::: {.photo-entry}
 
@@ -84,14 +69,9 @@ events. A line each is enough, and photographs are welcome.
 :::
 
 ::: {.photo-body}
-### Event or place name {.photo-title}
+### 2025. 09. {.photo-title}
 
-::: {.photo-date}
-Month Year · City
-:::
-
-- What you did
-- [Read about the project →](SOMEPAGE.qmd)
+- What it was, **where it happened**
 :::
 
 :::

@@ -277,18 +277,26 @@ a.icon-link:focus {
 
 /* ----------------------------- Activity photos ---------------------------- */
 
-/* One entry per row: photograph on the left, text beside it on the right. */
+/* One entry per row: a large photograph on the left, a short caption beside it.
+   The detail lives on the individual project pages, so the text here is only a
+   date and a line naming the event. */
 .photo-entry {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 2rem;
-  margin: 2.25rem 0 3rem 0;
+  margin: 2rem 0;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.photo-entry:last-of-type {
+  border-bottom: none;
 }
 
 .photo-media {
-  flex: 0 0 265px;
-  max-width: 265px;
+  flex: 0 0 440px;
+  max-width: 440px;
 }
 
 .photo-media img {
@@ -305,14 +313,15 @@ a.icon-link:focus {
 }
 
 .photo-body {
-  flex: 1 1 240px;
+  flex: 1 1 220px;
   min-width: 0;
 }
 
 .photo-body h3.photo-title {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
+  font-weight: 700;
   margin-top: 0;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.6rem;
 }
 
 .photo-date {
@@ -331,22 +340,20 @@ a.icon-link:focus {
   margin-bottom: 0.4rem;
 }
 
-/* Keep the text beside the photograph on small screens too, by shrinking both
-   columns rather than stacking them. */
-@media (max-width: 575.98px) {
+/* Below the breakpoint the two columns stack: at this photograph size there is
+   no width left for a readable text column beside it. */
+@media (max-width: 767.98px) {
   .photo-entry {
     gap: 1rem;
   }
 
-  /* The photograph is deliberately smaller here than on a wide screen: past
-     roughly 140px the text column gets too narrow to read comfortably. */
   .photo-media {
-    flex: 0 0 140px;
-    max-width: 140px;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
   .photo-body {
-    flex: 1 1 140px;
+    flex: 1 1 100%;
   }
 
   .photo-body h3.photo-title {
@@ -354,11 +361,7 @@ a.icon-link:focus {
   }
 
   .photo-body ul {
-    padding-left: 1rem;
-  }
-
-  .photo-body li {
-    font-size: 0.92rem;
+    padding-left: 1.1rem;
   }
 }
 
