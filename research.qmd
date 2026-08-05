@@ -122,7 +122,7 @@ supportive rather than conclusive.
 ## 4. Deep Learning-based Neural Granger Causality for Solar Radiation Data
 
 ::: {.project-meta}
-Poster · Korean Statistical Society Summer Conference 2025 · June 2025 · PLACEHOLDER: location · Department of Statistics, JBNU
+Poster · Korean Statistical Society Summer Conference 2025 · June 2025 · PLACEHOLDER: location · Department of Statistics, Jeonbuk National University
 :::
 
 Classical Granger causality tests rest on a linear vector autoregression, which

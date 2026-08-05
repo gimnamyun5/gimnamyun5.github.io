@@ -15,12 +15,12 @@ toc: false
 ::: {.profile-text}
 
 ::: {.affiliation}
-Department of Statistics · JBNU, Jeonju, South Korea
+Department of Statistics, Jeonbuk National University (JBNU)
 :::
 
-I am an undergraduate researcher in Statistics at JBNU, majoring in Statistics
-with a minor in Mathematics, and applying to PhD programs in Statistics and
-Biostatistics.
+I am an undergraduate researcher at Jeonbuk National University, majoring in
+Statistics with a minor in Mathematics, and applying to PhD programs in
+Statistics and Biostatistics.
 
 Most of my work so far has been on health data, but what pulls me into a problem
 is usually the statistical question rather than the subject area — whether a
@@ -61,7 +61,7 @@ See the [Research](research.qmd) page for current projects.
 
 ## Education
 
-**B.S. in Statistics**, minor in Mathematics — JBNU, Jeonju, South Korea \
+**B.S. in Statistics**, minor in Mathematics — Jeonbuk National University (JBNU) \
 March 2021 – February 2027 (expected)
 
 ## Activities
