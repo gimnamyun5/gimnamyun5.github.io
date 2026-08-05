@@ -19,16 +19,19 @@ Department of Statistics, Jeonbuk National University (JBNU) · Jeonju, South Ko
 :::
 
 I am an undergraduate researcher in Statistics at Jeonbuk National University,
-preparing to apply to PhD programs in Statistics and Biostatistics. My work sits
-at the intersection of statistical methodology and health data science.
+applying to PhD programs in Statistics and Biostatistics.
 
-My current interests include **biostatistics**, **machine learning for healthcare**,
-**electronic health records (EHR)**, **clinical prediction modeling**, and
-**statistical network analysis**. I am particularly interested in methods that
-remain reliable when they are moved outside the setting in which they were
-developed — across hospitals, across countries, and across populations — and in
-understanding when apparent predictive gains are artifacts of data collection
-rather than genuine signal.
+Most of my work so far has been on health data, but what pulls me into a problem
+is usually the statistical question rather than the subject area — whether a
+method still holds once its assumptions are loosened, and whether a result
+survives being moved somewhere new. That has taken me into weather time series
+and network models as readily as into hospital records.
+
+<!-- PLACEHOLDER (optional): one or two sentences in your own voice. What got you
+     into statistics, what you find satisfying about it, or what you do outside
+     research. Two honest sentences here do more than another paragraph of
+     methods. Delete this comment once written, or delete nothing if you would
+     rather keep the page purely professional. -->
 
 ::: {.profile-links}
 [CV](cv.qmd){.btn .btn-outline-dark .btn-sm role="button"}
@@ -47,23 +50,19 @@ rather than genuine signal.
 
 ## Research interests
 
-- **Biostatistics** — study design and inference for observational health data
-- **Machine learning for healthcare** — evaluation, calibration, and generalization
-- **Electronic health records** — multi-site and multi-country EHR data
-- **Clinical prediction modeling** — transfer learning and target adaptation
-- **Evidence synthesis** — systematic review and meta-analysis of clinical trials
-- **Statistical network analysis** — community detection in heterogeneous networks
+- Biostatistics
+- Statistical machine learning
+- Clinical prediction modeling
+- Statistical network analysis
+- Time series and causal discovery
 
 See the [Research](research.qmd) page for current projects.
 
 ## Education
 
-**B.S. in Statistics** — Jeonbuk National University (JBNU), Jeonju, South Korea \
-March 2021 – February 2027 (expected) \
-PLACEHOLDER: relevant coursework, honors, or GPA (optional)
+**B.S. in Statistics** — Jeonbuk National University, Jeonju, South Korea \
+March 2021 – February 2027 (expected)
 
-## News
-
-- **PLACEHOLDER (YYYY-MM)** — PLACEHOLDER: e.g., poster accepted at a conference.
-- **PLACEHOLDER (YYYY-MM)** — PLACEHOLDER: e.g., started a new research project.
-- **PLACEHOLDER (YYYY-MM)** — PLACEHOLDER: e.g., began teaching assistantship.
+<!-- A News section can go here once there is something to announce - a poster
+     accepted, a preprint posted, a new position. Left out for now: three empty
+     bullet points read worse than no section at all. -->
