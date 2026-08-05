@@ -39,7 +39,7 @@ May 2025 · Seoul
 June 2025 · Gyeongju
 :::
 
-- Presented the neural Granger causality analysis of solar radiation data
+- Presented the neural Granger causality analysis of solar radiation time series
 - [Read about the project →](project-granger.qmd)
 :::
 

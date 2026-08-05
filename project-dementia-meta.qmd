@@ -1,5 +1,5 @@
 ---
-title: "Digital Cognitive Training Interventions for Dementia: A Systematic Review and Meta-Analysis"
+title: "Effectiveness of Digital Cognitive Training Interventions for Dementia: A Systematic Review and Meta-analysis"
 ---
 
 ::: {.project-meta}

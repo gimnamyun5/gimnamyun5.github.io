@@ -1,0 +1,57 @@
+---
+title: "About"
+toc: false
+---
+
+## Background
+
+I am an undergraduate researcher at Jeonbuk National University, majoring in
+Statistics with a minor in Mathematics, and I am applying to PhD programs in
+Statistics and Biostatistics.
+
+I began in health data and have stayed close to it — clinical prediction from
+electronic health records, and evidence synthesis from randomized trials — but
+the questions that hold my attention are usually methodological rather than
+clinical. Does a method still behave once its assumptions are loosened? Does a
+result survive being carried into a different hospital, a different country, a
+different population? Those questions are what took me from a meta-analysis of
+dementia trials to neural Granger causality on meteorological series and on to
+transfer learning for intensive-care prediction, which looks like a scattered
+list until you notice that each one is asking whether a claim holds up outside
+the setting that produced it.
+
+<!-- PLACEHOLDER (optional): two or three sentences in your own voice. How you
+     came to statistics, a moment in a project that stayed with you, or what you
+     do outside research. Write it in Korean and I will render it in English -
+     an honest paragraph here is worth more than another list of methods. -->
+
+## What I work with
+
+Statistical methods for observational health data, machine learning applied to
+clinical prediction, and the evaluation problems that come with both —
+calibration, generalization, and the question of whether a reported gain is
+signal or an artifact of how the data were collected. Alongside that, time
+series and causal discovery, and spectral methods for community structure in
+networks.
+
+Details of the individual projects are on the [Research](research.qmd) page.
+
+## Contact
+
+I am glad to hear from researchers, prospective collaborators, and faculty in
+Statistics and Biostatistics PhD programs.
+
+**Email** — namyoon2000@jbnu.ac.kr
+
+**GitHub** — <https://github.com/gimnamyun5>
+
+**LinkedIn** — <https://www.linkedin.com/in/namyoon-kim-3b7b32416/>
+
+<!-- PLACEHOLDER: add Google Scholar and ORCID links here once you have them,
+     or leave this out. Addresses are obfuscated at render time - see
+     `email-obfuscation` in _quarto.yml. -->
+
+**Affiliation** — Department of Statistics, Jeonbuk National University, Jeonju,
+South Korea
+
+[Download CV (PDF)](files/NamYoon_Kim_CV.pdf){.btn .btn-outline-dark .btn-sm role="button" target="_blank"}

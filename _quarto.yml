@@ -14,14 +14,14 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: about.qmd
+        text: About
+      - href: activities.qmd
+        text: "Activities & Photos"
       - href: research.qmd
         text: Research
       - href: publications.qmd
         text: Publications
-      - href: activities.qmd
-        text: "Activities & Photos"
-      - href: contact.qmd
-        text: Contact
     right:
       - icon: github
         href: https://github.com/gimnamyun5

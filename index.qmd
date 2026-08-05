@@ -29,15 +29,14 @@ and network models as readily as into hospital records.
      rather keep the page purely professional. -->
 
 ::: {.profile-links}
-[CV (PDF)](files/NamYoon_Kim_CV.pdf){.btn .btn-outline-dark .btn-sm role="button" target="_blank"}
-[GitHub](https://github.com/gimnamyun5){.btn .btn-outline-dark .btn-sm role="button"}
-[LinkedIn](https://www.linkedin.com/in/namyoon-kim-3b7b32416/){.btn .btn-outline-dark .btn-sm role="button"}
-<a href="mailto:namyoon2000@jbnu.ac.kr" class="btn btn-outline-dark btn-sm" role="button">Email</a>
+<a href="https://github.com/gimnamyun5" class="icon-link" aria-label="GitHub" title="GitHub"><i class="bi bi-github"></i></a>
+<a href="https://www.linkedin.com/in/namyoon-kim-3b7b32416/" class="icon-link" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="mailto:namyoon2000@jbnu.ac.kr" class="icon-link" aria-label="Email" title="Email"><i class="bi bi-envelope"></i></a>
 :::
 
-<!-- The email button is written as raw HTML on purpose: a Markdown mailto link
-     would be rewritten by Pandoc's email obfuscation and would lose its
-     button styling. -->
+<!-- The links are raw HTML so that the Bootstrap icon markup survives, and
+     because a Markdown mailto link would be rewritten by Pandoc's email
+     obfuscation and lose its styling. -->
 
 :::
 
