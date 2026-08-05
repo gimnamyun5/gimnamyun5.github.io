@@ -50,10 +50,10 @@ March 2021 – February 2027 (expected)
 
 ## Research experience
 
-- **PLACEHOLDER: start date – present**: Undergraduate Researcher,
-  PLACEHOLDER: lab name, Department of Statistics, Jeonbuk National University
-- **Jun 2025 – Jul 2025**: Visiting Student Researcher, UNLV EIP Program,
-  University of Nevada, Las Vegas
+- **Feb 2026 – present**: Undergraduate Researcher, Statistical Learning Across
+  Biomedicine (S-LAB), Jeonbuk National University
+- **Jun 2025 – Jul 2025**: Visiting Student Researcher, University of Nevada,
+  Las Vegas
 
 Projects are described on the [Research](research.qmd) page.
 
@@ -69,7 +69,7 @@ Projects are described on the [Research](research.qmd) page.
 
 - **Poster presentation** — IC-KDA + ASAD 2025, May 2025
 - **Poster presentation** — Korean Statistical Society Summer Conference 2025, June 2025
-- **Visiting student** — UNLV summer research program, June – July 2025
+- **Visiting student researcher** — University of Nevada, Las Vegas, June – July 2025
 - PLACEHOLDER: add other activities — student societies, seminars, volunteering,
   competitions, or anything else you would want a reader to know.
 

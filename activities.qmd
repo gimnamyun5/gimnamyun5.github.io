@@ -14,10 +14,10 @@ Both projects are described in full on the [Research](research.qmd) page.
 
 ## Research visits
 
-**University of Nevada, Las Vegas** — UNLV summer research program (EIP) \
-Four weeks, June – July 2025
+**University of Nevada, Las Vegas** — Visiting Student Researcher \
+June – July 2025
 
-A credit-bearing program in machine learning and data science: coursework and
+A summer research program in machine learning and data science: coursework and
 assessment alongside a four-person team project on deep neural networks for
 electronic health record data, supervised by Dr. Mingon Kang.
 
