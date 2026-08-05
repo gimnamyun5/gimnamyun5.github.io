@@ -7,9 +7,37 @@ My research applies statistical and machine-learning methods to health data, wit
 an emphasis on prediction from electronic health records and on whether models
 built in one setting remain trustworthy in another.
 
+::: {.project-index}
+
+[1. Cross-Country Transfer Learning for ICU Admission Prediction](#sec-icu){.project-index-title}
+
+Whether a clinical prediction model trained on one country's electronic health
+records still works in another, and how much data from the target country is
+needed to close the gap. In progress.
+
+[2. Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series](#sec-ehr){.project-index-title}
+
+Predicting patient mortality from irregularly sampled vital signs, comparing two
+interpolation schemes against two network architectures. A team project at the
+University of Nevada, Las Vegas.
+
+[3. Digital Cognitive Training Interventions for Dementia](#sec-dementia){.project-index-title}
+
+A PROSPERO-registered systematic review and meta-analysis of eleven randomized
+trials, asking whether remotely delivered cognitive training improves cognitive
+and depressive outcomes in dementia.
+
+[4. Deep Learning-based Neural Granger Causality for Solar Radiation Data](#sec-granger){.project-index-title}
+
+Which meteorological variables carry predictive information about solar
+radiation, and whether neural Granger causality recovers relationships that a
+linear vector autoregression misses.
+
+:::
+
 ---
 
-## 1. Cross-Country Transfer Learning for ICU Admission Prediction
+## 1. Cross-Country Transfer Learning for ICU Admission Prediction {#sec-icu}
 
 ::: {.project-meta}
 In progress · Manuscript in preparation · PLACEHOLDER: start date – present · PLACEHOLDER: lab / advisor
@@ -39,7 +67,7 @@ on the target country, and what the label-noise analysis implied.
 
 ---
 
-## 2. Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series
+## 2. Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series {#sec-ehr}
 
 ::: {.project-meta}
 Research project · UNLV summer research program (EIP), Project 4 · Four weeks, June – July 2025 · Team of four ("Deep Patient") · Faculty: Dr. Mingon Kang
@@ -84,7 +112,7 @@ next step rather than completed.
 
 ---
 
-## 3. Digital Cognitive Training Interventions for Dementia: A Systematic Review and Meta-Analysis
+## 3. Digital Cognitive Training Interventions for Dementia: A Systematic Review and Meta-Analysis {#sec-dementia}
 
 ::: {.project-meta}
 Poster · IC-KDA + ASAD 2025 · May 2025 · PLACEHOLDER: location · with Jiyoun Sung (College of Pharmacy, Seoul National University)
@@ -119,7 +147,7 @@ supportive rather than conclusive.
 
 ---
 
-## 4. Deep Learning-based Neural Granger Causality for Solar Radiation Data
+## 4. Deep Learning-based Neural Granger Causality for Solar Radiation Data {#sec-granger}
 
 ::: {.project-meta}
 Poster · Korean Statistical Society Summer Conference 2025 · June 2025 · PLACEHOLDER: location · Department of Statistics, Jeonbuk National University

@@ -48,30 +48,14 @@ and network models as readily as into hospital records.
 **B.S. in Statistics**, minor in Mathematics — Jeonbuk National University (JBNU) \
 March 2021 – February 2027 (expected)
 
-**Visiting Student** — University of Nevada, Las Vegas \
-UNLV summer research program (EIP) · Four weeks, June – July 2025 \
-Credit-bearing program in machine learning and data science, combining coursework
-with a team research project.
-
 ## Research experience
 
-**Cross-country transfer learning for ICU admission prediction** — ongoing \
-Transfer of a TabPFN-based clinical prediction model across countries, with target
-adaptation and a label-noise analysis.
+- **PLACEHOLDER: start date – present**: Undergraduate Researcher,
+  PLACEHOLDER: lab name, Department of Statistics, Jeonbuk National University
+- **Jun 2025 – Jul 2025**: Visiting Student Researcher, UNLV EIP Program,
+  University of Nevada, Las Vegas
 
-**Deep neural networks for mortality prediction from EHR** — UNLV, 2025 \
-Compared interpolation schemes and network architectures on irregularly sampled
-vital-sign sequences from a Brazilian cancer center.
-
-**Neural Granger causality for solar radiation data** — JBNU, 2025 \
-Applied component-wise MLP and LSTM models to a year of hourly meteorological
-observations, benchmarked against a linear VAR.
-
-**Digital cognitive training for dementia: a meta-analysis** — 2025 \
-PROSPERO-registered systematic review and meta-analysis of eleven randomized
-controlled trials.
-
-Full descriptions are on the [Research](research.qmd) page.
+Projects are described on the [Research](research.qmd) page.
 
 ## Research interests
 

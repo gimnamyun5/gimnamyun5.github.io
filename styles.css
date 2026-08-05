@@ -256,6 +256,38 @@ img.profile-img {
 
 /* --------------------------- Research page bits --------------------------- */
 
+/* Index of projects at the top of the Research page. The titles are links to the
+   detailed sections below; they are deliberately not headings, so that the
+   table of contents lists each project once rather than twice. */
+.project-index {
+  margin: 2rem 0 0.5rem 0;
+}
+
+a.project-index-title {
+  display: block;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--ink);
+  text-decoration: none;
+  margin-top: 1.75rem;
+  margin-bottom: 0.4rem;
+}
+
+a.project-index-title:hover,
+a.project-index-title:focus {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+.project-index p {
+  margin-bottom: 0;
+  color: var(--ink-muted);
+}
+
 .project-meta {
   color: var(--ink-muted);
   font-size: 0.9rem;
