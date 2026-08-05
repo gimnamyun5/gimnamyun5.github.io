@@ -57,16 +57,32 @@ March 2021 – February 2027 (expected)
 
 ## Teaching experience
 
-- **PLACEHOLDER: term and year**: Teaching Assistant, PLACEHOLDER: course title,
-  Department of Statistics, Jeonbuk National University
+**Teaching Assistant** — Introduction to Big Data \
+Jeonbuk National University · Fall 2025
 
-<!-- PLACEHOLDER: if you want a line describing the work, the earlier draft read:
-     reviewed lecture notes, problem sets and solutions before release, and
-     answered students' questions on introductory statistical theory. -->
+- Reviewed teaching materials and answered student questions in Python
+- Supported lectures, guided students on assignments, and graded exams
 
-## Awards
+**Teaching Assistant** — Understanding and Application of Big Data \
+Jeonbuk National University · Spring 2025
 
-- **PLACEHOLDER: year**: PLACEHOLDER: award or scholarship name, granting body
+- Co-developed the course syllabus
+- Supported lectures, guided students on assignments, and graded exams
+
+**Teaching Assistant** — Statistical Thinking and Society \
+Jeonbuk National University · Fall 2024
+
+- Reviewed and revised instructional materials covering fundamental statistical
+  concepts
+- Supported lectures, guided students on assignments, and graded assignments and
+  exams
+
+## Awards and scholarships
+
+- **Best Poster Award** — IC-KDA + ASAD 2025, May 2025
+- **President's Award for Academic Excellence** — Jeonbuk National University, 2025
+- **Full Merit-Based Scholarship** — Jeonbuk National University, every semester
+  from Fall 2024 to Spring 2026
 
 ## Research interests
 

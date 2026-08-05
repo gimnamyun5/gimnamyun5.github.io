@@ -25,7 +25,7 @@ University of Nevada, Las Vegas.
 
 A PROSPERO-registered systematic review and meta-analysis of eleven randomized
 trials, asking whether remotely delivered cognitive training improves cognitive
-and depressive outcomes in dementia.
+and depressive outcomes in dementia. Best Poster Award, IC-KDA + ASAD 2025.
 
 [4. Deep Learning-based Neural Granger Causality for Solar Radiation Data](#sec-granger){.project-index-title}
 
@@ -115,7 +115,7 @@ next step rather than completed.
 ## 3. Digital Cognitive Training Interventions for Dementia: A Systematic Review and Meta-Analysis {#sec-dementia}
 
 ::: {.project-meta}
-Poster · IC-KDA + ASAD 2025 · May 2025 · PLACEHOLDER: location · Independent two-person collaboration with Jiyoun Sung (College of Pharmacy, Seoul National University)
+Poster · **Best Poster Award** · IC-KDA + ASAD 2025 · May 2025 · PLACEHOLDER: location · Independent two-person collaboration with Jiyoun Sung (College of Pharmacy, Seoul National University)
 :::
 
 A systematic review and meta-analysis of randomized controlled trials asking
