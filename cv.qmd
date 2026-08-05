@@ -42,6 +42,7 @@ June – July 2025
 - Predicted patient mortality from irregularly sampled EHR vital-sign sequences
   in a four-person team, comparing linear and non-linear interpolation across CNN
   and LSTM architectures; responsible for the linear-interpolation + LSTM arm.
+- Faculty: Dr. Mingon Kang.
 
 **Undergraduate Research Assistant** — Department of Statistics, Jeonbuk National University \
 PLACEHOLDER: dates

@@ -42,7 +42,7 @@ on the target country, and what the label-noise analysis implied.
 ## 2. Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series
 
 ::: {.project-meta}
-Research project · UNLV summer research program (EIP), Project 4 · Four weeks, June – July 2025 · Team of four ("Deep Patient") · PLACEHOLDER: faculty supervisor
+Research project · UNLV summer research program (EIP), Project 4 · Four weeks, June – July 2025 · Team of four ("Deep Patient") · Faculty: Dr. Mingon Kang
 :::
 
 A team research project carried out during a four-week, credit-bearing summer
