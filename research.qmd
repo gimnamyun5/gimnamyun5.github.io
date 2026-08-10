@@ -4,10 +4,6 @@ subtitle: "Projects and presentations"
 toc: false
 ---
 
-My research applies statistical and machine-learning methods to health data, with
-an emphasis on prediction from electronic health records and on whether models
-built in one setting remain trustworthy in another.
-
 ::: {.research-card}
 
 ::: {.research-label}
@@ -40,7 +36,7 @@ Research project · UNLV 2025
 [Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series](project-ehr-mortality.qmd){.research-title}
 
 ::: {.research-authors}
-Bokyung Shin, *Nam-Yoon Kim*, Hyunsoo Kim, Hyeonjong Yu · University of Nevada, Las Vegas
+B. Shin, *N.-Y. Kim*, H. Kim, H. Yu · University of Nevada, Las Vegas
 :::
 
 Predicts patient mortality from irregularly sampled vital signs at a Brazilian
@@ -62,7 +58,7 @@ Poster · IC-KDA + ASAD 2025 · Best Poster Award
 [Effectiveness of Digital Cognitive Training Interventions for Dementia: A Systematic Review and Meta-analysis](project-dementia-meta.qmd){.research-title}
 
 ::: {.research-authors}
-Jiyoun Sung, *Nam-Yoon Kim* · May 2025, Seoul
+J. Sung, *N.-Y. Kim* · May 2025, Seoul
 :::
 
 A PROSPERO-registered meta-analysis of eleven randomized trials asking whether
@@ -85,7 +81,7 @@ Poster · Korean Statistical Society 2025
 [Deep Learning-based Neural Granger Causality for Solar Radiation Time Series](project-granger.qmd){.research-title}
 
 ::: {.research-authors}
-Minwoo Lee, Sangmin Lee, Younghwi Cho, *Nam-Yoon Kim*, Gahee Kim, Youngmi Lee · June 2025, Gyeongju
+M. Lee, S. Lee, Y. Cho, *N.-Y. Kim*, G. Kim, Y. Lee · June 2025, Gyeongju
 :::
 
 Asks which meteorological variables carry predictive information about solar
