@@ -40,7 +40,7 @@ format:
     link-external-newwindow: true
     email-obfuscation: javascript
     grid:
-      body-width: 1100px
+      body-width: 1250px
 
 execute:
   freeze: auto

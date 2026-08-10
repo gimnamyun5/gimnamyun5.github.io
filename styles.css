@@ -215,7 +215,7 @@ header.headroom,
    stay modest. On pages with a TOC the column is already narrower. */
 main.content,
 main#quarto-document-content {
-  max-width: 1100px;
+  max-width: 1250px;
 }
 
 /* ------------------------------- Card grid -------------------------------- */
@@ -322,7 +322,7 @@ main#quarto-document-content {
 .profile-block {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 2.25rem;
   margin: 1.5rem 0 2.5rem 0;
 }
@@ -330,6 +330,13 @@ main#quarto-document-content {
 .profile-photo {
   flex: 0 0 330px;
   max-width: 330px;
+}
+
+/* Pandoc wraps the image in a paragraph whose bottom margin would make the
+   column taller than the picture, so the links below could never line up. */
+.profile-photo p,
+.profile-photo figure {
+  margin: 0;
 }
 
 /* No forced aspect ratio and no cover cropping: a portrait photograph would
@@ -344,9 +351,13 @@ img.profile-img {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
 }
 
+/* A column, so the links can be pushed to the foot of the block and line up
+   with the bottom edge of the photograph. */
 .profile-text {
   flex: 1 1 320px;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile-text p:first-child {
@@ -356,8 +367,12 @@ img.profile-img {
 /* The button row is laid out with flex rather than left inline inside a <p>.
    Inline-blocks taller than the body line-height give uneven spacing and can
    collide when they wrap onto a second line at narrow widths or high zoom. */
+/* margin-top:auto drops the links to the foot of the text column, which is
+   stretched to the height of the photograph, so they finish level with it
+   whenever the text above is shorter than the picture. */
 .profile-links {
-  margin-top: 1.5rem;
+  margin-top: auto;
+  padding-top: 1rem;
 }
 
 /* Pandoc wraps the links in a <p> inside the div, so the paragraph - not the

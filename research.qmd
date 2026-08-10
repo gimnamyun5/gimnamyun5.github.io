@@ -37,7 +37,7 @@ University of Nevada, Las Vegas · 2025
 [Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series](project-ehr-mortality.qmd){.research-title}
 
 ::: {.research-authors}
-B. Shin, *N.-Y. Kim*, H. Kim, H. Yu · University of Nevada, Las Vegas
+Team project
 :::
 
 Predicts patient mortality from irregularly sampled vital signs at a Brazilian
