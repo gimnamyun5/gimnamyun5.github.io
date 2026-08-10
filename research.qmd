@@ -1,14 +1,7 @@
 ---
-title: "Research"
+title: "Research experience"
 toc: false
 ---
-
-## Research experience
-
-- **Feb 2026 – present**: Undergraduate Researcher, Statistical Learning Across
-  Biomedicine (S-LAB), Jeonbuk National University
-- **Jun 2025 – Jul 2025**: Visiting Student Researcher, University of Nevada,
-  Las Vegas
 
 ## Research projects
 

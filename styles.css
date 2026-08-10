@@ -53,9 +53,18 @@ h1.title {
   margin-bottom: 0.3rem;
 }
 
-body.home-page h1.title {
+/* On the home page the name is set inside the profile block, beside the
+   photograph, so the standard title block above it is hidden. */
+body.home-page #title-block-header {
+  display: none;
+}
+
+h1.profile-name {
   font-size: 3.6rem;
+  line-height: 1.1;
   letter-spacing: -0.02em;
+  margin-top: 0;
+  margin-bottom: 1.1rem;
 }
 
 .subtitle {
@@ -319,8 +328,8 @@ main#quarto-document-content {
 }
 
 .profile-photo {
-  flex: 0 0 260px;
-  max-width: 260px;
+  flex: 0 0 330px;
+  max-width: 330px;
 }
 
 /* No forced aspect ratio and no cover cropping: a portrait photograph would
@@ -768,8 +777,8 @@ table {
     font-size: 1.95rem;
   }
 
-  body.home-page h1.title {
-    font-size: 2.5rem;
+  h1.profile-name {
+    font-size: 2.4rem;
   }
 
   body.home-page .subtitle {

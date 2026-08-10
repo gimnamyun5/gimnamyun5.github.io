@@ -12,6 +12,8 @@ body-classes: home-page
 
 ::: {.profile-text}
 
+# Nam-Yoon Kim {.profile-name}
+
 I am an undergraduate researcher at Jeonbuk National University, majoring in
 Statistics with a minor in Mathematics, and applying to PhD programs in
 Statistics and Biostatistics.
