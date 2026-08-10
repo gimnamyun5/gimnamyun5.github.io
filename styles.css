@@ -195,9 +195,23 @@ main#quarto-document-content {
 /* Summary panels on the home page, in place of stacked CV-style lists. */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.15rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
   margin: 2.5rem 0 1rem 0;
+}
+
+/* Three across is tight below the full content width, so drop to two and then
+   to one rather than letting the columns get too narrow to read. */
+@media (max-width: 991.98px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* The page stays white, so the panels are separated by a hairline and a very
@@ -206,7 +220,7 @@ main#quarto-document-content {
   background-color: #ffffff;
   border: 1px solid var(--rule);
   border-radius: 4px;
-  padding: 1.3rem 1.4rem 1.4rem 1.4rem;
+  padding: 1.2rem 1.2rem 1.3rem 1.2rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
@@ -229,10 +243,10 @@ main#quarto-document-content {
 
 .info-card li {
   position: relative;
-  padding-left: 1.4rem;
-  margin-bottom: 0.55rem;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  padding-left: 1.2rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
 }
 
 .info-card li:last-child {
