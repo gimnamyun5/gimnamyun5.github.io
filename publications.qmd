@@ -1,32 +1,37 @@
 ---
 title: "Publications"
+toc: false
 ---
 
 ## Manuscripts in preparation
 
-1. **Kim, N.-Y.** PLACEHOLDER: co-authors. Cross-country transfer learning for
-   ICU admission prediction. *In preparation.*
-   PLACEHOLDER: confirm the working title and author list.
+::: {.research-card}
 
-## Conference presentations
+::: {.research-label}
+In preparation
+:::
 
-1. Sung, J., & **Kim, N.-Y.** (2025, May). Effectiveness of Digital Cognitive
-   Training Interventions for Dementia: A Systematic Review and Meta-analysis.
-   Poster presented at *IC-KDA + ASAD 2025*, Seoul, South Korea.
-   **Best Poster Award.** PROSPERO CRD42025631806.
+[Cross-Country Transfer Learning for ICU Admission Prediction](project-icu-transfer.qmd){.research-title}
 
-2. Lee, M., Lee, S., Cho, Y., **Kim, N.-Y.**, Kim, G., & Lee, Y. (2025, June).
-   Deep learning-based neural Granger causality for solar radiation time series.
-   Poster
-   presented at the *Korean Statistical Society Summer Conference 2025*,
-   Gyeongju, South Korea.
+::: {.research-authors}
+PLACEHOLDER: author list · S-LAB, Jeonbuk National University
+:::
 
-<!-- PLACEHOLDER: once co-author permission is confirmed, the poster PDFs can be
-     placed in files/ and linked from each entry like this:
+Transfer of a TabPFN-based clinical prediction model across countries, with
+target adaptation and a label-noise analysis.
+PLACEHOLDER: confirm the working title and intended venue.
 
-     [Poster (PDF)](files/poster_2025_dementia-meta-analysis.pdf) -->
+::: {.research-links}
+[Project page](project-icu-transfer.qmd){.research-btn}
+:::
+
+:::
 
 ## Journal articles
 
-PLACEHOLDER: none yet. Delete this section, or leave it as a heading you will
-fill in later.
+PLACEHOLDER: none yet. Delete this section, or leave the heading and fill it in
+when the first paper is accepted.
+
+---
+
+Conference posters are listed on the [Research](research.qmd) page.

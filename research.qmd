@@ -8,49 +8,99 @@ My research applies statistical and machine-learning methods to health data, wit
 an emphasis on prediction from electronic health records and on whether models
 built in one setting remain trustworthy in another.
 
-::: {.project-index}
+## Research projects
 
-[Cross-Country Transfer Learning for ICU Admission Prediction](project-icu-transfer.qmd){.project-index-title}
+::: {.research-card}
 
-::: {.project-index-meta}
-In progress · S-LAB, Jeonbuk National University · Feb 2026 – present
+::: {.research-label}
+Manuscript in preparation
+:::
+
+[Cross-Country Transfer Learning for ICU Admission Prediction](project-icu-transfer.qmd){.research-title}
+
+::: {.research-authors}
+PLACEHOLDER: author list · S-LAB, Jeonbuk National University · Feb 2026 – present
 :::
 
 Whether a clinical prediction model trained on one country's electronic health
 records still works in another, and how much data from the target country is
-needed to close the gap. TabPFN, with target adaptation and a label-noise
-analysis.
+needed to close the gap. Built on TabPFN, with target adaptation and a
+label-noise analysis to test whether the reported gains are real.
 
-[Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series](project-ehr-mortality.qmd){.project-index-title}
+::: {.research-links}
+[Project page](project-icu-transfer.qmd){.research-btn}
+:::
 
-::: {.project-index-meta}
-University of Nevada, Las Vegas · June – July 2025
+:::
+
+::: {.research-card}
+
+::: {.research-label}
+UNLV 2025
+:::
+
+[Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series](project-ehr-mortality.qmd){.research-title}
+
+::: {.research-authors}
+Bokyung Shin, *Nam-Yoon Kim*, Hyunsoo Kim, Hyeonjong Yu · University of Nevada, Las Vegas · June – July 2025
 :::
 
 Predicting patient mortality from irregularly sampled vital signs recorded at a
-Brazilian cancer center, crossing two interpolation schemes with two network
-architectures. The convolutional models won on every metric.
+Brazilian cancer center. Two interpolation schemes crossed with two network
+architectures on the same cohort; the convolutional models won on every metric,
+and the interpolation choice mattered far less than the architecture.
 
-[Effectiveness of Digital Cognitive Training Interventions for Dementia: A Systematic Review and Meta-analysis](project-dementia-meta.qmd){.project-index-title}
+::: {.research-links}
+[Project page](project-ehr-mortality.qmd){.research-btn}
+:::
 
-::: {.project-index-meta}
-Best Poster Award, IC-KDA + ASAD 2025 · May 2025, Seoul
+:::
+
+## Conference posters
+
+::: {.research-card}
+
+::: {.research-label}
+IC-KDA + ASAD 2025 · Best Poster Award
+:::
+
+[Effectiveness of Digital Cognitive Training Interventions for Dementia: A Systematic Review and Meta-analysis](project-dementia-meta.qmd){.research-title}
+
+::: {.research-authors}
+Jiyoun Sung, *Nam-Yoon Kim* · May 2025, Seoul
 :::
 
 A PROSPERO-registered systematic review and meta-analysis of eleven randomized
 trials, asking whether remotely delivered cognitive training improves cognitive
 and depressive outcomes in dementia. It improved both, on a small evidence base.
 
-[Deep Learning-based Neural Granger Causality for Solar Radiation Time Series](project-granger.qmd){.project-index-title}
+::: {.research-links}
+[Project page](project-dementia-meta.qmd){.research-btn}
+[PROSPERO CRD42025631806](https://www.crd.york.ac.uk/prospero/display_record.php?RecordID=631806){.research-btn}
+:::
 
-::: {.project-index-meta}
-Korean Statistical Society Summer Conference 2025 · June 2025, Gyeongju
+:::
+
+::: {.research-card}
+
+::: {.research-label}
+Korean Statistical Society 2025
+:::
+
+[Deep Learning-based Neural Granger Causality for Solar Radiation Time Series](project-granger.qmd){.research-title}
+
+::: {.research-authors}
+Minwoo Lee, Sangmin Lee, Younghwi Cho, *Nam-Yoon Kim*, Gahee Kim, Youngmi Lee · June 2025, Gyeongju
 :::
 
 Which meteorological variables carry predictive information about solar
 radiation, and whether neural Granger causality recovers relationships that a
-linear vector autoregression misses. It does, for the variables that behave least
-like continuous measurements.
+linear vector autoregression misses. It does — for the variables that behave
+least like continuous measurements.
+
+::: {.research-links}
+[Project page](project-granger.qmd){.research-btn}
+:::
 
 :::
 

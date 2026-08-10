@@ -182,12 +182,12 @@ header.headroom,
 
 /* ------------------------------ Measure/width ----------------------------- */
 
-/* Pages without a table of contents (Home, Contact) otherwise stretch the full
-   width of the content area, which gives an uncomfortably long line length.
-   On pages that do have a TOC the column is already narrower, so this is inert. */
+/* Pages without a table of contents otherwise stretch the full width of the
+   content area. This caps the measure, but wide enough that the side margins
+   stay modest. On pages with a TOC the column is already narrower. */
 main.content,
 main#quarto-document-content {
-  max-width: 900px;
+  max-width: 1100px;
 }
 
 /* ------------------------------- Card grid -------------------------------- */
@@ -511,6 +511,102 @@ a.back-link:focus {
   color: var(--link);
   text-decoration: underline;
   text-underline-offset: 0.15em;
+}
+
+/* ---------------------------- Research cards ------------------------------ */
+
+.research-card {
+  background-color: #ffffff;
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--link);
+  border-radius: 3px;
+  padding: 1.5rem 1.75rem 1.4rem 1.75rem;
+  margin: 1.25rem 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.research-label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--link);
+  margin-bottom: 0.55rem;
+}
+
+a.research-title {
+  display: block;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--ink);
+  text-decoration: none;
+  margin-bottom: 0.45rem;
+}
+
+a.research-title:hover,
+a.research-title:focus {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+.research-authors {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--ink-muted);
+  margin-bottom: 0.9rem;
+}
+
+/* The author's own name is set upright so it can be picked out of the list. */
+.research-authors em {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.research-card > p {
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.1rem;
+}
+
+/* Pandoc wraps the title link in its own paragraph, which would otherwise pick
+   up the description styling and an extra margin below the heading. */
+.research-card > p:has(> a.research-title) {
+  margin-bottom: 0;
+  font-size: inherit;
+}
+
+.research-links p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+a.research-btn {
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-muted);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 0.4rem 0.75rem;
+  text-decoration: none;
+}
+
+a.research-btn:hover,
+a.research-btn:focus {
+  color: #ffffff;
+  background-color: var(--link);
+  border-color: var(--link);
+  text-decoration: none;
 }
 
 .project-meta {
