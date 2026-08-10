@@ -1,6 +1,7 @@
 ---
 title: "Publications"
 toc: false
+body-classes: serif-page
 ---
 
 ::: {.pub-card}
