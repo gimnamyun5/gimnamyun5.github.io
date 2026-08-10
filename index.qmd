@@ -42,51 +42,51 @@ and network models as readily as into hospital records.
 
 :::
 
-## Education
+::: {.card-grid}
 
-**B.S. in Statistics**, minor in Mathematics — Jeonbuk National University (JBNU) \
-March 2021 – February 2027 (expected)
+::: {.info-card}
+::: {.card-label}
+Education
+:::
+- **B.S. in Statistics**, minor in Mathematics — Jeonbuk National University,
+  March 2021 – February 2027 (expected)
+:::
 
-## Research interests
+::: {.info-card}
+::: {.card-label}
+Research experience
+:::
+- Undergraduate Researcher, S-LAB, Jeonbuk National University, Feb 2026 – present
+- Visiting Student Researcher, University of Nevada, Las Vegas, Jun – Jul 2025
+:::
 
+::: {.info-card}
+::: {.card-label}
+Awards & scholarships
+:::
+- Best Poster Award, IC-KDA + ASAD 2025
+- President's Award for Academic Excellence, 2025
+- Full Merit-Based Scholarship, Fall 2024 – Spring 2026
+:::
+
+::: {.info-card}
+::: {.card-label}
+Research interests
+:::
 - Biostatistics
 - Statistical machine learning
 - Clinical prediction modeling
 - Statistical network analysis
 - Time series and causal discovery
+:::
 
-## Research experience
+::: {.info-card}
+::: {.card-label}
+Teaching
+:::
+- TA · Introduction to Big Data, Fall 2025
+- TA · Understanding and Application of Big Data, Spring 2025
+- TA · Statistical Thinking and Society, Fall 2024
+:::
 
-- **Feb 2026 – present**: Undergraduate Researcher, Statistical Learning Across
-  Biomedicine (S-LAB), Jeonbuk National University
-- **Jun 2025 – Jul 2025**: Visiting Student Researcher, University of Nevada,
-  Las Vegas
-
-## Teaching experience
-
-**Teaching Assistant** — Introduction to Big Data \
-Jeonbuk National University · Fall 2025
-
-- Reviewed teaching materials and answered student questions in Python
-- Supported lectures, guided students on assignments, and graded exams
-
-**Teaching Assistant** — Understanding and Application of Big Data \
-Jeonbuk National University · Spring 2025
-
-- Co-developed the course syllabus
-- Supported lectures, guided students on assignments, and graded exams
-
-**Teaching Assistant** — Statistical Thinking and Society \
-Jeonbuk National University · Fall 2024
-
-- Reviewed and revised instructional materials covering fundamental statistical
-  concepts
-- Supported lectures, guided students on assignments, and graded assignments and
-  exams
-
-## Awards and scholarships
-
-- **Best Poster Award** — IC-KDA + ASAD 2025, May 2025
-- **President's Award for Academic Excellence** — Jeonbuk National University, 2025
-- **Full Merit-Based Scholarship** — Jeonbuk National University, every semester
-  from Fall 2024 to Spring 2026
+:::

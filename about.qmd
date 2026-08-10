@@ -36,6 +36,28 @@ networks.
 
 Details of the individual projects are on the [Research](research.qmd) page.
 
+## Teaching
+
+**Teaching Assistant** — Introduction to Big Data \
+Jeonbuk National University · Fall 2025
+
+- Reviewed teaching materials and answered student questions in Python
+- Supported lectures, guided students on assignments, and graded exams
+
+**Teaching Assistant** — Understanding and Application of Big Data \
+Jeonbuk National University · Spring 2025
+
+- Co-developed the course syllabus
+- Supported lectures, guided students on assignments, and graded exams
+
+**Teaching Assistant** — Statistical Thinking and Society \
+Jeonbuk National University · Fall 2024
+
+- Reviewed and revised instructional materials covering fundamental statistical
+  concepts
+- Supported lectures, guided students on assignments, and graded assignments and
+  exams
+
 ## Contact
 
 I am glad to hear from researchers, prospective collaborators, and faculty in

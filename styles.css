@@ -183,6 +183,63 @@ main#quarto-document-content {
   max-width: 900px;
 }
 
+/* ------------------------------- Card grid -------------------------------- */
+
+/* Summary panels on the home page, in place of stacked CV-style lists. */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.15rem;
+  margin: 2.5rem 0 1rem 0;
+}
+
+/* The page stays white, so the panels are separated by a hairline and a very
+   faint shadow rather than by a tinted background. */
+.info-card {
+  background-color: #ffffff;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 1.3rem 1.4rem 1.4rem 1.4rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.card-label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-muted);
+  margin-bottom: 0.9rem;
+}
+
+/* Items are prefixed with an arrow instead of a bullet. */
+.info-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.info-card li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.55rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.info-card li:last-child {
+  margin-bottom: 0;
+}
+
+.info-card li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--link);
+}
+
 /* ------------------------- Home page profile block ------------------------ */
 
 .profile-block {
