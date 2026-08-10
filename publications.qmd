@@ -3,36 +3,44 @@ title: "Publications"
 toc: false
 ---
 
-## Journal articles
+::: {.pub-card}
 
-No published articles yet.
-
-<!-- PLACEHOLDER: when a paper is accepted, add it as a card in the same form as
-     the Research page:
-
-::: {.research-card}
-
-::: {.research-label}
-Journal name, year
+::: {.pub-tags}
+[Manuscript in preparation]{.pub-tag .tag-status}
 :::
 
-[Title of the paper](https://doi.org/DOI){.research-title}
+[Cross-Country Transfer Learning for ICU Admission Prediction](project-icu-transfer.qmd){.pub-title}
 
-::: {.research-authors}
-A. Author, *N.-Y. Kim*, B. Author
+::: {.pub-authors}
+PLACEHOLDER: author list
 :::
 
-One or two sentences on what the paper does.
-
-::: {.research-links}
-[DOI](https://doi.org/DOI){.research-btn}
-[PDF](files/FILENAME.pdf){.research-btn}
+::: {.pub-row}
+::: {.pub-status}
+S-LAB, Jeonbuk National University
+:::
+[Project page →](project-icu-transfer.qmd){.pub-link}
 :::
 
 :::
+
+<!-- To add an entry, copy the block above and change the four parts.
+
+     Tags — use as many as apply, in this order:
+       [SCIE]{.pub-tag .tag-index}
+       [First Author]{.pub-tag .tag-role}
+       [Co-Author]{.pub-tag .tag-role}
+       [Manuscript in preparation]{.pub-tag .tag-status}
+       [Under review]{.pub-tag .tag-status}
+
+     Status line — the journal and year once it is out:
+       Journal name · 2027
+       Under review · 2027
+
+     Link — a DOI when there is one:
+       [DOI →](https://doi.org/DOI){.pub-link}
 -->
 
 ---
 
-Work not yet published — the manuscript in preparation and the conference
-posters — is listed on the [Research](research.qmd) page.
+Conference presentations are listed on the [Research](research.qmd) page.
