@@ -10,7 +10,14 @@
   --rule:       #e0e0e0;   /* hairline rules */
   --link:       #1f3a5f;   /* deep navy, the only accent */
   --link-hover: #0d1f36;
-  --surface:    #f7f7f5;   /* very light warm grey for inset blocks */
+  --page:       #f4f3f0;   /* warm off-white behind the content */
+  --surface:    #ffffff;   /* panels and inset blocks sit above the page */
+}
+
+/* The page carries a faint warm tint so that the white panels read as panels.
+   The header strip is pinned to white separately, further down. */
+body {
+  background-color: var(--page);
 }
 
 /* ------------------------------- Typography ------------------------------- */
@@ -511,7 +518,7 @@ hr {
 }
 
 .callout.callout-style-simple {
-  background-color: var(--surface);
+  background-color: #ffffff;
 }
 
 table {
@@ -526,10 +533,20 @@ pre {
 }
 
 pre {
-  background-color: var(--surface);
+  background-color: #ffffff;
   border: 1px solid var(--rule);
   border-radius: 2px;
   font-size: 0.88rem;
+}
+
+/* Tables and photographs also sit on white so they lift off the tinted page. */
+table {
+  background-color: #ffffff;
+}
+
+.photo-media img,
+.project-index {
+  background-color: transparent;
 }
 
 /* ----------------------------- Table of contents -------------------------- */
