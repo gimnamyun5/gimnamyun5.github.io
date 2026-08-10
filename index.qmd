@@ -42,31 +42,27 @@ and network models as readily as into hospital records.
 
 :::
 
+## Education
+
+**B.S. in Statistics**, minor in Mathematics — Jeonbuk National University (JBNU) \
+March 2021 – February 2027 (expected)
+
+## Research experience
+
+- **Feb 2026 – present**: Undergraduate Researcher, Statistical Learning Across
+  Biomedicine (S-LAB), Jeonbuk National University
+- **Jun 2025 – Jul 2025**: Visiting Student Researcher, University of Nevada,
+  Las Vegas
+
 ::: {.card-grid}
 
-::: {.info-card}
-::: {.card-label}
-Education
-:::
-- **B.S. in Statistics**, minor in Mathematics — Jeonbuk National University,
-  March 2021 – February 2027 (expected)
-:::
-
-::: {.info-card}
-::: {.card-label}
-Research experience
-:::
-- Undergraduate Researcher, S-LAB, Jeonbuk National University, Feb 2026 – present
-- Visiting Student Researcher, University of Nevada, Las Vegas, Jun – Jul 2025
-:::
-
-::: {.info-card}
+::: {.info-card .awards-card}
 ::: {.card-label}
 Awards & scholarships
 :::
-- Best Poster Award, IC-KDA + ASAD 2025
-- President's Award for Academic Excellence, 2025
-- Full Merit-Based Scholarship, Fall 2024 – Spring 2026
+- **Best Poster Award** — IC-KDA + ASAD 2025
+- **President's Award for Academic Excellence** — Jeonbuk National University, 2025
+- **Full Merit-Based Scholarship** — Fall 2024 – Spring 2026
 :::
 
 ::: {.info-card}

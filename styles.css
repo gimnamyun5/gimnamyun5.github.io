@@ -247,6 +247,13 @@ main#quarto-document-content {
   color: var(--link);
 }
 
+/* The award names carry the accent colour so the honours stand out from the
+   surrounding cards. */
+.awards-card li strong {
+  color: var(--link);
+  font-weight: 700;
+}
+
 /* ------------------------- Home page profile block ------------------------ */
 
 .profile-block {
