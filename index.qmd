@@ -1,7 +1,7 @@
 ---
 title: "Nam-Yoon Kim"
-subtitle: "Undergraduate Researcher in Statistics"
 toc: false
+body-classes: home-page
 ---
 
 ::: {.profile-block}
@@ -56,7 +56,7 @@ March 2021 – February 2027 (expected)
 
 ::: {.card-grid}
 
-::: {.info-card .awards-card}
+::: {.info-card .awards-card .accent-amber}
 ::: {.card-label}
 Awards & scholarships
 :::
@@ -76,7 +76,7 @@ Research interests
 - Time series and causal discovery
 :::
 
-::: {.info-card}
+::: {.info-card .accent-rust}
 ::: {.card-label}
 Teaching
 :::

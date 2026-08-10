@@ -8,8 +8,15 @@
   --ink:        #1a1a1a;   /* body text */
   --ink-muted:  #5a5a5a;   /* secondary text */
   --rule:       #e0e0e0;   /* hairline rules */
-  --link:       #1f3a5f;   /* deep navy, the only accent */
+  --link:       #1f3a5f;   /* deep navy: links and the primary accent */
   --link-hover: #0d1f36;
+
+  /* Three accents, all dark enough to read as text on white. Navy leads;
+     rust and amber mark the other kinds of entry. */
+  --navy:       #1f3a5f;
+  --rust:       #a8452f;   /* muted red */
+  --amber:      #9c5f16;   /* orange */
+
   --page:       #f4f3f0;   /* warm off-white behind the content */
   --surface:    #ffffff;   /* panels and inset blocks sit above the page */
 }
@@ -38,15 +45,27 @@ h1, h2, h3, h4, h5, h6,
   color: var(--ink);
 }
 
+/* Page titles are larger than the body allows for by default; the name on the
+   home page is larger again, so it stays the biggest thing on the site. */
 h1.title {
-  font-size: 2.1rem;
-  margin-bottom: 0.25rem;
+  font-size: 2.55rem;
+  line-height: 1.15;
+  margin-bottom: 0.3rem;
+}
+
+body.home-page h1.title {
+  font-size: 3.6rem;
+  letter-spacing: -0.02em;
 }
 
 .subtitle {
   color: var(--ink-muted);
   font-size: 1.08rem;
   font-style: italic;
+}
+
+body.home-page .subtitle {
+  font-size: 1.25rem;
 }
 
 /* A short accent bar sits over the left end of the hairline under each section
@@ -219,9 +238,30 @@ main#quarto-document-content {
 .info-card {
   background-color: #ffffff;
   border: 1px solid var(--rule);
+  border-top: 3px solid var(--navy);
   border-radius: 4px;
   padding: 1.2rem 1.2rem 1.3rem 1.2rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+/* Each card carries its own accent along the top edge, in the label and in the
+   arrows, so the row reads as three distinct panels rather than one block. */
+.info-card.accent-amber {
+  border-top-color: var(--amber);
+}
+
+.info-card.accent-amber .card-label,
+.info-card.accent-amber li::before {
+  color: var(--amber);
+}
+
+.info-card.accent-rust {
+  border-top-color: var(--rust);
+}
+
+.info-card.accent-rust .card-label,
+.info-card.accent-rust li::before {
+  color: var(--rust);
 }
 
 .card-label {
@@ -230,7 +270,7 @@ main#quarto-document-content {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: var(--ink-muted);
+  color: var(--navy);
   margin-bottom: 0.9rem;
 }
 
@@ -264,7 +304,7 @@ main#quarto-document-content {
 /* The award names carry the accent colour so the honours stand out from the
    surrounding cards. */
 .awards-card li strong {
-  color: var(--link);
+  color: var(--amber);
   font-weight: 700;
 }
 
@@ -531,8 +571,26 @@ a.back-link:focus {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.13em;
-  color: var(--link);
+  color: var(--navy);
   margin-bottom: 0.55rem;
+}
+
+/* Conference entries are marked in rust, awarded ones in amber, so the kind of
+   entry is legible from the colour of the rule before the text is read. */
+.research-card.accent-rust {
+  border-left-color: var(--rust);
+}
+
+.research-card.accent-rust .research-label {
+  color: var(--rust);
+}
+
+.research-card.accent-amber {
+  border-left-color: var(--amber);
+}
+
+.research-card.accent-amber .research-label {
+  color: var(--amber);
 }
 
 a.research-title {
@@ -707,7 +765,15 @@ table {
   }
 
   h1.title {
-    font-size: 1.75rem;
+    font-size: 1.95rem;
+  }
+
+  body.home-page h1.title {
+    font-size: 2.5rem;
+  }
+
+  body.home-page .subtitle {
+    font-size: 1.1rem;
   }
 
   h2 {

@@ -1,8 +1,9 @@
 ---
 title: "Research"
-subtitle: "Projects and presentations"
 toc: false
 ---
+
+## Research projects
 
 ::: {.research-card}
 
@@ -30,7 +31,7 @@ that the reported gains are real.
 ::: {.research-card}
 
 ::: {.research-label}
-Research project · UNLV 2025
+University of Nevada, Las Vegas · 2025
 :::
 
 [Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series](project-ehr-mortality.qmd){.research-title}
@@ -49,10 +50,12 @@ architectures. The convolutional models won on every metric.
 
 :::
 
-::: {.research-card}
+## Conference presentations
+
+::: {.research-card .accent-amber}
 
 ::: {.research-label}
-Poster · IC-KDA + ASAD 2025 · Best Poster Award
+IC-KDA + ASAD 2025 · Best Poster Award
 :::
 
 [Effectiveness of Digital Cognitive Training Interventions for Dementia: A Systematic Review and Meta-analysis](project-dementia-meta.qmd){.research-title}
@@ -72,10 +75,10 @@ in dementia. It improved both, on a small evidence base.
 
 :::
 
-::: {.research-card}
+::: {.research-card .accent-rust}
 
 ::: {.research-label}
-Poster · Korean Statistical Society 2025
+Korean Statistical Society Summer Conference 2025
 :::
 
 [Deep Learning-based Neural Granger Causality for Solar Radiation Time Series](project-granger.qmd){.research-title}

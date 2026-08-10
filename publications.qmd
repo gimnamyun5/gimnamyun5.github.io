@@ -3,35 +3,36 @@ title: "Publications"
 toc: false
 ---
 
-## Manuscripts in preparation
+## Journal articles
+
+No published articles yet.
+
+<!-- PLACEHOLDER: when a paper is accepted, add it as a card in the same form as
+     the Research page:
 
 ::: {.research-card}
 
 ::: {.research-label}
-In preparation
+Journal name, year
 :::
 
-[Cross-Country Transfer Learning for ICU Admission Prediction](project-icu-transfer.qmd){.research-title}
+[Title of the paper](https://doi.org/DOI){.research-title}
 
 ::: {.research-authors}
-PLACEHOLDER: author list · S-LAB, Jeonbuk National University
+A. Author, *N.-Y. Kim*, B. Author
 :::
 
-Transfer of a TabPFN-based clinical prediction model across countries, with
-target adaptation and a label-noise analysis.
-PLACEHOLDER: confirm the working title and intended venue.
+One or two sentences on what the paper does.
 
 ::: {.research-links}
-[Project page](project-icu-transfer.qmd){.research-btn}
+[DOI](https://doi.org/DOI){.research-btn}
+[PDF](files/FILENAME.pdf){.research-btn}
 :::
 
 :::
-
-## Journal articles
-
-PLACEHOLDER: none yet. Delete this section, or leave the heading and fill it in
-when the first paper is accepted.
+-->
 
 ---
 
-Conference posters are listed on the [Research](research.qmd) page.
+Work not yet published — the manuscript in preparation and the conference
+posters — is listed on the [Research](research.qmd) page.
