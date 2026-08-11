@@ -440,18 +440,23 @@ img.profile-img {
 
    The colour is set once per link as `--brand` and read by the glyph, the hover
    border and the focus ring. */
+/* Each tile copies how that service's own app icon is built, which is what makes
+   the row read as real buttons: GitHub is a black tile with a white mark,
+   LinkedIn a blue tile with a white mark, Gmail a white tile with a coloured
+   mark. Three variables per link - `--tile`, `--tile-edge`, `--mark` - and
+   `--brand` for the hover edge. */
 a.icon-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: #ffffff;
-  border: 1px solid var(--rule);
+  background-color: var(--tile, #ffffff);
+  border: 1px solid var(--tile-edge, var(--rule));
   border-radius: 8px;
-  color: var(--brand, var(--ink));
+  color: var(--mark, var(--ink));
   text-decoration: none;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
 }
 
 a.icon-link i {
@@ -459,11 +464,12 @@ a.icon-link i {
   line-height: 1;
 }
 
+/* The shadow reads on every tile; the border change only shows on the white one,
+   which is the only tile with a visible edge to begin with. */
 a.icon-link:hover,
 a.icon-link:focus {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
   border-color: var(--brand, var(--link));
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  color: var(--brand, var(--ink));
   text-decoration: none;
 }
 
@@ -473,20 +479,29 @@ a.icon-link:focus {
   }
 }
 
-/* Official brand colours: GitHub's own black, LinkedIn's own blue, Gmail's own
-   red. Note the mail button is a Bootstrap Icons envelope in Gmail red, not the
-   Gmail logo itself - Bootstrap Icons has no Gmail glyph, and the real mark is
-   four-colour, which a single-colour icon font cannot carry. Swapping in the
-   official SVG under images/ is the way to get the actual logo. */
+/* Official brand colours, arranged the way each service arranges its own icon. */
 .icon-github {
+  --tile: #181717;
+  --tile-edge: #181717;
+  --mark: #ffffff;
   --brand: #181717;
 }
 
 .icon-linkedin {
+  --tile: #0a66c2;
+  --tile-edge: #0a66c2;
+  --mark: #ffffff;
   --brand: #0a66c2;
 }
 
+/* Gmail's own icon is a light tile carrying a coloured mark, so this one stays
+   white. The mark is a Bootstrap Icons envelope in Gmail red, NOT the Gmail logo:
+   the real one is four-colour and an icon font cannot carry it. Dropping the
+   official SVG into images/ and swapping the <i> for an <img> is the only way to
+   get the actual logo. */
 .icon-email {
+  --tile: #ffffff;
+  --mark: #ea4335;
   --brand: #ea4335;
 }
 
