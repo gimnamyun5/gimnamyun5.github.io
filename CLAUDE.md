@@ -48,17 +48,40 @@ right-aligned. There is no CV page: the button links straight to the PDF.
 
 All of it lives in `styles.css`.
 
-**Colour.** Two blues, and nothing else. `--navy` `#1f3a5f` (11.5:1 on white) is
-the link colour; `--steel` `#3a6ea8` (5.28:1) is the accent that carries every
-card. Steel is **sampled** from the publication cards on
-<https://ankush-gupta04.github.io/Ankush/>, so it is a match, not a choice.
+**Colour.** Two blues everywhere except the publication cards. `--navy` `#1f3a5f`
+(11.5:1 on white) is the link colour; `--steel` `#3a6ea8` (5.28:1) is the accent
+on the home cards, the Research cards and the heading bars. Steel is **sampled**
+from the publication cards on <https://ankush-gupta04.github.io/Ankush/>, whose
+page colour `#faf7f2` is also matched exactly as `--page`.
 
-Warm accents were tried and dropped on purpose: rust `#a8452f`, amber `#9c5f16`,
-vermilion `#d1401a` and the lab's terracotta `#c4603a` (`--terra` on
-<https://vic-dragon.github.io>). The last of those was ruled out partly because
-it measures 4.13:1 on white, under the 4.5:1 everything else holds; `#b95a36` is
-the same terracotta at 4.59:1 if it ever comes back. **Reintroducing a warm
-accent is a design decision, not a fix.**
+`.pub-card` is the exception: colours as well as metrics are sampled from
+<https://vic-dragon.github.io>, so that one component is warm. Rust `#a8452f`,
+amber `#9c5f16` and vermilion `#d1401a` were all tried and dropped along the way
+and are not coming back; the terracotta family below is the sampled set, not a
+palette to extend.
+
+**The publication cards are low contrast on purpose.** The user wants that page to
+read quietly — little separation between the parts — and chose these values
+knowing the numbers. Do not "fix" them, and do not raise it again as a defect.
+Measured on the card (`#f1ede8`), against the 4.5:1 the rest of the site holds:
+
+| Part | Colour | Contrast |
+| --- | --- | --- |
+| title | `#2d2926` | 12.37 ✓ |
+| journal, DOI link, hover border | `#c4603a` | 3.55 |
+| authors | `#9c8874` | 2.91 |
+| `.tag-status` | `#c4603a` | 2.99 |
+| `.tag-coauthor` | `#9c8874` | 2.42 |
+| `.tag-index` | `#6b8fd4` | 2.19 |
+| `.tag-first` | `#e07a52` | 2.03 |
+| `.tag-cofirst` | `#5aad82` | 1.76 |
+| `.tag-corresponding` | `#d4915a` | 1.67 |
+| `.tag-kci` | `#6bb8d4` | 1.57 |
+
+Only the title passes, and these figures match the source page to within 0.01 —
+both the match and the softness are wanted. If the decision is ever reversed,
+darkening each text colour while keeping the tints holds the look and clears
+4.5:1; that is the only change to make, and only when asked.
 
 `--card-accent`, set on `.info-card` and on `.research-card`, is what the top or
 left rule, the labels, the arrows, the award names and the button hovers all
@@ -83,15 +106,23 @@ across); `.research-card` (entry card with a coloured left rule); `.photo-entry`
 (activities, photo left and caption right).
 
 `.pub-card` is **ported from the publication list on
-<https://vic-dragon.github.io>** and deliberately does not match
-`.research-card`: a faintly tinted panel with a hairline all the way round rather
-than a coloured left rule, the accent held back for the hover border and the two
-footer items, and a title at Inter 500 / 0.92rem rather than as a display line.
-The metrics come from that source — changing them drifts away from the thing it
-was matched to. The tabs on the source (Published / Under Review / In
-Preparation) were **not** ported: there is one entry, so two panels would be
-empty. `.tag-index`, `.tag-role` and `.tag-status` now differ only by depth of
-blue tint, so the wording carries the distinction that hue used to.
+<https://vic-dragon.github.io>** — metrics and colours both — and deliberately
+does not match `.research-card`: a warm tinted panel (`#f1ede8`) with a hairline
+all the way round rather than a coloured left rule, terracotta held back for the
+hover border and the two footer items, and a title at Inter 500 / 0.92rem rather
+than as a display line. Everything there is a sampled value; changing any of it
+drifts away from the thing it was matched to.
+
+The card is set to the flat colour the source's translucent tint composites to
+over *its* page, so it reads identically here on a different white. The badge
+tints stay translucent, which lands them on the source values exactly because the
+card underneath now matches.
+
+One badge class per kind, each its own hue: `.tag-index` (SCIE), `.tag-kci`,
+`.tag-first`, `.tag-cofirst`, `.tag-corresponding`, `.tag-coauthor`,
+`.tag-status`. The template in `publications.qmd` lists them all. The tabs on the
+source (Published / Under Review / In Preparation) were **not** ported: there is
+one entry, so two panels would be empty.
 
 ## Still to fill in
 

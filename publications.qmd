@@ -27,10 +27,14 @@ S-LAB, Jeonbuk National University
 
 <!-- To add an entry, copy the block above and change the four parts.
 
-     Tags — use as many as apply, in this order:
+     Tags — use as many as apply, in this order. One class per kind, each with
+     its own colour, following the badges on vic-dragon.github.io:
        [SCIE]{.pub-tag .tag-index}
-       [First Author]{.pub-tag .tag-role}
-       [Co-Author]{.pub-tag .tag-role}
+       [KCI]{.pub-tag .tag-kci}
+       [First Author]{.pub-tag .tag-first}
+       [Co-First Author]{.pub-tag .tag-cofirst}
+       [Corresponding Author]{.pub-tag .tag-corresponding}
+       [Co-Author]{.pub-tag .tag-coauthor}
        [Manuscript in preparation]{.pub-tag .tag-status}
        [Under review]{.pub-tag .tag-status}
 

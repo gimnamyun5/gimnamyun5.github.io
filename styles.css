@@ -23,7 +23,8 @@
   --navy:       #1f3a5f;   /* 11.5:1 on white; links and the darker accent */
   --steel:      #3a6ea8;   /* 5.28:1 on white; the accent that carries the cards */
 
-  --page:       #f8f7f4;   /* warm off-white behind the content */
+  --page:       #faf7f2;   /* warm off-white behind the content; the --bg from
+                              ankush-gupta04.github.io, matched exactly */
   --surface:    #ffffff;   /* panels and inset blocks sit above the page */
 }
 
@@ -620,14 +621,19 @@ a.back-link:focus {
 
 /* -------------------------- Publication cards ----------------------------- */
 
-/* Ported from the publication list on vic-dragon.github.io: a quiet tinted panel
-   with a hairline all the way round instead of a coloured left rule, the accent
-   held back for the hover border and the two footer items, and a title set at
-   text weight rather than as a display line. Metrics follow that source; the
-   colours are this site's blues. */
+/* Ported from the publication list on vic-dragon.github.io - metrics AND colours,
+   sampled from the live page, so this one component sits outside the site's
+   two-blue rule on purpose. The literal hexes below are matches; a variable would
+   only hide where they came from.
+
+   The card is set to the flat colour their translucent tint composites to over
+   their own page (#f5f2ee), not to the tint itself, so the card reads the same
+   here even though this page sits on a slightly different white. The badge tints
+   below stay translucent, which lands them on exactly the source values now that
+   the card underneath matches. */
 .pub-card {
-  background-color: rgba(58, 110, 168, 0.045);
-  border: 1px solid var(--rule);
+  background-color: #f1ede8;
+  border: 1px solid #ddd5c8;
   border-radius: 3px;
   padding: 1.5rem 1.8rem;
   margin: 1rem 0;
@@ -635,7 +641,7 @@ a.back-link:focus {
 }
 
 .pub-card:hover {
-  border-color: var(--steel);
+  border-color: #c4603a;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -659,23 +665,44 @@ a.back-link:focus {
   padding: 0.22rem 0.65rem;
   border-radius: 4px;
   white-space: nowrap;
-  color: var(--navy);
 }
 
-/* The three kinds of tag once carried three different hues. On one blue they are
-   separated by depth of tint instead, which is a weaker signal - the wording is
-   now what distinguishes them. Splitting these back out is where a second accent
-   would go if the colour rule is ever relaxed. */
-.tag-index {
-  background-color: rgba(58, 110, 168, 0.18);
+/* One class per badge on the source, same tint and same text colour. Journal
+   index, authorship role and status are each a different hue again, which is what
+   makes them readable at a glance. */
+.tag-index {                                  /* SCIE */
+  background-color: rgba(45, 74, 139, 0.15);
+  color: #6b8fd4;
 }
 
-.tag-role {
-  background-color: rgba(58, 110, 168, 0.1);
+.tag-kci {
+  background-color: rgba(45, 107, 139, 0.15);
+  color: #6bb8d4;
 }
 
-.tag-status {
-  background-color: rgba(31, 58, 95, 0.08);
+.tag-first {
+  background-color: rgba(196, 96, 58, 0.2);
+  color: #e07a52;
+}
+
+.tag-cofirst {
+  background-color: rgba(45, 106, 79, 0.2);
+  color: #5aad82;
+}
+
+.tag-corresponding {
+  background-color: rgba(139, 69, 19, 0.2);
+  color: #d4915a;
+}
+
+.tag-coauthor {
+  background-color: rgba(156, 136, 116, 0.2);
+  color: #9c8874;
+}
+
+.tag-status {                                 /* under review, in preparation */
+  background-color: rgba(196, 96, 58, 0.15);
+  color: #c4603a;
 }
 
 a.pub-title {
@@ -684,14 +711,16 @@ a.pub-title {
   font-size: 0.92rem;
   font-weight: 500;
   line-height: 1.55;
-  color: var(--ink);
+  color: #2d2926;
   text-decoration: none;
   margin-bottom: 0.5rem;
 }
 
+/* The source's titles are not links, so there is no hover to copy; it takes the
+   card's own accent. */
 a.pub-title:hover,
 a.pub-title:focus {
-  color: var(--link);
+  color: #c4603a;
   text-decoration: underline;
   text-underline-offset: 0.15em;
 }
@@ -700,7 +729,7 @@ a.pub-title:focus {
   font-family: var(--font-body);
   font-size: 0.78rem;
   font-weight: 300;
-  color: var(--ink-muted);
+  color: #9c8874;
   line-height: 1.5;
   margin-bottom: 0.3rem;
 }
@@ -718,7 +747,7 @@ a.pub-title:focus {
   font-family: var(--font-body);
   font-size: 0.72rem;
   letter-spacing: 0.04em;
-  color: var(--steel);
+  color: #c4603a;
 }
 
 .pub-status p,
@@ -732,7 +761,7 @@ a.pub-link {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--steel);
+  color: #c4603a;
   text-decoration: none;
   white-space: nowrap;
 }
