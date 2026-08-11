@@ -6,8 +6,10 @@ Biostatistics. Built with Quarto, deployed to GitHub Pages by GitHub Actions.
 
 **The user writes in Korean. Reply in Korean.**
 
-- Local: `C:\Users\user\OneDrive\Documents\namyoon-kim-website`
-  (OneDrive moved this out of `C:\Users\user\Documents` — that older path is dead)
+- Local: `C:\Users\user\projects\namyoon-kim-website`
+  (deliberately outside OneDrive: syncing a `.git` directory invites file locks
+  and conflict copies. Two earlier paths under `Documents` and
+  `OneDrive\Documents` are dead.)
 - Repository: <https://github.com/gimnamyun5/gimnamyun5.github.io>
 - Live: <https://gimnamyun5.github.io/>
 
