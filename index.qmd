@@ -58,7 +58,7 @@ March 2021 – February 2027 (expected)
 
 ::: {.card-grid}
 
-::: {.info-card .awards-card .accent-amber}
+::: {.info-card .awards-card}
 ::: {.card-label}
 Awards & scholarships
 :::
@@ -78,7 +78,7 @@ Research interests
 - Time series and causal discovery
 :::
 
-::: {.info-card .accent-vermilion}
+::: {.info-card}
 ::: {.card-label}
 Teaching
 :::

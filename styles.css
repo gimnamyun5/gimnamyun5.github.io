@@ -1,7 +1,8 @@
 /* ---------------------------------------------------------------------------
    Nam-Yoon Kim — academic website
    Minimal serif-headed, restrained academic styling layered over Bootstrap
-   (Quarto's "cosmo" theme). No animation, no bright accent colors.
+   (Quarto's "cosmo" theme). Motion is limited to short colour fades on the
+   things you can point at; the accents are bright but never fill a surface.
    --------------------------------------------------------------------------- */
 
 :root {
@@ -20,6 +21,9 @@
   --vermilion:  #d1401a;   /* bright red-orange; 4.7:1 on white, so it still
                               reads as text. Going any brighter drops below
                               4.5:1 and stops being usable for the labels. */
+  --steel:      #35608f;   /* the lighter, bluer navy from the reference card;
+                              6.5:1 on white. Distinctly less dark than --navy,
+                              which stays on the links. */
 
   --page:       #f8f7f4;   /* warm off-white behind the content */
   --surface:    #ffffff;   /* panels and inset blocks sit above the page */
@@ -130,6 +134,8 @@ h2 {
   position: relative;
 }
 
+/* The bar takes its section's accent where one is set (see the Research page
+   sections further down) and falls back to navy everywhere else. */
 h2::after {
   content: "";
   position: absolute;
@@ -137,7 +143,7 @@ h2::after {
   bottom: -1px;
   width: 42px;
   height: 2px;
-  background-color: var(--link);
+  background-color: var(--section-accent, var(--link));
 }
 
 body.serif-page h2 {
@@ -295,33 +301,18 @@ main#quarto-document-content {
 
 /* The page stays white, so the panels are separated by a hairline and a very
    faint shadow rather than by a tinted background. */
+/* The whole row shares one accent, so the three panels read as a single block
+   rather than as three unrelated ones. It is set as a variable on the card and
+   read by the top edge, the label, the arrows and the award names below, so
+   giving one card its own colour again means overriding this one declaration. */
 .info-card {
+  --card-accent: var(--vermilion);
   background-color: #ffffff;
   border: 1px solid var(--rule);
-  border-top: 3px solid var(--navy);
+  border-top: 3px solid var(--card-accent);
   border-radius: 4px;
   padding: 1.2rem 1.2rem 1.3rem 1.2rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
-}
-
-/* Each card carries its own accent along the top edge, in the label and in the
-   arrows, so the row reads as three distinct panels rather than one block. */
-.info-card.accent-amber {
-  border-top-color: var(--amber);
-}
-
-.info-card.accent-amber .card-label,
-.info-card.accent-amber li::before {
-  color: var(--amber);
-}
-
-.info-card.accent-vermilion {
-  border-top-color: var(--vermilion);
-}
-
-.info-card.accent-vermilion .card-label,
-.info-card.accent-vermilion li::before {
-  color: var(--vermilion);
 }
 
 .card-label {
@@ -330,8 +321,11 @@ main#quarto-document-content {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: var(--navy);
   margin-bottom: 0.9rem;
+}
+
+.info-card .card-label {
+  color: var(--card-accent);
 }
 
 /* Items are prefixed with an arrow instead of a bullet. */
@@ -358,13 +352,13 @@ main#quarto-document-content {
   position: absolute;
   left: 0;
   top: 0;
-  color: var(--link);
+  color: var(--card-accent);
 }
 
 /* The award names carry the accent colour so the honours stand out from the
-   surrounding cards. */
+   surrounding text. */
 .awards-card li strong {
-  color: var(--amber);
+  color: var(--card-accent);
   font-weight: 700;
 }
 
@@ -738,10 +732,24 @@ a.pub-link:focus {
 
 /* ---------------------------- Research cards ------------------------------ */
 
+/* Colour comes from the section, not the card: Quarto wraps each `##` heading in
+   a `<section>` whose id is derived from the heading text, so setting
+   `--section-accent` once there colours the heading bar, every card's left rule
+   and every label inside it. A new card needs no class, but renaming a heading
+   changes the id and orphans the rule below. */
+#research-projects {
+  --section-accent: var(--steel);
+}
+
+#conference-presentations {
+  --section-accent: var(--vermilion);
+}
+
 .research-card {
+  --card-accent: var(--section-accent, var(--steel));
   background-color: #ffffff;
   border: 1px solid var(--rule);
-  border-left: 3px solid var(--link);
+  border-left: 3px solid var(--card-accent);
   border-radius: 2px;
   padding: 1.25rem 1.6rem 1.3rem 1.6rem;
   margin: 1.75rem 0;
@@ -753,26 +761,8 @@ a.pub-link:focus {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.17em;
-  color: var(--navy);
+  color: var(--card-accent);
   margin-bottom: 0.5rem;
-}
-
-/* Conference entries are marked in rust, awarded ones in amber, so the kind of
-   entry is legible from the colour of the rule before the text is read. */
-.research-card.accent-rust {
-  border-left-color: var(--rust);
-}
-
-.research-card.accent-rust .research-label {
-  color: var(--rust);
-}
-
-.research-card.accent-amber {
-  border-left-color: var(--amber);
-}
-
-.research-card.accent-amber .research-label {
-  color: var(--amber);
 }
 
 a.research-title {
@@ -843,17 +833,26 @@ a.research-btn {
   border-radius: 2px;
   padding: 0.42rem 0.8rem;
   text-decoration: none;
+  transition: border-color 0.22s ease, color 0.22s ease;
 }
 
-/* The button is outlined, not filled: only the border takes the accent, so the
-   card stays quiet when a button is hovered, focused or held down. */
+/* The button is outlined, not filled: only the border takes the accent - the
+   card's own, so the button matches the section it sits in - and it eases in
+   rather than snapping. */
 a.research-btn:hover,
 a.research-btn:focus,
 a.research-btn:active {
   color: var(--ink-muted);
   background-color: transparent;
-  border-color: var(--link);
+  border-color: var(--card-accent);
   text-decoration: none;
+}
+
+/* Anyone who has asked for less motion gets the colour change with no fade. */
+@media (prefers-reduced-motion: reduce) {
+  a.research-btn {
+    transition: none;
+  }
 }
 
 .project-meta {

@@ -53,7 +53,7 @@ architectures. The convolutional models won on every metric.
 
 ## Conference presentations
 
-::: {.research-card .accent-amber}
+::: {.research-card}
 
 ::: {.research-label}
 IC-KDA + ASAD 2025 · Best Poster Award
@@ -76,7 +76,7 @@ in dementia. It improved both, on a small evidence base.
 
 :::
 
-::: {.research-card .accent-rust}
+::: {.research-card}
 
 ::: {.research-label}
 Korean Statistical Society Summer Conference 2025

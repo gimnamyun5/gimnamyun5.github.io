@@ -51,11 +51,23 @@ All of it lives in `styles.css`.
 **Colour.** Four accents, all above 4.5:1 on white: navy `#1f3a5f` (links and
 the default), rust `#a8452f`, amber `#9c5f16`, and vermilion `#d1401a` (4.71:1 —
 brightening it further drops below 4.5:1, so it is at its limit, and it is only
-ever used inside white cards; on the page tint it measures 4.40:1). Add
-`.accent-rust`, `.accent-amber` or `.accent-vermilion` to a card to switch its
-accent — home uses vermilion, Research and Publications use rust. The page sits
-on `#f8f7f4`; cards, tables and code blocks are pinned white. The header strip
-is the only full-width white band: the footer is painted `--page`.
+ever used inside white cards; on the page tint it measures 4.40:1), and steel
+`#35608f` (6.5:1), a lighter and bluer navy matched to a reference card the user
+supplied — estimated from a screenshot, so it is worth re-checking against the
+original if it ever looks off. Navy is now only the link colour.
+
+Accents are carried by two inherited variables rather than per-card classes.
+`--card-accent`, set on `.info-card`, colours the home cards' top edge, label,
+arrows and award names — all three share vermilion. `--section-accent`, set on
+the Quarto section wrapper, colours that section's heading bar and every card
+inside it: `#research-projects` is steel, `#conference-presentations` is
+vermilion, and a new card in either needs no class. Those two selectors key off
+ids Quarto derives from the heading text, so **renaming either Research heading
+silently drops its colour** back to the fallback. Publications still uses navy
+and rust directly.
+
+The page sits on `#f8f7f4`; cards, tables and code blocks are pinned white. The
+header strip is the only full-width white band: the footer is painted `--page`.
 
 **Type.** Most pages use Georgia over the system sans. Research and Publications
 carry `body-classes: serif-page`, which overrides `--font-display` and
