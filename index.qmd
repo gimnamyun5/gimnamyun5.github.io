@@ -31,9 +31,9 @@ and network models as readily as into hospital records.
      rather keep the page purely professional. -->
 
 ::: {.profile-links}
-<a href="https://github.com/gimnamyun5" class="icon-link" aria-label="GitHub" title="GitHub"><i class="bi bi-github"></i></a>
-<a href="https://www.linkedin.com/in/namyoon-kim-3b7b32416/" class="icon-link" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-<a href="mailto:namyoon2000@jbnu.ac.kr" class="icon-link" aria-label="Email" title="Email"><i class="bi bi-envelope"></i></a>
+<a href="https://github.com/gimnamyun5" class="icon-link icon-github" aria-label="GitHub" title="GitHub"><i class="bi bi-github"></i></a>
+<a href="https://www.linkedin.com/in/namyoon-kim-3b7b32416/" class="icon-link icon-linkedin" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="mailto:namyoon2000@jbnu.ac.kr" class="icon-link icon-email" aria-label="Email" title="Email"><i class="bi bi-envelope-fill"></i></a>
 :::
 
 <!-- The links are raw HTML so that the Bootstrap icon markup survives, and

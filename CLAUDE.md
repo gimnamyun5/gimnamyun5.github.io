@@ -42,7 +42,8 @@ PATH by default; prepend the machine and user PATH before calling it.
 | `_parked-community-detection.qmd` | — | Not rendered; the leading `_` excludes it |
 
 Navbar order is Home, About, Activities & Photos, Research, Publications, all
-right-aligned. There is no CV page: the button links straight to the PDF.
+right-aligned. There is no CV page: the button links straight to the PDF, and it
+lives on About only — the home page carries the three icon buttons instead.
 
 ## Design system
 
@@ -105,6 +106,16 @@ system stack as fallbacks.
 across); `.research-card` (entry card with a coloured left rule); `.photo-entry`
 (activities, photo left and caption right).
 
+`a.icon-link` is the home page's row of app-style buttons: a 40px white tile,
+8px radius, carrying the service's own mark in the service's own brand colour.
+The colour is `--brand`, set once per link by `.icon-github` / `.icon-linkedin` /
+`.icon-email`, and read by the glyph and the hover border. **The marks are
+Bootstrap Icons glyphs, not image files** — the font ships with the cosmo theme at
+`site_libs/bootstrap/bootstrap-icons.woff`, so there is nothing to fetch or keep
+current, and it works offline. The trade is that Bootstrap Icons has no
+Google Scholar, ORCID or ResearchGate glyph: adding one of those means adding a
+real SVG or PNG under `images/`.
+
 `.pub-card` is **ported from the publication list on
 <https://vic-dragon.github.io>** — metrics and colours both — and deliberately
 does not match `.research-card`: a warm tinted panel (`#f1ede8`) with a hairline
@@ -140,7 +151,9 @@ grep -rn "PLACEHOLDER" --include="*.qmd" .
 - **ICU project detail** — data, methods and findings on
   `project-icu-transfer.qmd` are all placeholder.
 - **A personal sentence or two** on `index.qmd` and `about.qmd`, marked optional.
-- Google Scholar and ORCID links on `about.qmd`, if they exist.
+- ~~Google Scholar and ORCID links~~ — **neither account exists** (confirmed
+  2026-08-12). Nothing to add; stop offering. Revisit only if the user says one
+  has been created.
 - Poster PDFs: hold until the co-authors agree — the dementia poster is joint
   with Jiyoun Sung (SNU), the Granger poster has six authors.
 
