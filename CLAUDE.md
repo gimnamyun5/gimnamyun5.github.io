@@ -48,10 +48,14 @@ right-aligned. There is no CV page: the button links straight to the PDF.
 
 All of it lives in `styles.css`.
 
-**Colour.** Three accents, all above 4.5:1 on white: navy `#1f3a5f` (links and
-the default), rust `#a8452f`, amber `#9c5f16`. Add `.accent-rust` or
-`.accent-amber` to a card to switch its accent. The page sits on `#f4f3f0`; the
-header strip, cards, tables and code blocks are pinned white.
+**Colour.** Four accents, all above 4.5:1 on white: navy `#1f3a5f` (links and
+the default), rust `#a8452f`, amber `#9c5f16`, and vermilion `#d1401a` (4.71:1 —
+brightening it further drops below 4.5:1, so it is at its limit, and it is only
+ever used inside white cards; on the page tint it measures 4.40:1). Add
+`.accent-rust`, `.accent-amber` or `.accent-vermilion` to a card to switch its
+accent — home uses vermilion, Research and Publications use rust. The page sits
+on `#f8f7f4`; cards, tables and code blocks are pinned white. The header strip
+is the only full-width white band: the footer is painted `--page`.
 
 **Type.** Most pages use Georgia over the system sans. Research and Publications
 carry `body-classes: serif-page`, which overrides `--font-display` and
@@ -109,7 +113,8 @@ grep -rn "PLACEHOLDER" --include="*.qmd" .
 ## Verifying
 
 The browser pane blocks plain localhost, so preview through
-`.claude/launch.json` (`preview_start` with `name: namyoon-site`) — note it
-holds an absolute path to the project and needs updating if the folder moves.
+`.claude/launch.json` (`preview_start` with `name: namyoon-site`) — it runs
+`quarto preview` on port 4321 from the project directory. The only absolute path
+in it is `quarto.exe`, so moving the project needs no change there.
 Screenshots fail when the pane is hidden; measure with `javascript_tool`
 instead — element geometry, computed styles, contrast ratios.

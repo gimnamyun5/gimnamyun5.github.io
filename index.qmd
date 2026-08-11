@@ -78,7 +78,7 @@ Research interests
 - Time series and causal discovery
 :::
 
-::: {.info-card .accent-rust}
+::: {.info-card .accent-vermilion}
 ::: {.card-label}
 Teaching
 :::

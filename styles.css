@@ -11,13 +11,17 @@
   --link:       #1f3a5f;   /* deep navy: links and the primary accent */
   --link-hover: #0d1f36;
 
-  /* Three accents, all dark enough to read as text on white. Navy leads;
-     rust and amber mark the other kinds of entry. */
+  /* Four accents, all dark enough to read as text on white. Navy leads;
+     rust and amber mark the other kinds of entry on Research and Publications,
+     and vermilion is the bright accent the home cards use. */
   --navy:       #1f3a5f;
   --rust:       #a8452f;   /* muted red */
   --amber:      #9c5f16;   /* orange */
+  --vermilion:  #d1401a;   /* bright red-orange; 4.7:1 on white, so it still
+                              reads as text. Going any brighter drops below
+                              4.5:1 and stops being usable for the labels. */
 
-  --page:       #f4f3f0;   /* warm off-white behind the content */
+  --page:       #f8f7f4;   /* warm off-white behind the content */
   --surface:    #ffffff;   /* panels and inset blocks sit above the page */
 }
 
@@ -311,13 +315,13 @@ main#quarto-document-content {
   color: var(--amber);
 }
 
-.info-card.accent-rust {
-  border-top-color: var(--rust);
+.info-card.accent-vermilion {
+  border-top-color: var(--vermilion);
 }
 
-.info-card.accent-rust .card-label,
-.info-card.accent-rust li::before {
-  color: var(--rust);
+.info-card.accent-vermilion .card-label,
+.info-card.accent-vermilion li::before {
+  color: var(--vermilion);
 }
 
 .card-label {
@@ -841,10 +845,13 @@ a.research-btn {
   text-decoration: none;
 }
 
+/* The button is outlined, not filled: only the border takes the accent, so the
+   card stays quiet when a button is hovered, focused or held down. */
 a.research-btn:hover,
-a.research-btn:focus {
-  color: #ffffff;
-  background-color: var(--link);
+a.research-btn:focus,
+a.research-btn:active {
+  color: var(--ink-muted);
+  background-color: transparent;
   border-color: var(--link);
   text-decoration: none;
 }
@@ -926,6 +933,15 @@ table {
 }
 
 /* --------------------------------- Footer --------------------------------- */
+
+/* The footer sits on the page tint, not on white: the white strip belongs to the
+   header alone, so the foot of the page reads as background rather than as one
+   more panel. Quarto paints both the footer and its inner bar, hence both
+   selectors. */
+footer.footer,
+.nav-footer {
+  background-color: var(--page) !important;
+}
 
 .nav-footer {
   border-top: 1px solid var(--rule);
