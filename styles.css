@@ -12,18 +12,16 @@
   --link:       #1f3a5f;   /* deep navy: links and the primary accent */
   --link-hover: #0d1f36;
 
-  /* Four accents, all dark enough to read as text on white. Navy leads;
-     rust and amber mark the other kinds of entry on Research and Publications,
-     and vermilion is the bright accent the home cards use. */
-  --navy:       #1f3a5f;
-  --rust:       #a8452f;   /* muted red */
-  --amber:      #9c5f16;   /* orange */
-  --vermilion:  #d1401a;   /* bright red-orange; 4.7:1 on white, so it still
-                              reads as text. Going any brighter drops below
-                              4.5:1 and stops being usable for the labels. */
-  --steel:      #35608f;   /* the lighter, bluer navy from the reference card;
-                              6.5:1 on white. Distinctly less dark than --navy,
-                              which stays on the links. */
+  /* One blue family, deliberately. Everything that carries colour on this site
+     is navy or steel - the rust, amber and terracotta accents that used to mark
+     different kinds of entry were dropped on purpose, so reaching for a warm
+     accent again is a design decision, not a fix. The retired hexes are recorded
+     in CLAUDE.md.
+
+     Steel is sampled from ankush-gupta04.github.io, where it marks the
+     publication cards, so it is a match rather than a choice. */
+  --navy:       #1f3a5f;   /* 11.5:1 on white; links and the darker accent */
+  --steel:      #3a6ea8;   /* 5.28:1 on white; the accent that carries the cards */
 
   --page:       #f8f7f4;   /* warm off-white behind the content */
   --surface:    #ffffff;   /* panels and inset blocks sit above the page */
@@ -134,8 +132,6 @@ h2 {
   position: relative;
 }
 
-/* The bar takes its section's accent where one is set (see the Research page
-   sections further down) and falls back to navy everywhere else. */
 h2::after {
   content: "";
   position: absolute;
@@ -143,7 +139,7 @@ h2::after {
   bottom: -1px;
   width: 42px;
   height: 2px;
-  background-color: var(--section-accent, var(--link));
+  background-color: var(--steel);
 }
 
 body.serif-page h2 {
@@ -306,7 +302,7 @@ main#quarto-document-content {
    read by the top edge, the label, the arrows and the award names below, so
    giving one card its own colour again means overriding this one declaration. */
 .info-card {
-  --card-accent: var(--vermilion);
+  --card-accent: var(--steel);
   background-color: #ffffff;
   border: 1px solid var(--rule);
   border-top: 3px solid var(--card-accent);
@@ -624,59 +620,73 @@ a.back-link:focus {
 
 /* -------------------------- Publication cards ----------------------------- */
 
+/* Ported from the publication list on vic-dragon.github.io: a quiet tinted panel
+   with a hairline all the way round instead of a coloured left rule, the accent
+   held back for the hover border and the two footer items, and a title set at
+   text weight rather than as a display line. Metrics follow that source; the
+   colours are this site's blues. */
 .pub-card {
-  background-color: #ffffff;
+  background-color: rgba(58, 110, 168, 0.045);
   border: 1px solid var(--rule);
-  border-left: 3px solid var(--link);
-  border-radius: 2px;
-  padding: 1.25rem 1.6rem 1.3rem 1.6rem;
-  margin: 1.75rem 0;
+  border-radius: 3px;
+  padding: 1.5rem 1.8rem;
+  margin: 1rem 0;
+  transition: border-color 0.2s ease;
+}
+
+.pub-card:hover {
+  border-color: var(--steel);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pub-card {
+    transition: none;
+  }
 }
 
 .pub-tags p {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin: 0 0 0.75rem 0;
+  margin: 0 0 0.9rem 0;
 }
 
 .pub-tag {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 0.62rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.11em;
-  padding: 0.28rem 0.6rem;
-  border-radius: 3px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 0.22rem 0.65rem;
+  border-radius: 4px;
   white-space: nowrap;
-}
-
-/* Journal index, authorship role and publication status each get their own
-   tint, so the tags are distinguishable at a glance. */
-.tag-index {
-  background-color: #e0e8f3;
   color: var(--navy);
 }
 
+/* The three kinds of tag once carried three different hues. On one blue they are
+   separated by depth of tint instead, which is a weaker signal - the wording is
+   now what distinguishes them. Splitting these back out is where a second accent
+   would go if the colour rule is ever relaxed. */
+.tag-index {
+  background-color: rgba(58, 110, 168, 0.18);
+}
+
 .tag-role {
-  background-color: #f6e4de;
-  color: var(--rust);
+  background-color: rgba(58, 110, 168, 0.1);
 }
 
 .tag-status {
-  background-color: #f7ebd8;
-  color: var(--amber);
+  background-color: rgba(31, 58, 95, 0.08);
 }
 
 a.pub-title {
   display: block;
-  font-family: var(--font-card-title);
-  font-size: 1.05rem;
-  font-weight: 700;
-  line-height: 1.35;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.55;
   color: var(--ink);
   text-decoration: none;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
 a.pub-title:hover,
@@ -689,23 +699,26 @@ a.pub-title:focus {
 .pub-authors {
   font-family: var(--font-body);
   font-size: 0.78rem;
-  font-style: italic;
+  font-weight: 300;
   color: var(--ink-muted);
-  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  margin-bottom: 0.3rem;
 }
 
 .pub-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   gap: 0.75rem;
+  margin-top: 1rem;
 }
 
 .pub-status {
   font-family: var(--font-body);
-  font-size: 0.8rem;
-  color: var(--rust);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--steel);
 }
 
 .pub-status p,
@@ -714,12 +727,12 @@ a.pub-title:focus {
 }
 
 a.pub-link {
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
-  font-weight: 500;
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.13em;
-  color: var(--rust);
+  letter-spacing: 0.1em;
+  color: var(--steel);
   text-decoration: none;
   white-space: nowrap;
 }
@@ -732,21 +745,12 @@ a.pub-link:focus {
 
 /* ---------------------------- Research cards ------------------------------ */
 
-/* Colour comes from the section, not the card: Quarto wraps each `##` heading in
-   a `<section>` whose id is derived from the heading text, so setting
-   `--section-accent` once there colours the heading bar, every card's left rule
-   and every label inside it. A new card needs no class, but renaming a heading
-   changes the id and orphans the rule below. */
-#research-projects {
-  --section-accent: var(--steel);
-}
-
-#conference-presentations {
-  --section-accent: var(--vermilion);
-}
-
+/* Both Research sections share one accent, so there is nothing to key off the
+   section any more - the per-section rules that used to sit here are gone. The
+   card still routes its colour through `--card-accent`, which is what the label
+   and the buttons read. */
 .research-card {
-  --card-accent: var(--section-accent, var(--steel));
+  --card-accent: var(--steel);
   background-color: #ffffff;
   border: 1px solid var(--rule);
   border-left: 3px solid var(--card-accent);

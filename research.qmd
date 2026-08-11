@@ -99,10 +99,5 @@ continuous measurements.
 
 :::
 
-::: {.callout-note appearance="simple"}
-Code and materials for these projects are available on request while repositories
-are being prepared for public release.
-:::
-
 <!-- The community-detection project is parked in _parked-community-detection.qmd
      until it is further along. -->

@@ -48,38 +48,50 @@ right-aligned. There is no CV page: the button links straight to the PDF.
 
 All of it lives in `styles.css`.
 
-**Colour.** Four accents, all above 4.5:1 on white: navy `#1f3a5f` (links and
-the default), rust `#a8452f`, amber `#9c5f16`, and vermilion `#d1401a` (4.71:1 —
-brightening it further drops below 4.5:1, so it is at its limit, and it is only
-ever used inside white cards; on the page tint it measures 4.40:1), and steel
-`#35608f` (6.5:1), a lighter and bluer navy matched to a reference card the user
-supplied — estimated from a screenshot, so it is worth re-checking against the
-original if it ever looks off. Navy is now only the link colour.
+**Colour.** Two blues, and nothing else. `--navy` `#1f3a5f` (11.5:1 on white) is
+the link colour; `--steel` `#3a6ea8` (5.28:1) is the accent that carries every
+card. Steel is **sampled** from the publication cards on
+<https://ankush-gupta04.github.io/Ankush/>, so it is a match, not a choice.
 
-Accents are carried by two inherited variables rather than per-card classes.
-`--card-accent`, set on `.info-card`, colours the home cards' top edge, label,
-arrows and award names — all three share vermilion. `--section-accent`, set on
-the Quarto section wrapper, colours that section's heading bar and every card
-inside it: `#research-projects` is steel, `#conference-presentations` is
-vermilion, and a new card in either needs no class. Those two selectors key off
-ids Quarto derives from the heading text, so **renaming either Research heading
-silently drops its colour** back to the fallback. Publications still uses navy
-and rust directly.
+Warm accents were tried and dropped on purpose: rust `#a8452f`, amber `#9c5f16`,
+vermilion `#d1401a` and the lab's terracotta `#c4603a` (`--terra` on
+<https://vic-dragon.github.io>). The last of those was ruled out partly because
+it measures 4.13:1 on white, under the 4.5:1 everything else holds; `#b95a36` is
+the same terracotta at 4.59:1 if it ever comes back. **Reintroducing a warm
+accent is a design decision, not a fix.**
 
-The page sits on `#f8f7f4`; cards, tables and code blocks are pinned white. The
-header strip is the only full-width white band: the footer is painted `--page`.
+`--card-accent`, set on `.info-card` and on `.research-card`, is what the top or
+left rule, the labels, the arrows, the award names and the button hovers all
+read. Both Research sections share the one accent, so nothing keys off the
+section any more.
+
+The page sits on `#f8f7f4` — still a warm off-white, the one warm thing left.
+Tables and code blocks are pinned white; the header strip is the only full-width
+white band, and the footer is painted `--page`.
 
 **Type.** Most pages use Georgia over the system sans. Research and Publications
 carry `body-classes: serif-page`, which overrides `--font-display` and
 `--font-body` to EB Garamond and Inter — every rule reads those variables, so
-nothing else needs changing. Inside entry cards: Playfair Display 700 for
-titles, Inter for text, IBM Plex Mono for the letter-spaced labels and buttons.
-Web fonts load from Google Fonts via `include-in-header` in `_quarto.yml`, with
-Georgia and the system stack as fallbacks.
+nothing else needs changing. Research cards use Playfair Display 700 for titles,
+Inter for text, IBM Plex Mono for the letter-spaced labels and buttons.
+Publication cards are all Inter, including the title — see below. Web fonts load
+from Google Fonts via `include-in-header` in `_quarto.yml`, with Georgia and the
+system stack as fallbacks.
 
 **Components.** `.info-card` in a `.card-grid` (home summary panels, three
-across); `.research-card` and `.pub-card` (entry cards with a coloured left
-rule); `.photo-entry` (activities, photo left and caption right).
+across); `.research-card` (entry card with a coloured left rule); `.photo-entry`
+(activities, photo left and caption right).
+
+`.pub-card` is **ported from the publication list on
+<https://vic-dragon.github.io>** and deliberately does not match
+`.research-card`: a faintly tinted panel with a hairline all the way round rather
+than a coloured left rule, the accent held back for the hover border and the two
+footer items, and a title at Inter 500 / 0.92rem rather than as a display line.
+The metrics come from that source — changing them drifts away from the thing it
+was matched to. The tabs on the source (Published / Under Review / In
+Preparation) were **not** ported: there is one entry, so two panels would be
+empty. `.tag-index`, `.tag-role` and `.tag-status` now differ only by depth of
+blue tint, so the wording carries the distinction that hue used to.
 
 ## Still to fill in
 
