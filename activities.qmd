@@ -16,7 +16,6 @@ toc: false
 
 - Poster presentation, **IC-KDA + ASAD 2025 @ Seoul**
 - **Best Poster Award**
-- [About the project →](project-dementia-meta.qmd)
 :::
 
 :::
@@ -31,7 +30,6 @@ toc: false
 ### 2025. 06. {.photo-title}
 
 - Poster presentation, **Korean Statistical Society Summer Conference @ Gyeongju**
-- [About the project →](project-granger.qmd)
 :::
 
 :::
@@ -49,7 +47,6 @@ toc: false
 
 - Summer research program, **University of Nevada, Las Vegas**
 - Supervised by Dr. Mingon Kang
-- [About the project →](project-ehr-mortality.qmd)
 :::
 
 :::
