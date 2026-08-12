@@ -464,6 +464,16 @@ a.icon-link i {
   line-height: 1;
 }
 
+/* Gmail's mark is a real multi-colour SVG rather than a glyph, so it comes in as
+   an image. 24px wide against the glyphs' 23px, because the logo is 4:3 and would
+   otherwise read smaller than the square marks beside it. The `display: block`
+   keeps the inline baseline gap from pushing it off centre. */
+a.icon-link img {
+  display: block;
+  width: 24px;
+  height: auto;
+}
+
 /* The shadow reads on every tile; the border change only shows on the white one,
    which is the only tile with a visible edge to begin with. */
 a.icon-link:hover,
@@ -495,13 +505,11 @@ a.icon-link:focus {
 }
 
 /* Gmail's own icon is a light tile carrying a coloured mark, so this one stays
-   white. The mark is a Bootstrap Icons envelope in Gmail red, NOT the Gmail logo:
-   the real one is four-colour and an icon font cannot carry it. Dropping the
-   official SVG into images/ and swapping the <i> for an <img> is the only way to
-   get the actual logo. */
+   white. The mark is the real logo - images/gmail.svg, the five-colour Google
+   asset from Wikimedia Commons (public domain) - so there is no `--mark` here:
+   the SVG carries its own colours. `--brand` is only the hover edge. */
 .icon-email {
   --tile: #ffffff;
-  --mark: #ea4335;
   --brand: #ea4335;
 }
 
