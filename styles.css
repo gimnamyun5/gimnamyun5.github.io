@@ -552,7 +552,7 @@ a.icon-link:focus {
   display: block;
   width: auto;
   height: auto;
-  max-height: 320px;
+  max-height: 380px;
   max-width: 100%;
   border: 1px solid var(--rule);
   border-radius: 2px;
@@ -576,7 +576,7 @@ a.icon-link:focus {
   display: block;
   width: auto;
   height: auto;
-  max-height: 210px;
+  max-height: 250px;
   max-width: 100%;
   border: 1px solid var(--rule);
   border-radius: 2px;
@@ -587,6 +587,49 @@ a.icon-link:focus {
 .photo-poster p,
 .photo-poster figure {
   margin: 0;
+}
+
+/* The link to the full poster sits at the far right of the entry. margin-left:auto
+   rather than a fixed width, so it stays pinned to the right edge whatever the
+   caption does, and drops onto its own line when the row wraps on a narrow
+   screen. */
+.photo-action {
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+.photo-action p {
+  margin: 0;
+}
+
+/* Same outlined, border-only treatment as the buttons on the Research cards. */
+a.photo-btn {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--ink-muted);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 0.42rem 0.8rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: border-color 0.22s ease;
+}
+
+a.photo-btn:hover,
+a.photo-btn:focus,
+a.photo-btn:active {
+  border-color: var(--steel);
+  text-decoration: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a.photo-btn {
+    transition: none;
+  }
 }
 
 .photo-body {
@@ -632,11 +675,17 @@ a.icon-link:focus {
   /* Both pictures come down on a narrow screen, keeping the gap between them so
      the photograph still leads. */
   .photo-media img {
-    max-height: 240px;
+    max-height: 280px;
   }
 
   .photo-poster img {
-    max-height: 170px;
+    max-height: 200px;
+  }
+
+  /* Once the row has wrapped there is no right edge left to hang off, so the
+     button sits at the start of its own line instead. */
+  .photo-action {
+    margin-left: 0;
   }
 
   .photo-body {

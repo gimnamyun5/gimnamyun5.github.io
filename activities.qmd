@@ -23,6 +23,10 @@ toc: false
 
 :::
 
+::: {.photo-action}
+[Poster PDF](files/poster-dementia-2025.pdf){.photo-btn target="_blank"}
+:::
+
 :::
 
 ::: {.photo-entry}
@@ -40,6 +44,10 @@ toc: false
 ![](images/poster-granger-2025.jpg){fig-alt="Conference poster: Deep Learning-based Neural Granger Causality for Solar Radiation Data, by Minwoo Lee, Sangmin Lee, Younghwi Cho, Nam-Yoon Kim, Gahee Kim and Youngmi Lee"}
 :::
 
+:::
+
+::: {.photo-action}
+[Poster PDF](files/poster-granger-2025.pdf){.photo-btn target="_blank"}
 :::
 
 :::
