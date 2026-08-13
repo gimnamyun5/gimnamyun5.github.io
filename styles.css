@@ -563,26 +563,17 @@ a.icon-link:focus {
   margin: 0;
 }
 
-/* The poster sits in the text column, under the caption, and is capped to the same
-   height as the photograph - keep the two figures in step if either changes. */
-.photo-poster {
-  margin-top: 1.1rem;
-}
+/* Photograph and poster stand side by side at the head of the entry, tops and
+   bottoms flush: both are capped to the same height by .photo-media img above and
+   both are taller than they are wide, so both reach that cap exactly and the pair
+   squares off. Widths differ, which is the aspect ratios doing their job.
 
-.photo-poster img {
-  display: block;
-  width: auto;
-  height: auto;
-  max-height: 380px;
-  max-width: 100%;
-  border: 1px solid var(--rule);
-  border-radius: 2px;
-}
-
-/* Pandoc wraps the image in its own paragraph, whose margin would otherwise open a
-   second gap under the caption. */
-.photo-poster p,
-.photo-poster figure {
+   Pandoc puts both images inside a single paragraph, so the paragraph has to be the
+   flex container - the div cannot be, the same trap as .profile-links. */
+.photo-media.photo-pair p {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
   margin: 0;
 }
 
@@ -671,10 +662,13 @@ a.photo-btn:active {
   }
 
   /* Both pictures come down together on a narrow screen, staying the same size as
-     each other. */
-  .photo-media img,
-  .photo-poster img {
+     each other, and the pair may wrap if there is no room for two. */
+  .photo-media img {
     max-height: 280px;
+  }
+
+  .photo-media.photo-pair p {
+    flex-wrap: wrap;
   }
 
   /* Once the row has wrapped there is no right edge left to hang off, so the

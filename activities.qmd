@@ -7,8 +7,9 @@ toc: false
 
 ::: {.photo-entry}
 
-::: {.photo-media}
+::: {.photo-media .photo-pair}
 ![](images/activity-ickda-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the dementia meta-analysis poster at IC-KDA + ASAD 2025"}
+![](images/poster-dementia-2025.jpg){fig-alt="Conference poster: Effectiveness of Digital Cognitive Training Interventions for Dementia — A Systematic Review and Meta-Analysis, by Jiyoun Sung and Nam-Yoon Kim"}
 :::
 
 ::: {.photo-body}
@@ -16,11 +17,6 @@ toc: false
 
 - Poster presentation, **IC-KDA + ASAD 2025 @ Seoul**
 - **Best Poster Award**
-
-::: {.photo-poster}
-![](images/poster-dementia-2025.jpg){fig-alt="Conference poster: Effectiveness of Digital Cognitive Training Interventions for Dementia — A Systematic Review and Meta-Analysis, by Jiyoun Sung and Nam-Yoon Kim"}
-:::
-
 :::
 
 ::: {.photo-action}
@@ -31,19 +27,15 @@ toc: false
 
 ::: {.photo-entry}
 
-::: {.photo-media}
+::: {.photo-media .photo-pair}
 ![](images/activity-kss-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the neural Granger causality poster at the Korean Statistical Society Summer Conference"}
+![](images/poster-granger-2025.jpg){fig-alt="Conference poster: Deep Learning-based Neural Granger Causality for Solar Radiation Data, by Minwoo Lee, Sangmin Lee, Younghwi Cho, Nam-Yoon Kim, Gahee Kim and Youngmi Lee"}
 :::
 
 ::: {.photo-body}
 ### 2025. 06. {.photo-title}
 
 - Poster presentation, **Korean Statistical Society Summer Conference @ Gyeongju**
-
-::: {.photo-poster}
-![](images/poster-granger-2025.jpg){fig-alt="Conference poster: Deep Learning-based Neural Granger Causality for Solar Radiation Data, by Minwoo Lee, Sangmin Lee, Younghwi Cho, Nam-Yoon Kim, Gahee Kim and Youngmi Lee"}
-:::
-
 :::
 
 ::: {.photo-action}
