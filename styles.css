@@ -563,11 +563,8 @@ a.icon-link:focus {
   margin: 0;
 }
 
-/* The poster sits in the text column, under the caption: beside the photograph but
-   deliberately not level with it, and smaller, so the photograph stays the thing
-   you look at first and the poster reads as the supporting document. Sizing it
-   against the photograph rather than to match it is the point - equal heights made
-   the pair compete. */
+/* The poster sits in the text column, under the caption, and is capped to the same
+   height as the photograph - keep the two figures in step if either changes. */
 .photo-poster {
   margin-top: 1.1rem;
 }
@@ -576,7 +573,7 @@ a.icon-link:focus {
   display: block;
   width: auto;
   height: auto;
-  max-height: 250px;
+  max-height: 380px;
   max-width: 100%;
   border: 1px solid var(--rule);
   border-radius: 2px;
@@ -589,13 +586,14 @@ a.icon-link:focus {
   margin: 0;
 }
 
-/* The link to the full poster sits at the far right of the entry. margin-left:auto
-   rather than a fixed width, so it stays pinned to the right edge whatever the
-   caption does, and drops onto its own line when the row wraps on a narrow
-   screen. */
+/* The link to the full poster sits at the bottom right of the entry: margin-left
+   auto pins it to the right edge whatever the caption does, and align-self overrides
+   the row's flex-start so it drops to the foot of the tallest column rather than
+   riding at the top. It moves onto its own line when the row wraps. */
 .photo-action {
   flex: 0 0 auto;
   margin-left: auto;
+  align-self: flex-end;
 }
 
 .photo-action p {
@@ -672,20 +670,18 @@ a.photo-btn:active {
     max-width: 100%;
   }
 
-  /* Both pictures come down on a narrow screen, keeping the gap between them so
-     the photograph still leads. */
-  .photo-media img {
-    max-height: 280px;
-  }
-
+  /* Both pictures come down together on a narrow screen, staying the same size as
+     each other. */
+  .photo-media img,
   .photo-poster img {
-    max-height: 200px;
+    max-height: 280px;
   }
 
   /* Once the row has wrapped there is no right edge left to hang off, so the
      button sits at the start of its own line instead. */
   .photo-action {
     margin-left: 0;
+    align-self: flex-start;
   }
 
   .photo-body {
