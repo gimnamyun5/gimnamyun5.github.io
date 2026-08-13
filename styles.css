@@ -540,10 +540,9 @@ a.icon-link:focus {
   border-bottom: none;
 }
 
-/* Every picture on the page is capped to one height and takes whatever width its
-   aspect ratio gives it, so a portrait photograph, a group shot and a poster all
-   sit on the same line without any of them being cropped. max-height rather than
-   height, so the browser can never scale one axis without the other. */
+/* The photograph of the day leads the entry and is the larger of the two
+   pictures. Width follows from the aspect ratio; max-height rather than height, so
+   the browser can never scale one axis without the other. */
 .photo-media {
   flex: 0 0 auto;
   max-width: 100%;
@@ -553,7 +552,7 @@ a.icon-link:focus {
   display: block;
   width: auto;
   height: auto;
-  max-height: 220px;
+  max-height: 320px;
   max-width: 100%;
   border: 1px solid var(--rule);
   border-radius: 2px;
@@ -564,15 +563,29 @@ a.icon-link:focus {
   margin: 0;
 }
 
-/* Two pictures in one entry: the photograph from the day beside the poster
-   itself. Pandoc puts both images inside a single paragraph, so the paragraph has
-   to be the flex container - the div cannot be, the same trap as .profile-links.
-   The shared height comes from .photo-media img above, so there is nothing to set
-   here beyond the row itself. */
-.photo-media.photo-pair p {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.6rem;
+/* The poster sits in the text column, under the caption: beside the photograph but
+   deliberately not level with it, and smaller, so the photograph stays the thing
+   you look at first and the poster reads as the supporting document. Sizing it
+   against the photograph rather than to match it is the point - equal heights made
+   the pair compete. */
+.photo-poster {
+  margin-top: 1.1rem;
+}
+
+.photo-poster img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 210px;
+  max-width: 100%;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+}
+
+/* Pandoc wraps the image in its own paragraph, whose margin would otherwise open a
+   second gap under the caption. */
+.photo-poster p,
+.photo-poster figure {
   margin: 0;
 }
 
@@ -616,14 +629,14 @@ a.icon-link:focus {
     max-width: 100%;
   }
 
-  /* Pictures come down a little on a narrow screen, and the pair may wrap so the
-     poster stacks under the photograph rather than both being squeezed. */
+  /* Both pictures come down on a narrow screen, keeping the gap between them so
+     the photograph still leads. */
   .photo-media img {
-    max-height: 190px;
+    max-height: 240px;
   }
 
-  .photo-media.photo-pair p {
-    flex-wrap: wrap;
+  .photo-poster img {
+    max-height: 170px;
   }
 
   .photo-body {
