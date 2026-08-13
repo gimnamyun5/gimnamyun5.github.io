@@ -3,60 +3,56 @@ title: "About"
 toc: false
 ---
 
-## Background
+## What Drives Me
 
-I am an undergraduate researcher at Jeonbuk National University, majoring in
-Statistics with a minor in Mathematics, and I am applying to PhD programs in
-Statistics and Biostatistics.
+Hello, my name is Nam-Yoon Kim, and I am an undergraduate researcher at Jeonbuk
+National University. I plan to apply to graduate programs for Fall 2027
+admission, and I am excited to continue growing as a researcher and taking the
+next step in my academic journey.
 
-I began in health data and have stayed close to it — clinical prediction from
-electronic health records, and evidence synthesis from randomized trials — but
-the questions that hold my attention are usually methodological rather than
-clinical. Does a method still behave once its assumptions are loosened? Does a
-result survive being carried into a different hospital, a different country, a
-different population? Those questions are what took me from a meta-analysis of
-dementia trials to neural Granger causality on meteorological series and on to
-transfer learning for intensive-care prediction, which looks like a scattered
-list until you notice that each one is asking whether a claim holds up outside
-the setting that produced it.
+The three words that best describe the way I approach my goals, studies, and
+research are self-motivated, persistent, and resilient.
 
-<!-- PLACEHOLDER (optional): two or three sentences in your own voice. How you
-     came to statistics, a moment in a project that stayed with you, or what you
-     do outside research. Write it in Korean and I will render it in English -
-     an honest paragraph here is worth more than another list of methods. -->
+### Self-Motivated
 
-## What I work with
+I believe that having a meaningful goal gives direction to what we do. \
+I currently have a clear goal that I am strongly committed to. \
+I enjoy setting goals for myself and taking the initiative to work toward them. \
+This motivates me to keep learning, improving, and challenging myself.
 
-Statistical methods for observational health data, machine learning applied to
-clinical prediction, and the evaluation problems that come with both —
-calibration, generalization, and the question of whether a reported gain is
-signal or an artifact of how the data were collected. Alongside that, time
-series and causal discovery, and spectral methods for community structure in
-networks.
+### Persistent
 
-Details of the individual projects are on the [Research](research.qmd) page.
+To me, consistency does not mean making the same amount of progress every day. \
+Some days I move forward a lot, while on others, progress may be small. \
+What matters is continuing to move forward without giving up. \
+I believe that steady effort over time eventually leads to meaningful progress.
 
-## Teaching
+### Resilient
 
-**Teaching Assistant** — Introduction to Big Data \
-Jeonbuk National University · Fall 2025
+There have been times when my routine, momentum, or research plans were
+disrupted. \
+I learned to reflect on what was not working and find my rhythm again. \
+I also learned to see setbacks as opportunities to rethink my approach. \
+I hope to become a researcher who learns from failure, adapts, and keeps moving
+forward.
 
-- Reviewed teaching materials and answered student questions in Python
-- Supported lectures, guided students on assignments, and graded exams
+## Education & experience
 
-**Teaching Assistant** — Understanding and Application of Big Data \
-Jeonbuk National University · Spring 2025
+::: {.timeline}
 
-- Co-developed the course syllabus
-- Supported lectures, guided students on assignments, and graded exams
+2021 – 2027
+:   **B.S. in Statistics**, minor in Mathematics, Jeonbuk National University
 
-**Teaching Assistant** — Statistical Thinking and Society \
-Jeonbuk National University · Fall 2024
+2022 – 2023
+:   Republic of Korea Army Artillery — military service
 
-- Reviewed and revised instructional materials covering fundamental statistical
-  concepts
-- Supported lectures, guided students on assignments, and graded assignments and
-  exams
+2025
+:   Visiting Student Researcher, **University of Nevada, Las Vegas**
+
+2026 –
+:   Undergraduate Researcher, **S-LAB**, Jeonbuk National University
+
+:::
 
 ## Contact
 
@@ -69,9 +65,8 @@ Statistics and Biostatistics PhD programs.
 
 **LinkedIn** — <https://www.linkedin.com/in/namyoon-kim-3b7b32416/>
 
-<!-- PLACEHOLDER: add Google Scholar and ORCID links here once you have them,
-     or leave this out. Addresses are obfuscated at render time - see
-     `email-obfuscation` in _quarto.yml. -->
+<!-- Addresses are obfuscated at render time - see `email-obfuscation` in
+     _quarto.yml. -->
 
 **Affiliation** — Department of Statistics, Jeonbuk National University, Jeonju,
 South Korea

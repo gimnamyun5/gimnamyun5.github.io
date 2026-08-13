@@ -1036,6 +1036,47 @@ hr {
   opacity: 1;
 }
 
+/* -------------------------------- Timeline -------------------------------- */
+
+/* Year on the left, entry on the right. Written as a definition list, so the
+   markup says what it means and the two columns come from one grid rather than
+   from a table or a pile of divs - which also keeps the years aligned however long
+   an entry runs. `max-content` sizes the year column to the longest year range, so
+   adding "2019 - 2020" later widens it on its own. */
+.timeline dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 1.6rem;
+  row-gap: 0.75rem;
+  margin: 1.3rem 0 0 0;
+}
+
+.timeline dt {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  color: var(--steel);
+  white-space: nowrap;
+  padding-top: 0.2rem;
+}
+
+.timeline dd {
+  margin: 0;
+}
+
+/* Below the breakpoint the year sits above its entry instead of beside it: two
+   columns leave the right-hand one too narrow to read. */
+@media (max-width: 575.98px) {
+  .timeline dl {
+    grid-template-columns: 1fr;
+    row-gap: 0.3rem;
+  }
+
+  .timeline dd {
+    margin-bottom: 0.7rem;
+  }
+}
+
 /* ------------------------------ CV page bits ------------------------------ */
 
 .cv-download {
