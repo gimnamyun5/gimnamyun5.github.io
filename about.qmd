@@ -1,6 +1,7 @@
 ---
 title: "About"
 toc: false
+body-classes: about-page
 ---
 
 ## What Drives Me
@@ -15,28 +16,28 @@ research are self-motivated, persistent, and resilient.
 
 ### Self-Motivated
 
-I believe that having a meaningful goal gives direction to what we do. \
-I currently have a clear goal that I am strongly committed to. \
-I enjoy setting goals for myself and taking the initiative to work toward them. \
-This motivates me to keep learning, improving, and challenging myself.
+I believe that having a meaningful goal gives direction to what we do. I
+currently have a clear goal that I am strongly committed to. I enjoy setting
+goals for myself and taking the initiative to work toward them. This motivates me
+to keep learning, improving, and challenging myself.
 
 ### Persistent
 
-To me, consistency does not mean making the same amount of progress every day. \
-Some days I move forward a lot, while on others, progress may be small. \
-What matters is continuing to move forward without giving up. \
-I believe that steady effort over time eventually leads to meaningful progress.
+To me, consistency does not mean making the same amount of progress every day.
+Some days I move forward a lot, while on others, progress may be small. What
+matters is continuing to move forward without giving up. I believe that steady
+effort over time eventually leads to meaningful progress.
 
 ### Resilient
 
 There have been times when my routine, momentum, or research plans were
-disrupted. \
-I learned to reflect on what was not working and find my rhythm again. \
-I also learned to see setbacks as opportunities to rethink my approach. \
-I hope to become a researcher who learns from failure, adapts, and keeps moving
-forward.
+disrupted. I learned to reflect on what was not working and find my rhythm again.
+I also learned to see setbacks as opportunities to rethink my approach. I hope to
+become a researcher who learns from failure, adapts, and keeps moving forward.
 
 ## Education & experience
+
+::: {.edu-row}
 
 ::: {.timeline}
 
@@ -51,6 +52,14 @@ forward.
 
 2026 –
 :   Undergraduate Researcher, **S-LAB**, Jeonbuk National University
+
+:::
+
+::: {.edu-cv}
+The full record — coursework, awards, talks and skills — is in the CV.
+
+[Nam-Yoon Kim — Curriculum Vitae (PDF)](files/NamYoon_Kim_CV.pdf){.btn .btn-outline-dark .btn-sm role="button" target="_blank"}
+:::
 
 :::
 
@@ -70,5 +79,3 @@ Statistics and Biostatistics PhD programs.
 
 **Affiliation** — Department of Statistics, Jeonbuk National University, Jeonju,
 South Korea
-
-[Download CV (PDF)](files/NamYoon_Kim_CV.pdf){.btn .btn-outline-dark .btn-sm role="button" target="_blank"}

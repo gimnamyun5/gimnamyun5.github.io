@@ -1036,6 +1036,48 @@ hr {
   opacity: 1;
 }
 
+/* ------------------------------- About page ------------------------------- */
+
+/* About is mostly prose written in the first person, and it reads better a size up
+   than the rest of the site. Only the elements that inherit their size are
+   affected - headings and the small labels are set in rem, so they hold. */
+body.about-page {
+  font-size: 1.12rem;
+  line-height: 1.72;
+}
+
+/* The timeline and the CV sit side by side, the way the reference page has them.
+   The timeline takes the space it needs and the CV column keeps a fixed share;
+   below the breakpoint the CV drops underneath. */
+.edu-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2.5rem;
+  margin-top: 1.3rem;
+}
+
+.edu-row .timeline {
+  flex: 1 1 440px;
+  min-width: 0;
+}
+
+.edu-cv {
+  flex: 0 1 300px;
+  min-width: 0;
+}
+
+.edu-cv p {
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+  margin-bottom: 0.9rem;
+}
+
+/* The timeline already carries the top margin for the row. */
+.edu-row .timeline dl {
+  margin-top: 0;
+}
+
 /* -------------------------------- Timeline -------------------------------- */
 
 /* Year on the left, entry on the right. Written as a definition list, so the
