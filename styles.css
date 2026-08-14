@@ -1046,6 +1046,21 @@ body.about-page {
   line-height: 1.72;
 }
 
+/* "What Drives Me" is the page's own title, so the standard title block above it -
+   which would just say "About" - is hidden and the first heading takes its size and
+   its place. The page is still About everywhere it is referenced: the navbar entry
+   and the browser tab both come from elsewhere and are left alone. */
+body.about-page #title-block-header {
+  display: none;
+}
+
+body.about-page main h1 {
+  font-size: 2.55rem;
+  line-height: 1.15;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
 /* Phrases the author wants to carry the weight of a paragraph: bold and underlined.
    Written as `[**...**]{.underline}` in the qmd, which Pandoc renders as <u><strong>
    - the class never reaches the HTML, so this has to target the element. The rule

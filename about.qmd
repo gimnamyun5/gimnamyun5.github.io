@@ -4,7 +4,7 @@ toc: false
 body-classes: about-page
 ---
 
-## What Drives Me
+# What Drives Me
 
 Hello, my name is Nam-Yoon Kim, and I am an undergraduate researcher at Jeonbuk
 National University. I plan to apply to graduate programs for Fall 2027
