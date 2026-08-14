@@ -1046,6 +1046,17 @@ body.about-page {
   line-height: 1.72;
 }
 
+/* Phrases the author wants to carry the weight of a paragraph: bold and underlined.
+   Written as `[**...**]{.underline}` in the qmd, which Pandoc renders as <u><strong>
+   - the class never reaches the HTML, so this has to target the element. The rule
+   sits below the baseline so it clears descenders, and takes the text's own colour
+   rather than an accent, since a coloured underline would read as a link. */
+u {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
 /* The timeline and the CV sit side by side, the way the reference page has them.
    The timeline takes the space it needs and the CV column keeps a fixed share;
    below the breakpoint the CV drops underneath. */
@@ -1058,19 +1069,33 @@ body.about-page {
 }
 
 .edu-row .timeline {
-  flex: 1 1 440px;
+  flex: 1 1 420px;
   min-width: 0;
 }
 
 .edu-cv {
-  flex: 0 1 300px;
+  flex: 0 1 460px;
   min-width: 0;
 }
 
+/* The CV is shown inline in the browser's own PDF viewer, so it can be read and
+   scrolled without leaving the page. Desktop browsers render this; phones mostly
+   do not - iOS shows a single static page and Android often shows nothing at all -
+   which is why the button below it stays, and is the real way in on a phone. */
+.cv-embed {
+  display: block;
+  width: 100%;
+  height: 420px;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  background-color: var(--surface);
+}
+
+/* The caption under the frame, and the button under that. */
 .edu-cv p {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--ink-muted);
-  margin-bottom: 0.9rem;
+  margin: 0.7rem 0 0.8rem 0;
 }
 
 /* The timeline already carries the top margin for the row. */

@@ -16,24 +16,28 @@ research are self-motivated, persistent, and resilient.
 
 ### Self-Motivated
 
-I believe that having a meaningful goal gives direction to what we do. I
-currently have a clear goal that I am strongly committed to. I enjoy setting
-goals for myself and taking the initiative to work toward them. This motivates me
-to keep learning, improving, and challenging myself.
+I believe that having a meaningful goal gives direction to what we do. At this
+point in my life, I have a clear goal that I am strongly committed to, and I am
+steadily working toward it. I enjoy [**setting goals for myself and taking the
+initiative**]{.underline} to move closer to them. Having something meaningful to
+pursue motivates me to keep learning, improving, and challenging myself.
 
 ### Persistent
 
-To me, consistency does not mean making the same amount of progress every day.
-Some days I move forward a lot, while on others, progress may be small. What
-matters is continuing to move forward without giving up. I believe that steady
-effort over time eventually leads to meaningful progress.
+To me, [**consistency does not mean making the same amount of progress every
+day.**]{.underline} Some days I move forward a lot, while on others, progress may
+be small. What matters is [**continuing to show up and move forward without
+giving up.**]{.underline} I believe that small efforts, repeated consistently,
+eventually lead to meaningful progress.
 
 ### Resilient
 
 There have been times when my routine, momentum, or research plans were
-disrupted. I learned to reflect on what was not working and find my rhythm again.
-I also learned to see setbacks as opportunities to rethink my approach. I hope to
-become a researcher who learns from failure, adapts, and keeps moving forward.
+disrupted. In those moments, I learned to [**reflect on what was not working and
+find my rhythm again.**]{.underline} I have also learned to see [**unexpected
+results and failed attempts as opportunities to rethink my
+approach.**]{.underline} I hope to become a researcher who can learn from
+setbacks, adapt, and continue moving forward.
 
 ## Education & experience
 
@@ -56,9 +60,12 @@ become a researcher who learns from failure, adapts, and keeps moving forward.
 :::
 
 ::: {.edu-cv}
-The full record — coursework, awards, talks and skills — is in the CV.
 
-[Nam-Yoon Kim — Curriculum Vitae (PDF)](files/NamYoon_Kim_CV.pdf){.btn .btn-outline-dark .btn-sm role="button" target="_blank"}
+<iframe class="cv-embed" src="files/NamYoon_Kim_CV.pdf#view=FitH" title="Nam-Yoon Kim — Curriculum Vitae"></iframe>
+
+Nam-Yoon Kim — Curriculum Vitae
+
+[Open the CV (PDF)](files/NamYoon_Kim_CV.pdf){.btn .btn-outline-dark .btn-sm role="button" target="_blank"}
 :::
 
 :::
