@@ -9,7 +9,7 @@ body-classes: serif-page
 ::: {.research-card}
 
 ::: {.research-label}
-Manuscript in preparation · S-LAB · Feb 2026 – present
+S-LAB, Jeonbuk National University · Feb 2026 – present
 :::
 
 [Transferability and Configuration Sensitivity of Clinical Prediction Models across Imaging, Time-Series, and Tabular Data](project-transferability.qmd){.research-title}
@@ -32,7 +32,7 @@ imaging, continuous glucose time series, and tabular COVID-19 outcomes.
 ::: {.research-card}
 
 ::: {.research-label}
-In progress · S-LAB · Aug 2026 – present
+S-LAB, Jeonbuk National University · Aug 2026 – present
 :::
 
 [Chest CT-Based Prediction of Pulmonary Function and Evaluation of Model Explainability](project-airway-ct.qmd){.research-title}
@@ -54,7 +54,7 @@ measures, then asks whether competing explanations agree on *why* — not just o
 ::: {.research-card}
 
 ::: {.research-label}
-Manuscript in preparation · Aug 2026 – present
+Department of Statistics, Jeonbuk National University · Aug 2026 – present
 :::
 
 [A Bootstrap Algorithm for Comparing Diagnostic Test Accuracy in Meta-Analysis with Within-Study Correlation](project-dauc-bootstrap.qmd){.research-title}
