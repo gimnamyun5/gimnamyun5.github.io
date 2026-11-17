@@ -14,7 +14,7 @@ body-classes: serif-page
 [Transferability and Configuration Sensitivity of Clinical Prediction Models across Imaging, Time-Series, and Tabular Data](project-transferability.qmd){.pub-title}
 
 ::: {.pub-authors}
-*N.-Y. Kim* et al.
+*N.-Y. Kim*, H. Choi, S. Kang, H. Kim, G. Kim, S. Hwang
 :::
 
 ::: {.pub-row}

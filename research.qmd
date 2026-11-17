@@ -15,7 +15,7 @@ Manuscript in preparation · S-LAB · Feb 2026 – present
 [Transferability and Configuration Sensitivity of Clinical Prediction Models across Imaging, Time-Series, and Tabular Data](project-transferability.qmd){.research-title}
 
 ::: {.research-authors}
-*N.-Y. Kim* · Lead researcher · Statistical Learning Across Biomedicine (S-LAB), Jeonbuk National University
+*N.-Y. Kim*, H. Choi, S. Kang, H. Kim, G. Kim, S. Hwang · Lead researcher · Statistical Learning Across Biomedicine (S-LAB), Jeonbuk National University
 :::
 
 Asks when transfer learning actually helps a clinical model, and whether the gain
