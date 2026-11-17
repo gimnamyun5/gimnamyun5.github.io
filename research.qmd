@@ -9,22 +9,27 @@ body-classes: serif-page
 ::: {.research-card}
 
 ::: {.research-label}
-Manuscript in preparation
+Manuscript in preparation · S-LAB · Feb 2026 – present
 :::
 
-[Cross-Country Transfer Learning for ICU Admission Prediction](project-icu-transfer.qmd){.research-title}
+[Transferability and Configuration Sensitivity of Clinical Prediction Models across Imaging, Time-Series, and Tabular Data](project-transferability.qmd){.research-title}
 
 ::: {.research-authors}
-PLACEHOLDER: author list · S-LAB, Jeonbuk National University · Feb 2026 – present
+*N.-Y. Kim* · Lead researcher · Statistical Learning Across Biomedicine (S-LAB), Jeonbuk National University
 :::
 
-Tests whether a clinical prediction model trained on one country's electronic
-health records still works in another, and how much target-country data is
-needed to close the gap. Built on TabPFN, with a label-noise analysis to check
-that the reported gains are real.
+Asks when transfer learning actually helps a clinical model, and whether the gain
+survives the choices made while training it. The gain is decomposed into
+successive stages of adaptation and each stage is measured against the variation
+produced by the configuration alone — random seeds, data splits, outcome
+prevalence, decision thresholds, and label or sensor noise. Three tasks stand in
+for three kinds of transfer: breast cancer classification moving from 3D
+tomosynthesis to 2D mammography, short-term glucose prediction across twenty
+monitoring cohorts, and COVID-19 clinical deterioration across five countries
+with a tabular foundation model.
 
 ::: {.research-links}
-[Project page](project-icu-transfer.qmd){.research-btn}
+[Project page](project-transferability.qmd){.research-btn}
 :::
 
 :::
@@ -32,13 +37,63 @@ that the reported gains are real.
 ::: {.research-card}
 
 ::: {.research-label}
-University of Nevada, Las Vegas · 2025
+In progress · S-LAB · Aug 2026 – present
+:::
+
+[Chest CT-Based Prediction of Pulmonary Function and Evaluation of Model Explainability](project-airway-ct.qmd){.research-title}
+
+::: {.research-authors}
+*N.-Y. Kim* · Lead researcher · Statistical Learning Across Biomedicine (S-LAB), Jeonbuk National University
+:::
+
+Low-dose CT taken for lung cancer screening carries hundreds of quantitative
+measures of the lung parenchyma and airways, and COPD in those participants is
+often missed. The measures are heavily correlated across lobes, which is enough to
+move the credit a model appears to give without moving its accuracy — so the work
+predicts airflow limitation from them and then tests whether competing
+explanations agree on *why*, not just on *what*.
+
+::: {.research-links}
+[Project page](project-airway-ct.qmd){.research-btn}
+:::
+
+:::
+
+::: {.research-card}
+
+::: {.research-label}
+Manuscript in preparation · Aug 2026 – present
+:::
+
+[A Bootstrap Algorithm for Comparing Diagnostic Test Accuracy in Meta-Analysis with Within-Study Correlation](project-dauc-bootstrap.qmd){.research-title}
+
+::: {.research-authors}
+S. Hwang, J. Kim, *N.-Y. Kim*, H. Choi · Research assistant · Department of Statistics, Jeonbuk National University
+:::
+
+Comparing two diagnostic tests across published studies means doing inference on
+a difference in areas under summary ROC curves, usually from nothing richer than
+aggregated 2×2 tables. Existing methods treat the two tests as independent even
+when the same participants took both, which widens intervals and costs power. The
+paper proposes a correlation-aware bootstrap that carries the dependence through,
+and reports simulations of its type I error, power, and interval coverage.
+
+::: {.research-links}
+[Project page](project-dauc-bootstrap.qmd){.research-btn}
+:::
+
+:::
+
+::: {.research-card}
+
+::: {.research-label}
+University of Nevada, Las Vegas · Jun – Jul 2025
 :::
 
 [Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series](project-ehr-mortality.qmd){.research-title}
 
 ::: {.research-authors}
-Team project
+Visiting researcher · Faculty mentor: Prof. Mingon Kang
 :::
 
 Predicts patient mortality from irregularly sampled vital signs at a Brazilian
@@ -52,6 +107,54 @@ architectures. The convolutional models won on every metric.
 :::
 
 ## Conference presentations
+
+::: {.research-card}
+
+::: {.research-label}
+Korean Data and Information Science Society 2026
+:::
+
+[Assessing the Reliability of Clinical AI: Reproducibility of Transfer Learning across Three Medical Modalities](project-transferability.qmd){.research-title}
+
+::: {.research-authors}
+*N.-Y. Kim*, H. Choi, S. Kang, H. Kim, G. Kim, S. Hwang · November 2026, Busan
+:::
+
+Isolates one factor per task — the kind of source pretraining, the amount of
+target adaptation, and whether a large source-domain stage exists at all — and
+asks whether the gain survives being carried to another institution, country or
+cohort. The direction of the gain held across all three domains; its size did
+not.
+
+::: {.research-links}
+[Project page](project-transferability.qmd){.research-btn}
+:::
+
+:::
+
+::: {.research-card}
+
+::: {.research-label}
+Korean Data and Information Science Society 2026
+:::
+
+[Explainable AI under Correlated Features: Do Models Agree on Why? An Application to Airflow Limitation Detection from Quantitative Chest CT](project-airway-ct.qmd){.research-title}
+
+::: {.research-authors}
+H. Kim, *N.-Y. Kim*, Y. Lee, K. Chae, S. Hwang · November 2026, Busan
+:::
+
+Three models detect airflow limitation from quantitative chest CT at nearly the
+same accuracy, then are asked what they used. Before the correlated measures were
+reduced all three credited emphysema first; afterwards they stopped agreeing,
+while AUROC barely moved. Similar accuracy did not guarantee similar
+explanations.
+
+::: {.research-links}
+[Project page](project-airway-ct.qmd){.research-btn}
+:::
+
+:::
 
 ::: {.research-card}
 

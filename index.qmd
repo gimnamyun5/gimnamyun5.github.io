@@ -47,7 +47,7 @@ and network models as readily as into hospital records.
 ## Education
 
 **B.S. in Statistics**, minor in Mathematics — Jeonbuk National University (JBNU) \
-March 2021 – February 2027 (expected) \
+March 2021 – August 2027 (expected) \
 2022 – 2023, Republic of Korea Army Artillery — military service
 
 ## Research experience
@@ -56,6 +56,8 @@ March 2021 – February 2027 (expected) \
   Biomedicine (S-LAB), Jeonbuk National University
 - **Jun 2025 – Jul 2025**: Visiting Student Researcher, University of Nevada,
   Las Vegas
+- **Mar 2025 – Jun 2025**: Research Assistant, Department of Statistics, Jeonbuk
+  National University
 
 ::: {.card-grid}
 
@@ -63,6 +65,7 @@ March 2021 – February 2027 (expected) \
 ::: {.card-label}
 Awards & scholarships
 :::
+- **Honorable Mention Award** — Korean Data and Information Science Society, 2026
 - **Best Poster Award** — IC-KDA + ASAD 2025
 - **President's Award for Academic Excellence** — Jeonbuk National University, 2025
 - **Full Merit-Based Scholarship** — Fall 2024 – Spring 2026
@@ -75,7 +78,7 @@ Research interests
 - Biostatistics
 - Statistical machine learning
 - Clinical prediction modeling
-- Statistical network analysis
+- Reproducibility under distribution shift
 - Time series and causal discovery
 :::
 

@@ -44,6 +44,27 @@ toc: false
 
 :::
 
+::: {.photo-entry}
+
+::: {.photo-media .photo-pair}
+![](images/poster-reproducibility-2026.jpg){fig-alt="Conference poster: Assessing the Reliability of Clinical AI — Reproducibility of Transfer Learning across Three Medical Modalities"}
+![](images/poster-airway-ct-2026.jpg){fig-alt="Conference poster: Explainable AI under Correlated Features — Do Models Agree on Why? An application to airflow limitation detection from quantitative chest CT"}
+:::
+
+::: {.photo-body}
+### 2026. 11. {.photo-title}
+
+- Two poster presentations, **Korean Data and Information Science Society @ Busan**
+- **Honorable Mention Award**
+:::
+
+::: {.photo-action}
+[Reliability of Clinical AI (PDF)](files/poster-reproducibility-2026.pdf){.photo-btn target="_blank"}
+[Explainable AI under Correlated Features (PDF)](files/poster-airway-ct-2026.pdf){.photo-btn target="_blank"}
+:::
+
+:::
+
 ## Research visits
 
 ::: {.photo-entry}

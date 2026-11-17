@@ -1,0 +1,53 @@
+---
+title: "A Bootstrap Algorithm for Comparing Diagnostic Test Accuracy in Meta-Analysis"
+---
+
+::: {.project-meta}
+In progress · Manuscript in preparation · Aug 2026 – present · Department of Statistics, Jeonbuk National University
+:::
+
+When two diagnostic tests are compared across published studies, the quantity of
+interest is the difference in areas under their summary ROC curves. The data
+available for it are usually nothing richer than aggregated 2×2 tables. Many of
+those studies are paired — the same participants took both tests — but the methods
+in common use treat the two tests as independent, and that assumption costs more
+than it looks.
+
+## The problem
+
+Ignoring the dependence between paired tests misrepresents the variability of the
+estimated difference. Under the positive dependence typical of two tests applied
+to the same participants, it produces confidence intervals that are wider than
+they should be and loses power. Under negative dependence it does the opposite:
+it understates the variability and inflates the type I error rate.
+
+## Methods
+
+The paper proposes a correlation-aware bootstrap. Both tests are embedded in a
+four-variate random-effects model, and the within-study correlations — which
+published studies almost never report — are set to a default value derived from
+Fréchet bounds and Fisher's z-transformation. The procedure accommodates fully
+paired, partially paired and unpaired studies, and needs no individual
+participant data.
+
+Monte Carlo simulations in R compare it against the independence-based bootstrap
+across a range of within- and between-study correlations, recording type I error,
+power, interval length and coverage.
+
+## Findings
+
+The proposed procedure gives type I error rates and interval lengths close to
+those obtained with the true within-study correlations, and detects differences
+between tests more often than the independence-based bootstrap when the tests are
+dependent — particularly when the dependence also arises between studies. Where
+no such dependence exists, the two procedures behave alike.
+
+Three published diagnostic meta-analyses are reanalysed to illustrate the
+procedure.
+
+## Materials
+
+PLACEHOLDER: manuscript in preparation · add the R code repository when it is
+public.
+
+[← All research](research.qmd){.back-link}

@@ -7,20 +7,43 @@ body-classes: serif-page
 ::: {.pub-card}
 
 ::: {.pub-tags}
+[First Author]{.pub-tag .tag-first}
 [Manuscript in preparation]{.pub-tag .tag-status}
 :::
 
-[Cross-Country Transfer Learning for ICU Admission Prediction](project-icu-transfer.qmd){.pub-title}
+[Transferability and Configuration Sensitivity of Clinical Prediction Models across Imaging, Time-Series, and Tabular Data](project-transferability.qmd){.pub-title}
 
 ::: {.pub-authors}
-PLACEHOLDER: author list
+*N.-Y. Kim* et al.
 :::
 
 ::: {.pub-row}
 ::: {.pub-status}
 S-LAB, Jeonbuk National University
 :::
-[Project page →](project-icu-transfer.qmd){.pub-link}
+[Project page →](project-transferability.qmd){.pub-link}
+:::
+
+:::
+
+::: {.pub-card}
+
+::: {.pub-tags}
+[Co-Author]{.pub-tag .tag-coauthor}
+[Manuscript in preparation]{.pub-tag .tag-status}
+:::
+
+[A Bootstrap Algorithm for Comparing Diagnostic Test Accuracy in Meta-Analysis with Within-Study Correlation](project-dauc-bootstrap.qmd){.pub-title}
+
+::: {.pub-authors}
+S. Hwang, J. Kim, *N.-Y. Kim*, H. Choi
+:::
+
+::: {.pub-row}
+::: {.pub-status}
+Department of Statistics, Jeonbuk National University
+:::
+[Project page →](project-dauc-bootstrap.qmd){.pub-link}
 :::
 
 :::

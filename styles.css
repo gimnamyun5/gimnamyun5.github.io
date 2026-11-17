@@ -588,6 +588,10 @@ a.icon-link:focus {
 }
 
 .photo-action p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.4rem;
   margin: 0;
 }
 
@@ -1012,7 +1016,7 @@ a.research-btn:focus,
 a.research-btn:active {
   color: var(--ink-muted);
   background-color: transparent;
-  border-color: var(--card-accent);
+  border-color: var(--card-accent, var(--steel));
   text-decoration: none;
 }
 

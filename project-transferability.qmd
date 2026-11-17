@@ -1,0 +1,74 @@
+---
+title: "Transferability and Configuration Sensitivity of Clinical Prediction Models"
+---
+
+::: {.project-meta}
+In progress · Manuscript in preparation · Feb 2026 – present · Statistical Learning Across Biomedicine (S-LAB), Jeonbuk National University
+:::
+
+A medical AI model that scores well at one hospital is expected to carry, with
+some adaptation, to the next. Privacy rules keep clinical data siloed by
+institution and country, so transfer learning is often the only route — but a
+single score from a single training run says little about whether the benefit is
+real. Most reported work gives the average gain and not how far it moves between
+runs.
+
+This project asks a narrower question: **which factor in the source-to-target
+pipeline actually drives the gain**, and does that gain still hold once the model
+is moved across institutions, countries or cohorts.
+
+## Design
+
+Three clinical tasks, each isolating one factor while the target evaluation is
+held fixed:
+
+| Task | Factor tested |
+| --- | --- |
+| Breast cancer diagnosis (3D → 2D) | the **kind** of source pretraining, generic against domain-specific |
+| Continuous glucose monitoring | the **amount** of target adaptation, direct transfer against fine-tuning |
+| COVID-19 clinical deterioration | the **presence** of a large source-domain stage at all |
+
+The gain is measured as Δ = score(arm A) − score(arm B), where the two arms differ
+by exactly the factor under test.
+
+## Data
+
+- **Breast imaging** — ImageNet-22K and BCS-DBT + DBT-2026 as sources, five
+  mammography target datasets, varying by region, acquisition and image dimension.
+- **Glucose monitoring** — a 19-cohort source pool at five-minute sampling, with
+  20 public target cohorts varying by region and phenotype; evaluated
+  leave-one-domain-out.
+- **COVID-19 deterioration** — a TabPFN-3 pretrained model and a reference cohort
+  of 114,987 patients, with five target countries varying in event rate and cohort
+  size; 25 data splits each.
+
+## Findings
+
+**The gain almost always points the same way across domains, but its size does
+not.** It varies with the target and with the model.
+
+- **Breast cancer diagnosis** — domain-specific pretraining on tomosynthesis added
+  +0.033 to +0.203 AUROC over ImageNet alone, across the five target datasets.
+- **Glucose monitoring** — source pretraining used in place of target training cut
+  RMSE by 15.07, 5.30 and 4.12 mg/dL for the three models that gained most, and
+  stayed within ±0.04 for three others. Ten epochs of target fine-tuning on top
+  added at most 0.06 mg/dL.
+- **COVID-19 deterioration** — in-context learning with the tabular foundation
+  model added +0.017 to +0.065 AUROC over XGBoost, ahead in 18 to 25 of 25 splits
+  in every country. Target fine-tuning moved the result by −0.005 to +0.003, and
+  the extra source-domain stage by no more than +0.011.
+
+The pattern that matters for practice: the stage that helps is not the same stage
+in every domain, and in two of the three tasks the later, more expensive stages of
+adaptation bought almost nothing.
+
+## Materials
+
+Manuscript in preparation. Presented as a poster, *Assessing the Reliability of
+Clinical AI: Reproducibility of Transfer Learning across Three Medical
+Modalities*, at the Korean Data and Information Science Society, Busan, November
+2026.
+
+[Poster PDF](files/poster-reproducibility-2026.pdf){.research-btn target="_blank"}
+
+[← All research](research.qmd){.back-link}
