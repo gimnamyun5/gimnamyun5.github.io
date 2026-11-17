@@ -15,7 +15,7 @@ S-LAB, Jeonbuk National University · Feb 2026 – present
 [Transferability and Configuration Sensitivity of Clinical Prediction Models across Imaging, Time-Series, and Tabular Data](project-transferability.qmd){.research-title}
 
 ::: {.research-authors}
-*N.-Y. Kim*, H. Choi, S. Kang, H. Kim, G. Kim, S. Hwang
+*N. Y. Kim*, H. Choi, H. Kim, G. Kim, S. Hwang
 :::
 
 Asks when transfer learning actually helps a clinical model, and whether the gain
@@ -38,7 +38,7 @@ S-LAB, Jeonbuk National University · Aug 2026 – present
 [Chest CT-Based Prediction of Pulmonary Function and Evaluation of Model Explainability](project-airway-ct.qmd){.research-title}
 
 ::: {.research-authors}
-*N.-Y. Kim*
+*N. Y. Kim*
 :::
 
 Predicts airflow limitation from hundreds of heavily correlated quantitative CT
@@ -60,7 +60,7 @@ Department of Statistics, Jeonbuk National University · Aug 2026 – present
 [A Bootstrap Algorithm for Comparing Diagnostic Test Accuracy in Meta-Analysis with Within-Study Correlation](project-dauc-bootstrap.qmd){.research-title}
 
 ::: {.research-authors}
-S. Hwang, J. Kim, *N.-Y. Kim*, H. Choi
+S. Hwang, J. Kim, *N. Y. Kim*, H. Choi
 :::
 
 Inference on a difference in summary ROC areas usually treats two diagnostic
@@ -105,7 +105,7 @@ Korean Data and Information Science Society 2026
 [Assessing the Reliability of Clinical AI: Reproducibility of Transfer Learning across Three Medical Modalities](project-transferability.qmd){.research-title}
 
 ::: {.research-authors}
-*N.-Y. Kim*, H. Choi, S. Kang, H. Kim, G. Kim, S. Hwang · November 2026, Busan
+*N. Y. Kim*, H. Choi, H. Kim, G. Kim, S. Hwang · November 2026, Busan
 :::
 
 Isolates one factor per task — the kind of source pretraining, the amount of
@@ -129,7 +129,7 @@ Korean Data and Information Science Society 2026
 [Explainable AI under Correlated Features: Do Models Agree on Why? An Application to Airflow Limitation Detection from Quantitative Chest CT](project-airway-ct.qmd){.research-title}
 
 ::: {.research-authors}
-H. Kim, *N.-Y. Kim*, Y. Lee, K. Chae, S. Hwang · November 2026, Busan
+H. Kim, *N. Y. Kim*, Y. Lee, K. Chae, S. Hwang · November 2026, Busan
 :::
 
 Three models detect airflow limitation from quantitative chest CT at nearly the
@@ -153,7 +153,7 @@ IC-KDA + ASAD 2025 · Best Poster Award
 [Effectiveness of Digital Cognitive Training Interventions for Dementia: A Systematic Review and Meta-analysis](project-dementia-meta.qmd){.research-title}
 
 ::: {.research-authors}
-J. Sung, *N.-Y. Kim* · May 2025, Seoul
+J. Sung, *N. Y. Kim* · May 2025, Seoul
 :::
 
 A PROSPERO-registered meta-analysis of eleven randomized trials asking whether
@@ -176,7 +176,7 @@ Korean Statistical Society Summer Conference 2025
 [Deep Learning-based Neural Granger Causality for Solar Radiation Time Series](project-granger.qmd){.research-title}
 
 ::: {.research-authors}
-M. Lee, S. Lee, Y. Cho, *N.-Y. Kim*, G. Kim, Y. Lee · June 2025, Gyeongju
+M. Lee, S. Lee, Y. Cho, *N. Y. Kim*, G. Kim, Y. Lee · June 2025, Gyeongju
 :::
 
 Asks which meteorological variables carry predictive information about solar
