@@ -47,10 +47,7 @@ toc: false
 ::: {.photo-entry}
 
 ::: {.photo-media .photo-pair}
-<!-- PLACEHOLDER: the photograph from the day goes here, beside the poster, the
-     way the 2025 entries are built. Drop the file into images/ and uncomment:
 ![](images/activity-kdiss-2026-reproducibility.jpg){fig-alt="Nam-Yoon Kim beside the transfer learning reproducibility poster at the Korean Data and Information Science Society, Busan"}
--->
 ![](images/poster-reproducibility-2026.jpg){fig-alt="Conference poster: Assessing the Reliability of Clinical AI — Reproducibility of Transfer Learning across Three Medical Modalities"}
 :::
 
@@ -60,6 +57,7 @@ toc: false
 - Poster presentation, **Korean Data and Information Science Society @ Busan**
 - *Assessing the Reliability of Clinical AI: Reproducibility of Transfer Learning
   across Three Medical Modalities*
+- **Honorable Mention Award**
 :::
 
 ::: {.photo-action}
