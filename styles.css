@@ -578,30 +578,23 @@ a.icon-link:focus {
 }
 
 /* Four pictures in one entry - two photographs and two posters - laid out two to a
-   row rather than four across: at the shared height a single row would need about
-   1130px and the content column is roughly 1020px, which would squeeze the caption
-   out. The cap on the paragraph is what forces the break, so it has to clear two
-   items and stop short of three. The pictures come down to suit the grid. */
+   row rather than four across: they keep the 380px height every other entry uses,
+   so a single row would need about 1130px against a content column of roughly
+   1020px and the caption would be squeezed out. The cap on the paragraph forces
+   the break instead: it has to clear the widest pair (285 + 8 + 285 = 578px) and
+   stop short of a third picture. */
 .photo-media.photo-quad p {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 0.5rem;
   margin: 0;
-  max-width: 450px;
-}
-
-.photo-media.photo-quad img {
-  max-height: 280px;
+  max-width: 600px;
 }
 
 @media (max-width: 767.98px) {
   .photo-media.photo-quad p {
     max-width: 100%;
-  }
-
-  .photo-media.photo-quad img {
-    max-height: 190px;
   }
 }
 

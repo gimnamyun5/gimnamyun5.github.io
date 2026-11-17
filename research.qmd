@@ -15,18 +15,13 @@ Manuscript in preparation · S-LAB · Feb 2026 – present
 [Transferability and Configuration Sensitivity of Clinical Prediction Models across Imaging, Time-Series, and Tabular Data](project-transferability.qmd){.research-title}
 
 ::: {.research-authors}
-*N.-Y. Kim*, H. Choi, S. Kang, H. Kim, G. Kim, S. Hwang · Lead researcher · Statistical Learning Across Biomedicine (S-LAB), Jeonbuk National University
+*N.-Y. Kim*, H. Choi, S. Kang, H. Kim, G. Kim, S. Hwang
 :::
 
 Asks when transfer learning actually helps a clinical model, and whether the gain
-survives the choices made while training it. The gain is decomposed into
-successive stages of adaptation and each stage is measured against the variation
-produced by the configuration alone — random seeds, data splits, outcome
-prevalence, decision thresholds, and label or sensor noise. Three tasks stand in
-for three kinds of transfer: breast cancer classification moving from 3D
-tomosynthesis to 2D mammography, short-term glucose prediction across twenty
-monitoring cohorts, and COVID-19 clinical deterioration across five countries
-with a tabular foundation model.
+survives the choices made while training it — seeds, splits, prevalence,
+thresholds, and noise. Three tasks stand in for three kinds of transfer: breast
+imaging, continuous glucose time series, and tabular COVID-19 outcomes.
 
 ::: {.research-links}
 [Project page](project-transferability.qmd){.research-btn}
@@ -43,15 +38,12 @@ In progress · S-LAB · Aug 2026 – present
 [Chest CT-Based Prediction of Pulmonary Function and Evaluation of Model Explainability](project-airway-ct.qmd){.research-title}
 
 ::: {.research-authors}
-*N.-Y. Kim* · Lead researcher · Statistical Learning Across Biomedicine (S-LAB), Jeonbuk National University
+*N.-Y. Kim*
 :::
 
-Low-dose CT taken for lung cancer screening carries hundreds of quantitative
-measures of the lung parenchyma and airways, and COPD in those participants is
-often missed. The measures are heavily correlated across lobes, which is enough to
-move the credit a model appears to give without moving its accuracy — so the work
-predicts airflow limitation from them and then tests whether competing
-explanations agree on *why*, not just on *what*.
+Predicts airflow limitation from hundreds of heavily correlated quantitative CT
+measures, then asks whether competing explanations agree on *why* — not just on
+*what*.
 
 ::: {.research-links}
 [Project page](project-airway-ct.qmd){.research-btn}
@@ -68,15 +60,12 @@ Manuscript in preparation · Aug 2026 – present
 [A Bootstrap Algorithm for Comparing Diagnostic Test Accuracy in Meta-Analysis with Within-Study Correlation](project-dauc-bootstrap.qmd){.research-title}
 
 ::: {.research-authors}
-S. Hwang, J. Kim, *N.-Y. Kim*, H. Choi · Research assistant · Department of Statistics, Jeonbuk National University
+S. Hwang, J. Kim, *N.-Y. Kim*, H. Choi
 :::
 
-Comparing two diagnostic tests across published studies means doing inference on
-a difference in areas under summary ROC curves, usually from nothing richer than
-aggregated 2×2 tables. Existing methods treat the two tests as independent even
-when the same participants took both, which widens intervals and costs power. The
-paper proposes a correlation-aware bootstrap that carries the dependence through,
-and reports simulations of its type I error, power, and interval coverage.
+Inference on a difference in summary ROC areas usually treats two diagnostic
+tests as independent, even when the same participants took both. The paper
+proposes a correlation-aware bootstrap that carries the dependence through.
 
 ::: {.research-links}
 [Project page](project-dauc-bootstrap.qmd){.research-btn}
@@ -93,12 +82,11 @@ University of Nevada, Las Vegas · Jun – Jul 2025
 [Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series](project-ehr-mortality.qmd){.research-title}
 
 ::: {.research-authors}
-Visiting researcher · Faculty mentor: Prof. Mingon Kang
+Faculty mentor: Prof. Mingon Kang
 :::
 
-Predicts patient mortality from irregularly sampled vital signs at a Brazilian
-cancer center, crossing two interpolation schemes with two network
-architectures. The convolutional models won on every metric.
+Predicts mortality from irregularly sampled vital signs at a Brazilian cancer
+center, crossing two interpolation schemes with two network architectures.
 
 ::: {.research-links}
 [Project page](project-ehr-mortality.qmd){.research-btn}
