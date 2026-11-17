@@ -577,6 +577,34 @@ a.icon-link:focus {
   margin: 0;
 }
 
+/* Four pictures in one entry - two photographs and two posters - laid out two to a
+   row rather than four across: at the shared height a single row would need about
+   1130px and the content column is roughly 1020px, which would squeeze the caption
+   out. The cap on the paragraph is what forces the break, so it has to clear two
+   items and stop short of three. The pictures come down to suit the grid. */
+.photo-media.photo-quad p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin: 0;
+  max-width: 450px;
+}
+
+.photo-media.photo-quad img {
+  max-height: 280px;
+}
+
+@media (max-width: 767.98px) {
+  .photo-media.photo-quad p {
+    max-width: 100%;
+  }
+
+  .photo-media.photo-quad img {
+    max-height: 190px;
+  }
+}
+
 /* The link to the full poster sits at the bottom right of the entry: margin-left
    auto pins it to the right edge whatever the caption does, and align-self overrides
    the row's flex-start so it drops to the foot of the tallest column rather than

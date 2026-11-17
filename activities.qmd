@@ -46,46 +46,26 @@ toc: false
 
 ::: {.photo-entry}
 
-::: {.photo-media .photo-pair}
+::: {.photo-media .photo-quad}
 ![](images/activity-kdiss-2026-reproducibility.jpg){fig-alt="Nam-Yoon Kim beside the transfer learning reproducibility poster at the Korean Data and Information Science Society, Busan"}
+![](images/activity-kdiss-2026-award.jpg){fig-alt="Three award recipients holding their certificates outside the 2026 autumn conference of the Korean Data and Information Science Society at Pukyong National University"}
 ![](images/poster-reproducibility-2026.jpg){fig-alt="Conference poster: Assessing the Reliability of Clinical AI — Reproducibility of Transfer Learning across Three Medical Modalities"}
-:::
-
-::: {.photo-body}
-### 2026. 11. {.photo-title}
-
-- Poster presentation, **Korean Data and Information Science Society @ Busan**
-- *Assessing the Reliability of Clinical AI: Reproducibility of Transfer Learning
-  across Three Medical Modalities*
-- **Honorable Mention Award**
-:::
-
-::: {.photo-action}
-[Poster PDF](files/poster-reproducibility-2026.pdf){.photo-btn target="_blank"}
-:::
-
-:::
-
-::: {.photo-entry}
-
-::: {.photo-media .photo-pair}
-<!-- PLACEHOLDER: the photograph from the day goes here, beside the poster.
-     Drop the file into images/ and uncomment:
-![](images/activity-kdiss-2026-airway-ct.jpg){fig-alt="Nam-Yoon Kim beside the explainable AI poster at the Korean Data and Information Science Society, Busan"}
--->
 ![](images/poster-airway-ct-2026.jpg){fig-alt="Conference poster: Explainable AI under Correlated Features — Do Models Agree on Why? An application to airflow limitation detection from quantitative chest CT"}
 :::
 
 ::: {.photo-body}
 ### 2026. 11. {.photo-title}
 
-- Poster presentation, **Korean Data and Information Science Society @ Busan**
+- Two poster presentations, **Korean Data and Information Science Society @ Busan**
+- *Assessing the Reliability of Clinical AI: Reproducibility of Transfer Learning
+  across Three Medical Modalities* — **Honorable Mention Award**
 - *Explainable AI under Correlated Features: Do Models Agree on Why? An
   Application to Airflow Limitation Detection from Quantitative Chest CT*
 :::
 
 ::: {.photo-action}
-[Poster PDF](files/poster-airway-ct-2026.pdf){.photo-btn target="_blank"}
+[Reproducibility (PDF)](files/poster-reproducibility-2026.pdf){.photo-btn target="_blank"}
+[Explainable AI (PDF)](files/poster-airway-ct-2026.pdf){.photo-btn target="_blank"}
 :::
 
 :::
