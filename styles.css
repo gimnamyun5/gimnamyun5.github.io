@@ -592,9 +592,27 @@ a.icon-link:focus {
   max-width: 600px;
 }
 
+/* All four sit in the same box, 285 x 380, so the grid squares off: left-hand
+   edges line up down the column and the two rows are the same width. The
+   photographs are 3:4 and fill it exactly; the posters are slightly narrower than
+   that, so object-fit contain scales them to the full height and leaves a few
+   pixels of white either side rather than cropping anything off a poster. */
+.photo-media.photo-quad img {
+  width: 285px;
+  height: 380px;
+  max-height: none;
+  object-fit: contain;
+  background-color: #fff;
+}
+
 @media (max-width: 767.98px) {
   .photo-media.photo-quad p {
     max-width: 100%;
+  }
+
+  .photo-media.photo-quad img {
+    width: 210px;
+    height: 280px;
   }
 }
 
