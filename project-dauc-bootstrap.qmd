@@ -1,9 +1,10 @@
 ---
 title: "A Bootstrap Algorithm for Comparing Diagnostic Test Accuracy in Meta-Analysis"
+body-classes: project-page
 ---
 
 ::: {.project-meta}
-In progress · Manuscript in preparation · Aug 2026 – present · Department of Statistics, Jeonbuk National University
+Manuscript in preparation · Aug 2026 – present · Department of Statistics, Jeonbuk National University
 :::
 
 When two diagnostic tests are compared across published studies, the quantity of
@@ -20,6 +21,8 @@ estimated difference. Under the positive dependence typical of two tests applied
 to the same participants, it produces confidence intervals that are wider than
 they should be and loses power. Under negative dependence it does the opposite:
 it understates the variability and inflates the type I error rate.
+
+![The design the method is built for: one set of participants, both tests. Sensitivity is read off the diseased participants and specificity off the non-diseased ones, for each test in turn — so the two tests' results are not independent, which is exactly what an independence-based interval ignores.](images/fig-dauc-paired.jpg){fig-alt="Diagram of a paired diagnostic study: one group of diseased and non-diseased participants, each undergoing both tests"}
 
 ## Methods
 
@@ -47,7 +50,7 @@ procedure.
 
 ## Materials
 
-PLACEHOLDER: manuscript in preparation · add the R code repository when it is
-public.
+Manuscript in preparation. The R code for the simulations will be linked here
+once the repository is public.
 
 [← All research](research.qmd){.back-link}

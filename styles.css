@@ -351,12 +351,22 @@ main#quarto-document-content {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
-.card-label {
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  font-weight: 600;
+/* One small label, used in three places: above a card on the home page, above a
+   research card, and under the title of a project page. They are the same kind
+   of line - what this is, where it was done - so they are set the same way and
+   at the same size, and only the colour and the space beneath them differ. */
+.card-label,
+.research-label,
+.project-meta {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
+  line-height: 1.5;
+}
+
+.card-label {
   margin-bottom: 0.9rem;
 }
 
@@ -1006,11 +1016,6 @@ a.pub-link:focus {
 }
 
 .research-label {
-  font-family: var(--font-mono);
-  font-size: 0.63rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.17em;
   color: var(--card-accent);
   margin-bottom: 0.35rem;
 }
@@ -1109,9 +1114,36 @@ a.research-btn:active {
 }
 
 .project-meta {
+  color: var(--steel);
+  margin: -0.2rem 0 1.5rem 0;
+}
+
+/* Figures on a project page are lifted straight out of the poster or the
+   manuscript, so they arrive on their own white ground: the frame and the inset
+   keep that ground from bleeding into the page tint, and the caption is set like
+   the body text so it reads as part of the argument rather than a label. */
+body.project-page figure {
+  margin: 1.8rem 0 2rem 0;
+}
+
+body.project-page figure img {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  background-color: #ffffff;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 0.65rem;
+}
+
+body.project-page figure figcaption,
+body.project-page .figure-caption {
+  max-width: 700px;
+  margin-top: 0.55rem;
+  font-size: 0.82rem;
+  line-height: 1.55;
   color: var(--ink-muted);
-  font-size: 0.9rem;
-  margin: -0.35rem 0 1.1rem 0;
+  text-align: left;
 }
 
 hr {

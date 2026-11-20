@@ -1,9 +1,10 @@
 ---
 title: "Deep Learning-based Neural Granger Causality for Solar Radiation Time Series"
+body-classes: project-page
 ---
 
 ::: {.project-meta}
-Poster · Korean Statistical Society Summer Conference 2025 · June 2025, Gyeongju · Faculty-led short-term project, Department of Statistics, Jeonbuk National University
+Poster · Korean Statistical Society Summer Conference 2025 · June 2025, Gyeongju
 :::
 
 Classical Granger causality tests rest on a linear vector autoregression, which
@@ -11,7 +12,8 @@ limits what they can detect in meteorological series where the relationships are
 not linear. This project applied neural Granger causality, following Tank et al.
 (2021), to ask which meteorological variables carry predictive information about
 solar radiation, and whether the neural formulation recovers relationships the
-linear test misses.
+linear test misses. It ran as a short faculty-led project in the Department of
+Statistics, Jeonbuk National University.
 
 ## Data
 
@@ -41,6 +43,8 @@ by how often it was detected.
 
 : Proportion of 50 replications in which each variable was identified as a Granger cause of solar radiation {.striped}
 
+![All six variables against each other, not just solar radiation. Rows are the potential causes and columns the variables affected; each cell is the proportion of 50 replications in which the relationship was detected. The cLSTM (right) detects more than the cMLP (left) almost everywhere.](images/fig-granger-heatmaps.jpg){fig-alt="Two heatmaps of detection frequency between six meteorological variables, one for the cMLP and one for the cLSTM"}
+
 Temperature was identified in every replication by all three methods, and
 humidity was the next most consistent. The methods diverged on the variables that
 behave less like continuous measurements: precipitation was detected in 37% of
@@ -52,6 +56,10 @@ robustness is not established.
 
 ## Materials
 
-PLACEHOLDER: poster PDF · GitHub repository
+Presented as a poster, *Deep Learning-based Neural Granger Causality for Solar
+Radiation Data*, at the Korean Statistical Society Summer Conference, Gyeongju,
+June 2025.
+
+[Poster PDF](files/poster-granger-2025.pdf){.research-btn target="_blank"}
 
 [← All research](research.qmd){.back-link}

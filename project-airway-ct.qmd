@@ -1,9 +1,10 @@
 ---
 title: "Chest CT-Based Prediction of Pulmonary Function and Model Explainability"
+body-classes: project-page
 ---
 
 ::: {.project-meta}
-In progress · Aug 2026 – present · Statistical Learning Across Biomedicine (S-LAB), Jeonbuk National University
+In progress · Aug 2026 – present · S-LAB, Jeonbuk National University
 :::
 
 Low-dose CT taken for lung cancer screening yields hundreds of quantitative
@@ -40,6 +41,8 @@ predictor set of 76 measures, once on a reduced set of 31 after correlated
 measures were merged or dropped at a threshold of |ρ| ≥ 0.8 — on the same
 cross-validation folds.
 
+![Two predictor sets from the same scans: 76 measures after rule-based and quality filtering, and 31 after correlated lobar measures were merged or dropped at |ρ| ≥ 0.8. Both sets are run through the same three models on the same folds.](images/fig-airway-selection.jpg){fig-alt="Flow diagram of variable selection, from 76 initial predictors down to a reduced set of 31"}
+
 Explanations are read as mean |SHAP| per predictor, summed into the share taken by
 each of five measure families: emphysema, airway, parenchymal opacity, lung volume
 and body size. The question is not which single feature ranks first but how the
@@ -57,6 +60,8 @@ correlation reduction they parted: emphysema stayed first for random forest and
 TabPFN, while for XGBoost the airway family took the lead (39% against 32%).
 Across the three models the emphysema share fell by 10–12 percentage points, with
 airway up 7 to 11 and lung volume up 3 to 6.
+
+![Mean |SHAP| per predictor, summed into each measure family's share. Before correlation reduction all three models put emphysema first; after it, XGBoost puts the airway family first while the other two do not.](images/fig-airway-shap.jpg){fig-alt="Stacked bar chart of SHAP share by measure family, before and after correlation reduction, for random forest, XGBoost and TabPFN"}
 
 Similar accuracy, in other words, did not guarantee similar explanations — which
 family a model credits depended on both the predictor set and the model.

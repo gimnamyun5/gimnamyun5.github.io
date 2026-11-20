@@ -1,9 +1,10 @@
 ---
 title: "Transferability and Configuration Sensitivity of Clinical Prediction Models"
+body-classes: project-page
 ---
 
 ::: {.project-meta}
-In progress · Manuscript in preparation · Feb 2026 – present · Statistical Learning Across Biomedicine (S-LAB), Jeonbuk National University
+Manuscript in preparation · Feb 2026 – present · S-LAB, Jeonbuk National University
 :::
 
 A medical AI model that scores well at one hospital is expected to carry, with
@@ -31,6 +32,8 @@ held fixed:
 The gain is measured as Δ = score(arm A) − score(arm B), where the two arms differ
 by exactly the factor under test.
 
+![Each task is run as a set of arms that differ by exactly one stage of the pipeline: the weights a model starts from, whether a source-domain stage happens at all, and what is done on the target. Every arm is scored on the same held-out target test set, so each Δ below names the two arms it subtracts.](images/fig-transfer-setup.jpg){fig-alt="Table of experimental arms for the three tasks, each row showing initial weights, source-domain stage and target stage"}
+
 ## Data
 
 - **Breast imaging** — ImageNet-22K and BCS-DBT + DBT-2026 as sources, five
@@ -46,6 +49,8 @@ by exactly the factor under test.
 
 **The gain almost always points the same way across domains, but its size does
 not.** It varies with the target and with the model.
+
+![The three tasks side by side. Breast imaging and COVID-19 are scored by AUROC (higher is better), glucose by RMSE on a log axis (lower is better); the rows beneath each panel give the Δ between the two arms named.](images/fig-transfer-results.jpg){fig-alt="Three bar-chart panels: breast cancer AUROC across five datasets, glucose RMSE across six models, COVID-19 AUROC across five countries"}
 
 - **Breast cancer diagnosis** — domain-specific pretraining on tomosynthesis added
   +0.033 to +0.203 AUROC over ImageNet alone, across the five target datasets.
@@ -68,6 +73,8 @@ Manuscript in preparation. Presented as a poster, *Assessing the Reliability of
 Clinical AI: Reproducibility of Transfer Learning across Three Medical
 Modalities*, at the Korean Data and Information Science Society, Busan, November
 2026.
+
+[Poster PDF](files/poster-reproducibility-2026.pdf){.research-btn target="_blank"}
 
 [Poster PDF](files/poster-reproducibility-2026.pdf){.research-btn target="_blank"}
 

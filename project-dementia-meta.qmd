@@ -1,16 +1,18 @@
 ---
 title: "Effectiveness of Digital Cognitive Training Interventions for Dementia: A Systematic Review and Meta-analysis"
+body-classes: project-page
 ---
 
 ::: {.project-meta}
-Poster · **Best Poster Award** · IC-KDA + ASAD 2025 · May 2025, Seoul · Independent two-person collaboration with Jiyoun Sung (College of Pharmacy, Seoul National University)
+Poster · **Best Poster Award** · IC-KDA + ASAD 2025 · May 2025, Seoul
 :::
 
 A systematic review and meta-analysis of randomized controlled trials asking
 whether digital cognitive training — programs delivered remotely through
 software, mobile applications or games — improves cognitive and depressive
 outcomes in patients with dementia. The protocol was preregistered with PROSPERO
-(CRD42025631806).
+(CRD42025631806). The review was an independent two-person collaboration with
+Jiyoun Sung (College of Pharmacy, Seoul National University).
 
 ## Data
 
@@ -20,6 +22,8 @@ Of 466 records identified, 147 duplicates were removed, 319 screened and 22
 assessed in full text, leaving 11 studies covering 1,352 participants (636
 intervention, 716 control; mean age approximately 83 in both arms). Patients with
 mild cognitive impairment or subjective cognitive decline were excluded.
+
+![The search, from 466 records to the 11 trials that entered the review.](images/fig-dementia-prisma.jpg){fig-alt="PRISMA flow diagram: 466 records identified, 147 duplicates removed, 319 screened, 22 assessed in full text, 11 included"}
 
 ## Methods
 
@@ -37,6 +41,8 @@ Heterogeneity was assessed with *I*².
 
 : Pooled effects of digital cognitive training {.striped}
 
+![Fixed-effect inverse-variance forest plots for the two outcomes. The diamond is the pooled estimate: to the right of zero for MMSE, where higher is better, and to the left for GDS, where lower is.](images/fig-dementia-forest.jpg){fig-alt="Two forest plots, MMSE across four studies and GDS across three, each with a pooled diamond"}
+
 Digital cognitive training improved cognitive scores and reduced depressive
 scores, with moderate heterogeneity in both. The evidence base is small — eleven
 trials, and only three to four contributing to each pooled estimate — so the
@@ -44,6 +50,11 @@ effects are best read as supportive rather than conclusive.
 
 ## Materials
 
-PLACEHOLDER: poster PDF · PROSPERO record CRD42025631806
+Presented as a poster at IC-KDA + ASAD 2025, Seoul, May 2025, where it received
+the Best Poster Award. The protocol is registered with PROSPERO
+(CRD42025631806).
+
+[Poster PDF](files/poster-dementia-2025.pdf){.research-btn target="_blank"}
+[PROSPERO record](https://www.crd.york.ac.uk/prospero/display_record.php?RecordID=631806){.research-btn target="_blank"}
 
 [← All research](research.qmd){.back-link}

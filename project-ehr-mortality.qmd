@@ -1,14 +1,15 @@
 ---
 title: "Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series"
+body-classes: project-page
 ---
 
 ::: {.project-meta}
-Research project · University of Nevada, Las Vegas · June – July 2025 · Team of four ("Deep Patient") · Faculty: Dr. Mingon Kang
+Research project · University of Nevada, Las Vegas · June – July 2025
 :::
 
-A team research project carried out during a summer research program at the
-University of Nevada, Las Vegas, predicting patient mortality from short
-sequences of routinely recorded vital signs. The practical obstacle in this data
+A summer research program project at the University of Nevada, Las Vegas,
+carried out by a team of four under Dr. Mingon Kang, predicting patient
+mortality from short sequences of routinely recorded vital signs. The practical obstacle in this data
 is that vital signs are not recorded on a regular schedule: the interval between
 measurements varies from patient to patient, so the series must be placed on a
 common time grid before any sequence model can be applied. The project was
