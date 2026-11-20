@@ -14,9 +14,9 @@ single score from a single training run says little about whether the benefit is
 real. Most reported work gives the average gain and not how far it moves between
 runs.
 
-This project asks a narrower question: **which factor in the source-to-target
-pipeline actually drives the gain**, and does that gain still hold once the model
-is moved across institutions, countries or cohorts.
+This project asks a narrower question: **which stage of the source-to-target
+pipeline actually produces the gain**, and whether that gain is larger than the
+variation the training configuration induces on its own.
 
 ## Design
 
@@ -29,52 +29,89 @@ held fixed:
 | Continuous glucose monitoring | the **amount** of target adaptation, direct transfer against fine-tuning |
 | COVID-19 clinical deterioration | the **presence** of a large source-domain stage at all |
 
-The gain is measured as Δ = score(arm A) − score(arm B), where the two arms differ
-by exactly the factor under test.
+Every task runs through the same four stages, and every arm is scored on the same
+held-out target test set, so each Δ names the two arms it subtracts.
 
-![Each task is run as a set of arms that differ by exactly one stage of the pipeline: the weights a model starts from, whether a source-domain stage happens at all, and what is done on the target. Every arm is scored on the same held-out target test set, so each Δ below names the two arms it subtracts.](images/fig-transfer-setup.jpg){fig-alt="Table of experimental arms for the three tasks, each row showing initial weights, source-domain stage and target stage"}
+![One row per task. Reading across a row gives that task's full design: the cohorts it draws on, the backbone, the transfer scenarios being compared, and the configuration perturbations the whole comparison is repeated under.](images/fig-transfer-framework.jpg){fig-alt="Four-column schematic with one row per task — breast imaging, glucose time series and COVID-19 tabular data — showing domains, backbones, transfer scenarios, and reproducibility and metrics"}
 
 ## Data
 
-- **Breast imaging** — ImageNet-22K and BCS-DBT + DBT-2026 as sources, five
-  mammography target datasets, varying by region, acquisition and image dimension.
-- **Glucose monitoring** — a 19-cohort source pool at five-minute sampling, with
-  20 public target cohorts varying by region and phenotype; evaluated
-  leave-one-domain-out.
-- **COVID-19 deterioration** — a TabPFN-3 pretrained model and a reference cohort
-  of 114,987 patients, with five target countries varying in event rate and cohort
-  size; 25 data splits each.
+- **Breast imaging** — ImageNet-22K and two tomosynthesis cohorts as sources, six
+  2D mammography target datasets varying by region, acquisition and image
+  dimension.
+- **Glucose monitoring** — 20 public cohorts (N = 3,187) from eight countries,
+  three sensor manufacturers and five glycemic groups, evaluated
+  leave-one-domain-out against a pooled 19-cohort source.
+- **COVID-19 deterioration** — a UK reference cohort of 114,987 patients and five
+  target countries of 122 to 2,095 patients, with event rates from 10.9% to
+  45.1%; 25 data splits each.
 
 ## Findings
 
-**The gain almost always points the same way across domains, but its size does
-not.** It varies with the target and with the model.
+**The gain almost always points the same way, but its size does not — and in two
+of the three tasks the stage everyone assumes is doing the work is not the stage
+doing the work.**
 
-![The three tasks side by side. Breast imaging and COVID-19 are scored by AUROC (higher is better), glucose by RMSE on a log axis (lower is better); the rows beneath each panel give the Δ between the two arms named.](images/fig-transfer-results.jpg){fig-alt="Three bar-chart panels: breast cancer AUROC across five datasets, glucose RMSE across six models, COVID-19 AUROC across five countries"}
+### Breast imaging — the kind of pretraining matters most when the data are hard
 
-- **Breast cancer diagnosis** — domain-specific pretraining on tomosynthesis added
-  +0.033 to +0.203 AUROC over ImageNet alone, across the five target datasets.
-- **Glucose monitoring** — source pretraining used in place of target training cut
-  RMSE by 15.07, 5.30 and 4.12 mg/dL for the three models that gained most, and
-  stayed within ±0.04 for three others. Ten epochs of target fine-tuning on top
-  added at most 0.06 mg/dL.
-- **COVID-19 deterioration** — in-context learning with the tabular foundation
-  model added +0.017 to +0.065 AUROC over XGBoost, ahead in 18 to 25 of 25 splits
-  in every country. Target fine-tuning moved the result by −0.005 to +0.003, and
-  the extra source-domain stage by no more than +0.011.
+Pretraining on 3D tomosynthesis before fine-tuning on 2D mammography added +0.033
+to +0.203 AUROC over ImageNet alone across the five target datasets, and +0.191
+to +0.263 over an equivalent model with no ImageNet stage at any point. The
+interesting part is where that margin comes from.
+
+![Test AUROC on EMBED as the positive rate in training falls from 50% to 10%, with the training budget held fixed at 5,444 images. The ImageNet-only model (blue) loses 0.074 AUROC across that range and the tomosynthesis-pretrained model (red) only 0.041, so the margin from domain-specific pretraining roughly doubles — from +0.030 to +0.063 — exactly where the problem gets harder.](images/fig-transfer-imaging.jpg){fig-alt="Line chart of test AUROC against positive training rate for three initializations; the tomosynthesis-pretrained model stays highest and declines least as imbalance increases"}
+
+Domain-specific pretraining was also the most reproducible: across five seeds its
+AUROC standard deviation was 0.0052, against 0.0241 for ImageNet-only and 0.0479
+for the no-ImageNet model.
+
+### Glucose monitoring — the gain is in the pooling, not in the transfer
+
+Averaged over nine architectures, transferring from a pooled source cut test RMSE
+by 28.4% against training on the target cohort alone. Almost all of it was
+already there before any target update: the pre-trained model used as-is reached
+2.71 of the 2.73 mg/dL reduction, and ten further epochs of target fine-tuning
+moved the result by at most 0.04 mg/dL.
+
+![Each point is one target cohort × architecture, transfer against training on the target alone — below the diagonal means transfer won. Pooling 19 source cohorts (left) wins 165 of 180 times; a single source cohort (right) wins only 72 of 180. The same method, the same fine-tuning, the same targets — only the breadth of the source changes.](images/fig-transfer-glucose.jpg){fig-alt="Two scatter plots of transfer RMSE against target-only RMSE on logarithmic axes with a diagonal reference line, for 20-cohort leave-one-domain-out transfer and for single-source transfer"}
+
+Pooling also flattened the choice of architecture. Training on the target alone,
+RMSE ranged from 4.27 to 12.88 mg/dL across the nine models; after pooled
+pretraining, from 4.23 to 5.01. The weaker five architectures gained 41% to 63%,
+the four strongest 1% to 4% — so most of what looks like a transfer-learning
+result is the weaker models catching up.
+
+### COVID-19 deterioration — a tabular foundation model beats a tuned baseline, and the adaptation strategy barely registers
+
+![The five target countries differ in size and event rate (panel a). Each cell in panel c gives how many of the 25 splits that strategy won and the median within-split AUROC difference. The foundation model beat XGBoost in at least 17 of 25 splits in every country; the three adaptation strategies separate from each other by medians of 0.000 to +0.013.](images/fig-transfer-covid.jpg){fig-alt="Three-panel figure: study design with five target countries, AUROC by country for four strategies, and a paired win-count heatmap across 25 data splits"}
+
+In-context learning with the tabular foundation model raised mean AUROC over
+XGBoost in every country — by 0.017 to 0.019 in the Netherlands at the low end
+and 0.060 to 0.072 in Canada at the high end. Adding target fine-tuning on top,
+or an extra source-domain stage on the UK reference cohort before it, changed
+almost nothing.
+
+### The configuration moves the score more than the method does
+
+![For every country and strategy, the spread of AUROC over 25 data splits with the seed fixed (pale, wide bars) exceeds the spread over 25 model seeds with the split fixed (solid, narrow bars) — 0.023 to 0.097 against 0.003 to 0.020 for the foundation-model arms. Which patients land in the test set moves the score more than which seed the model starts from.](images/fig-transfer-config.jpg){fig-alt="Bar chart comparing the standard deviation of AUROC across data splits versus across model seeds, for five countries and four modelling strategies"}
+
+This is the result that frames all the others. In the two smallest cohorts —
+Bolivia and Canada, whose test sets hold 11 and 14 events — the split-to-split
+standard deviation reaches 0.097, larger than every between-method difference
+reported above. A single reported AUROC from a single split cannot distinguish a
+method that works from a split that was kind.
 
 The pattern that matters for practice: the stage that helps is not the same stage
-in every domain, and in two of the three tasks the later, more expensive stages of
-adaptation bought almost nothing.
+in every domain, the later and more expensive stages of adaptation bought almost
+nothing in two of three tasks, and any gain smaller than the configuration's own
+spread should not be read as a gain at all.
 
 ## Materials
 
 Manuscript in preparation. Presented as a poster, *Assessing the Reliability of
 Clinical AI: Reproducibility of Transfer Learning across Three Medical
 Modalities*, at the Korean Data and Information Science Society, Busan, November
-2026.
-
-[Poster PDF](files/poster-reproducibility-2026.pdf){.research-btn target="_blank"}
+2026, where it received an Honorable Mention Award.
 
 [Poster PDF](files/poster-reproducibility-2026.pdf){.research-btn target="_blank"}
 

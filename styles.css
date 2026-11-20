@@ -1126,10 +1126,12 @@ body.project-page figure {
   margin: 1.8rem 0 2rem 0;
 }
 
+/* Several of these are multi-panel figures lifted from a manuscript, so they are
+   given more width than the caption beneath them. */
 body.project-page figure img {
   display: block;
   width: 100%;
-  max-width: 700px;
+  max-width: 820px;
   background-color: #ffffff;
   border: 1px solid var(--rule);
   border-radius: 2px;
