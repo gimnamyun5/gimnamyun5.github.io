@@ -1001,8 +1001,8 @@ a.pub-link:focus {
   border: 1px solid var(--rule);
   border-left: 3px solid var(--card-accent);
   border-radius: 2px;
-  padding: 1.25rem 1.6rem 1.3rem 1.6rem;
-  margin: 1.75rem 0;
+  padding: 0.9rem 1.3rem 0.95rem 1.3rem;
+  margin: 1rem 0;
 }
 
 .research-label {
@@ -1012,18 +1012,18 @@ a.pub-link:focus {
   text-transform: uppercase;
   letter-spacing: 0.17em;
   color: var(--card-accent);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35rem;
 }
 
 a.research-title {
   display: block;
   font-family: var(--font-card-title);
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.3;
   color: var(--ink);
   text-decoration: none;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
 }
 
 a.research-title:hover,
@@ -1036,10 +1036,10 @@ a.research-title:focus {
 
 .research-authors {
   font-family: var(--font-body);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-style: italic;
   color: var(--ink-muted);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.55rem;
 }
 
 /* The author's own name is set upright so it can be picked out of the list. */
@@ -1049,12 +1049,15 @@ a.research-title:focus {
   color: var(--ink);
 }
 
+/* The card is a pointer, not the account: one sentence, set small and tight, with
+   the detail left to the project page the title links to. The metrics above and
+   below keep the box close around it. */
 .research-card > p {
   font-family: var(--font-body);
   color: var(--ink-muted);
-  font-size: 0.8rem;
-  line-height: 1.62;
-  margin-bottom: 0.95rem;
+  font-size: 0.76rem;
+  line-height: 1.5;
+  margin-bottom: 0.7rem;
 }
 
 /* Pandoc wraps the title link in its own paragraph, which would otherwise pick

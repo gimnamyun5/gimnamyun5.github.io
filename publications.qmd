@@ -7,7 +7,6 @@ body-classes: serif-page
 ::: {.pub-card}
 
 ::: {.pub-tags}
-[First Author]{.pub-tag .tag-first}
 [Manuscript in preparation]{.pub-tag .tag-status}
 :::
 
@@ -29,7 +28,6 @@ S-LAB, Jeonbuk National University
 ::: {.pub-card}
 
 ::: {.pub-tags}
-[Co-Author]{.pub-tag .tag-coauthor}
 [Manuscript in preparation]{.pub-tag .tag-status}
 :::
 
@@ -60,6 +58,9 @@ Department of Statistics, Jeonbuk National University
        [Co-Author]{.pub-tag .tag-coauthor}
        [Manuscript in preparation]{.pub-tag .tag-status}
        [Under review]{.pub-tag .tag-status}
+
+     The authorship-position tags are left out of the entries on purpose while
+     the author lists are still being settled; add one back when it is fixed.
 
      Status line — the journal and year once it is out:
        Journal name · 2027
