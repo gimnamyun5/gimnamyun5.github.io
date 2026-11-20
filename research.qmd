@@ -9,14 +9,15 @@ body-classes: serif-page
 ::: {.research-card}
 
 ::: {.research-label}
-S-LAB, Jeonbuk National University · Feb 2026 – present
+S-LAB, Jeonbuk National University
 :::
 
 [Transferability and Configuration Sensitivity of Clinical Prediction Models across Imaging, Time-Series, and Tabular Data](project-transferability.qmd){.research-title}
 
 Whether a transfer-learning gain survives the training configuration — seeds,
-splits, prevalence, thresholds, noise — across breast imaging, glucose time
-series, and tabular COVID-19 outcomes.
+splits, prevalence, thresholds, noise. Three tasks stand in for three kinds of
+transfer: breast imaging, continuous glucose time series, and tabular COVID-19
+outcomes.
 
 ::: {.research-links}
 [Project page](project-transferability.qmd){.research-btn}
@@ -27,13 +28,14 @@ series, and tabular COVID-19 outcomes.
 ::: {.research-card}
 
 ::: {.research-label}
-S-LAB, Jeonbuk National University · Aug 2026 – present
+S-LAB, Jeonbuk National University
 :::
 
 [Chest CT-Based Prediction of Pulmonary Function and Evaluation of Model Explainability](project-airway-ct.qmd){.research-title}
 
-Predicts airflow limitation from correlated quantitative CT measures, then asks
-whether competing explanations agree on *why*.
+Predicts airflow limitation from hundreds of correlated quantitative CT measures
+taken during lung cancer screening. It then asks whether competing explanations
+agree on *why*, not just on *what*.
 
 ::: {.research-links}
 [Project page](project-airway-ct.qmd){.research-btn}
@@ -44,13 +46,15 @@ whether competing explanations agree on *why*.
 ::: {.research-card}
 
 ::: {.research-label}
-Department of Statistics, Jeonbuk National University · Aug 2026 – present
+Department of Statistics, Jeonbuk National University
 :::
 
 [A Bootstrap Algorithm for Comparing Diagnostic Test Accuracy in Meta-Analysis with Within-Study Correlation](project-dauc-bootstrap.qmd){.research-title}
 
-A correlation-aware bootstrap for comparing two diagnostic tests in
-meta-analysis when the same participants took both.
+Comparing two diagnostic tests across published studies usually treats them as
+independent, even when the same participants took both. A correlation-aware
+bootstrap carries that dependence through, and simulations report what it
+buys.
 
 ::: {.research-links}
 [Project page](project-dauc-bootstrap.qmd){.research-btn}
@@ -61,13 +65,14 @@ meta-analysis when the same participants took both.
 ::: {.research-card}
 
 ::: {.research-label}
-University of Nevada, Las Vegas · Jun – Jul 2025
+University of Nevada, Las Vegas
 :::
 
 [Deep Neural Networks for Mortality Prediction from EHR Vital-Sign Time Series](project-ehr-mortality.qmd){.research-title}
 
-Mortality prediction from irregularly sampled vital signs, crossing two
-interpolation schemes with two network architectures.
+Mortality prediction from irregularly sampled vital signs at a Brazilian cancer
+center, crossing two interpolation schemes with two network architectures. The
+convolutional models won on every metric.
 
 ::: {.research-links}
 [Project page](project-ehr-mortality.qmd){.research-btn}
@@ -78,13 +83,15 @@ interpolation schemes with two network architectures.
 ::: {.research-card}
 
 ::: {.research-label}
-Department of Statistics, Jeonbuk National University · Mar – Jun 2025
+Department of Statistics, Jeonbuk National University
 :::
 
 [Deep Learning-based Neural Granger Causality for Solar Radiation Time Series](project-granger.qmd){.research-title}
 
 Whether neural Granger causality recovers predictive relationships among
-meteorological variables that a linear vector autoregression misses.
+meteorological variables that a linear vector autoregression misses. Covers the
+assumptions behind both before the applied analysis of solar radiation
+records.
 
 ::: {.research-links}
 [Project page](project-granger.qmd){.research-btn}
@@ -95,13 +102,14 @@ meteorological variables that a linear vector autoregression misses.
 ::: {.research-card}
 
 ::: {.research-label}
-Independent research project · Jan – May 2025
+Independent research project
 :::
 
 [Effectiveness of Digital Cognitive Training Interventions for Dementia: A Systematic Review and Meta-analysis](project-dementia-meta.qmd){.research-title}
 
 A PROSPERO-registered systematic review and meta-analysis of remotely delivered
-cognitive training in dementia.
+cognitive training in dementia. Covers the literature screening, the data
+extraction and the pooled analysis of cognitive and depressive outcomes.
 
 ::: {.research-links}
 [Project page](project-dementia-meta.qmd){.research-btn}
@@ -123,8 +131,10 @@ Korean Data and Information Science Society 2026
 *N. Y. Kim*, H. Choi, H. Kim, G. Kim, S. Hwang · November 2026, Busan
 :::
 
-One factor isolated per task, carried to another institution, country or cohort:
-the direction of the gain held across all three domains, its size did not.
+One factor isolated per task — source pretraining, amount of adaptation, whether
+a large source stage exists at all — then carried to another institution,
+country or cohort. The direction of the gain held across all three domains; its
+size did not.
 
 ::: {.research-links}
 [Project page](project-transferability.qmd){.research-btn}
@@ -144,8 +154,9 @@ Korean Data and Information Science Society 2026
 H. Kim, *N. Y. Kim*, Y. Lee, K. Chae, S. Hwang · November 2026, Busan
 :::
 
-Three models detect airflow limitation at nearly the same accuracy, then stop
-agreeing on what they used once the correlated measures are reduced.
+Three models detect airflow limitation at nearly the same accuracy, then are
+asked what they used. Once the correlated measures were reduced they stopped
+agreeing, while AUROC barely moved.
 
 ::: {.research-links}
 [Project page](project-airway-ct.qmd){.research-btn}
@@ -165,7 +176,7 @@ IC-KDA + ASAD 2025 · Best Poster Award
 J. Sung, *N. Y. Kim* · May 2025, Seoul
 :::
 
-Eleven randomized trials pooled for cognitive and depressive outcomes: remotely
+Eleven randomized trials pooled for cognitive and depressive outcomes. Remotely
 delivered cognitive training improved both, on a small evidence base.
 
 ::: {.research-links}
@@ -188,7 +199,8 @@ M. Lee, S. Lee, Y. Cho, *N. Y. Kim*, G. Kim, Y. Lee · June 2025, Gyeongju
 :::
 
 Neural Granger causality recovers meteorological drivers of solar radiation that
-a linear vector autoregression misses.
+a linear vector autoregression misses. It does so for the variables that behave
+least like continuous measurements.
 
 ::: {.research-links}
 [Project page](project-granger.qmd){.research-btn}
