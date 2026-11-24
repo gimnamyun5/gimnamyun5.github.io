@@ -4,7 +4,7 @@ body-classes: project-page
 ---
 
 ::: {.project-meta}
-Under review · Aug 2026 – present · Department of Statistics, Jeonbuk National University
+Under review · Aug 2026 – present · S-LAB, Jeonbuk National University
 :::
 
 When two diagnostic tests are compared across published studies, the quantity of

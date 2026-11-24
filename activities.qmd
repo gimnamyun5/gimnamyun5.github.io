@@ -8,8 +8,8 @@ toc: false
 ::: {.photo-entry}
 
 ::: {.photo-media .photo-pair}
-![](images/activity-ickda-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the dementia meta-analysis poster at IC-KDA + ASAD 2025"}
-![](images/poster-dementia-2025.jpg){fig-alt="Conference poster: Effectiveness of Digital Cognitive Training Interventions for Dementia — A Systematic Review and Meta-Analysis, by Jiyoun Sung and Nam-Yoon Kim"}
+![](images/activity-ickda-2025.jpg){fig-alt="Nam Yoon Kim standing beside the dementia meta-analysis poster at IC-KDA + ASAD 2025"}
+![](images/poster-dementia-2025.jpg){fig-alt="Conference poster: Effectiveness of Digital Cognitive Training Interventions for Dementia — A Systematic Review and Meta-Analysis, by Jiyoun Sung and Nam Yoon Kim"}
 :::
 
 ::: {.photo-body}
@@ -28,8 +28,8 @@ toc: false
 ::: {.photo-entry}
 
 ::: {.photo-media .photo-pair}
-![](images/activity-kss-2025.jpg){fig-alt="Nam-Yoon Kim standing beside the neural Granger causality poster at the Korean Statistical Society Summer Conference"}
-![](images/poster-granger-2025.jpg){fig-alt="Conference poster: Deep Learning-based Neural Granger Causality for Solar Radiation Data, by Minwoo Lee, Sangmin Lee, Younghwi Cho, Nam-Yoon Kim, Gahee Kim and Youngmi Lee"}
+![](images/activity-kss-2025.jpg){fig-alt="Nam Yoon Kim standing beside the neural Granger causality poster at the Korean Statistical Society Summer Conference"}
+![](images/poster-granger-2025.jpg){fig-alt="Conference poster: Deep Learning-based Neural Granger Causality for Solar Radiation Data, by Minwoo Lee, Sangmin Lee, Younghwi Cho, Nam Yoon Kim, Gahee Kim and Youngmi Lee"}
 :::
 
 ::: {.photo-body}
@@ -47,7 +47,7 @@ toc: false
 ::: {.photo-entry}
 
 ::: {.photo-media .photo-quad}
-![](images/activity-kdiss-2026-reproducibility.jpg){fig-alt="Nam-Yoon Kim beside the transfer learning reproducibility poster at the Korean Data and Information Science Society, Busan"}
+![](images/activity-kdiss-2026-reproducibility.jpg){fig-alt="Nam Yoon Kim beside the transfer learning reproducibility poster at the Korean Data and Information Science Society, Busan"}
 ![](images/activity-kdiss-2026-award.jpg){fig-alt="Three award recipients holding their certificates outside the 2026 autumn conference of the Korean Data and Information Science Society at Pukyong National University"}
 ![](images/poster-reproducibility-2026.jpg){fig-alt="Conference poster: Assessing the Reliability of Clinical AI — Reproducibility of Transfer Learning across Three Medical Modalities"}
 ![](images/poster-airway-ct-2026.jpg){fig-alt="Conference poster: Explainable AI under Correlated Features — Do Models Agree on Why? An application to airflow limitation detection from quantitative chest CT"}

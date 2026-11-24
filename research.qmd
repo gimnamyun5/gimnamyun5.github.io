@@ -46,7 +46,7 @@ agree on *why*, not just on *what*.
 ::: {.research-card}
 
 ::: {.research-label}
-Department of Statistics, Jeonbuk National University
+S-LAB, Jeonbuk National University
 :::
 
 [A Bootstrap Algorithm for Comparing Diagnostic Test Accuracy in Meta-Analysis with Within-Study Correlation](project-dauc-bootstrap.qmd){.research-title}

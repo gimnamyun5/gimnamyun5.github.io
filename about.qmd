@@ -6,7 +6,7 @@ body-classes: about-page
 
 # What Drives Me
 
-Hello, my name is Nam-Yoon Kim, and I am an undergraduate researcher at Jeonbuk
+Hello, my name is Nam Yoon Kim, and I am an undergraduate researcher at Jeonbuk
 National University. I plan to apply to graduate programs for Fall 2027
 admission, and I am excited to continue growing as a researcher and taking the
 next step in my academic journey.
@@ -62,9 +62,9 @@ setbacks, adapt, and continue moving forward.
 
 ::: {.edu-cv}
 
-<iframe class="cv-embed" src="files/NamYoon_Kim_CV.pdf#view=FitH" title="Nam-Yoon Kim — Curriculum Vitae"></iframe>
+<iframe class="cv-embed" src="files/NamYoon_Kim_CV.pdf#view=FitH" title="Nam Yoon Kim — Curriculum Vitae"></iframe>
 
-Nam-Yoon Kim — Curriculum Vitae
+Nam Yoon Kim — Curriculum Vitae
 
 [Open the CV (PDF)](files/NamYoon_Kim_CV.pdf){.btn .btn-outline-dark .btn-sm role="button" target="_blank"}
 :::

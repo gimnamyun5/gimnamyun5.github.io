@@ -1,4 +1,4 @@
-# Nam-Yoon Kim — Academic Website
+# Nam Yoon Kim — Academic Website
 
 A minimal academic website built with [Quarto](https://quarto.org), deployed to
 GitHub Pages via GitHub Actions.

@@ -1,5 +1,5 @@
 ---
-title: "Nam-Yoon Kim"
+title: "Nam Yoon Kim"
 toc: false
 body-classes: home-page
 ---
@@ -7,12 +7,12 @@ body-classes: home-page
 ::: {.profile-block}
 
 ::: {.profile-photo}
-![](images/profile.jpg){fig-alt="Portrait of Nam-Yoon Kim" class="profile-img"}
+![](images/profile.jpg){fig-alt="Portrait of Nam Yoon Kim" class="profile-img"}
 :::
 
 ::: {.profile-text}
 
-# Nam-Yoon Kim {.profile-name}
+# Nam Yoon Kim {.profile-name}
 
 I am an undergraduate researcher at Jeonbuk National University, majoring in
 Statistics with a minor in Mathematics, and applying to PhD programs in

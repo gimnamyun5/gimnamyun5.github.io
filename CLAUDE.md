@@ -1,6 +1,6 @@
 # Project notes
 
-Academic website for Nam-Yoon Kim, an undergraduate researcher in Statistics at
+Academic website for Nam Yoon Kim, an undergraduate researcher in Statistics at
 Jeonbuk National University applying to PhD programs in Statistics and
 Biostatistics. Built with Quarto, deployed to GitHub Pages by GitHub Actions.
 
