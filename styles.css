@@ -1364,6 +1364,59 @@ footer.footer,
   color: var(--ink-muted);
 }
 
+/* Name on the left, contact block on the right, in the manner of a letterhead
+   foot. Each column is a stack of plain lines. */
+.nav-footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  align-items: flex-start;
+}
+
+.footer-id,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.footer-contact {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.footer-name,
+.footer-heading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+
+.footer-sub {
+  color: var(--ink-muted);
+}
+
+.nav-footer .footer-contact a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-footer .footer-contact a:hover {
+  color: var(--navy);
+  text-decoration: underline;
+}
+
+@media (max-width: 767.98px) {
+  .footer-id,
+  .footer-contact {
+    align-items: center;
+    text-align: center;
+  }
+}
+
 /* --------------------------------- Mobile --------------------------------- */
 
 @media (max-width: 767.98px) {

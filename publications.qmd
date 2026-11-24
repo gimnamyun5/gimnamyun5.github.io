@@ -69,7 +69,3 @@ S-LAB, Jeonbuk National University
      Link — a DOI when there is one:
        [DOI →](https://doi.org/DOI){.pub-link}
 -->
-
----
-
-Conference presentations are listed on the [Research](research.qmd) page.

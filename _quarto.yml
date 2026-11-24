@@ -24,8 +24,11 @@ website:
         text: Publications
 
   page-footer:
-    left: "© 2026 Nam-Yoon Kim"
-    right: "Built with [Quarto](https://quarto.org)"
+    # Raw HTML so the mailto link escapes Pandoc's email obfuscation.
+    left: |
+      <div class="footer-id"><span class="footer-name">Nam-Yoon Kim</span><span class="footer-sub">Personal website</span></div>
+    right: |
+      <div class="footer-contact"><span class="footer-heading">Contact</span><a href="mailto:namyoon2000@jbnu.ac.kr">namyoon2000@jbnu.ac.kr</a><a href="tel:+821023908797">+82 10-2390-8797</a></div>
     border: true
 
 format:

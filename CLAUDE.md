@@ -106,6 +106,10 @@ system stack as fallbacks.
 across); `.research-card` (entry card with a coloured left rule); `.photo-entry`
 (activities, photo left and caption right).
 
+The page footer (`page-footer` in `_quarto.yml`) is raw HTML: name and
+"Personal website" on the left, a Contact block with email and phone on the
+right, styled by `.footer-id` / `.footer-contact`.
+
 `a.icon-link` is the home page's row of app-style buttons: a 40px white tile,
 8px radius, carrying the service's own mark in the service's own brand colour.
 The colour is `--brand`, set once per link by `.icon-github` / `.icon-linkedin` /
@@ -143,9 +147,9 @@ Search for `PLACEHOLDER`:
 grep -rn "PLACEHOLDER" --include="*.qmd" .
 ```
 
-- **`files/NamYoon_Kim_CV.pdf` is a dummy.** One page reading "PLACEHOLDER". The
-  CV button on the home page and the About page both open it. Replace it,
-  keeping the filename.
+- **`files/NamYoon_Kim_CV.pdf`** is copied from the user's `CV_final.pdf`
+  (under `OneDrive\Desktop\유학 관련 서류\CV\`). Replace it there when the CV
+  changes, keeping the filename.
 - **ICU manuscript author list** — unknown, on `research.qmd`,
   `publications.qmd` and `project-icu-transfer.qmd`.
 - **ICU project detail** — data, methods and findings on
