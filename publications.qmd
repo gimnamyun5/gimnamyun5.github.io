@@ -13,7 +13,7 @@ body-classes: serif-page
 [A Bootstrap Algorithm for Comparing Diagnostic Test Accuracy in Meta-Analysis with Within-Study Correlation](project-dauc-bootstrap.qmd){.pub-title}
 
 ::: {.pub-authors}
-S. Hwang, J. Kim, *N. Y. Kim*, H. Choi
+S. Hwang, J. Kim, *N. Kim*, H. Choi
 :::
 
 ::: {.pub-row}
