@@ -64,8 +64,6 @@ setbacks, adapt, and continue moving forward.
 
 <iframe class="cv-embed" src="files/NamYoon_Kim_CV.pdf#view=FitH" title="Nam Yoon Kim — Curriculum Vitae"></iframe>
 
-Nam Yoon Kim — Curriculum Vitae
-
 [Open the CV (PDF)](files/NamYoon_Kim_CV.pdf){.btn .btn-outline-dark .btn-sm role="button" target="_blank"}
 :::
 

@@ -1193,11 +1193,13 @@ u {
 
 /* The timeline and the CV sit side by side, the way the reference page has them.
    The timeline takes the space it needs and the CV column keeps a fixed share;
-   below the breakpoint the CV drops underneath. */
+   below the breakpoint the CV drops underneath. Both columns stretch to the same
+   height, and the timeline spreads its entries down it, so the text does not
+   bunch at the top beside a tall frame. */
 .edu-row {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 2.5rem;
   margin-top: 1.3rem;
 }
@@ -1205,6 +1207,8 @@ u {
 .edu-row .timeline {
   flex: 1 1 420px;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .edu-cv {
@@ -1219,22 +1223,24 @@ u {
 .cv-embed {
   display: block;
   width: 100%;
-  height: 420px;
+  height: 380px;
   border: 1px solid var(--rule);
   border-radius: 2px;
   background-color: var(--surface);
 }
 
-/* The caption under the frame, and the button under that. */
+/* The button under the frame. No bottom margin, so the last timeline entry and
+   the button finish on the same line. */
 .edu-cv p {
-  font-size: 0.9rem;
-  color: var(--ink-muted);
-  margin: 0.7rem 0 0.8rem 0;
+  margin: 0.9rem 0 0 0;
 }
 
-/* The timeline already carries the top margin for the row. */
+/* The timeline already carries the top margin for the row. Beside the CV it fills
+   the column and spaces its entries evenly from the frame's top to the button. */
 .edu-row .timeline dl {
   margin-top: 0;
+  flex: 1;
+  align-content: space-between;
 }
 
 /* -------------------------------- Timeline -------------------------------- */
