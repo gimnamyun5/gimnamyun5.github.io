@@ -34,7 +34,7 @@ S-LAB, Jeonbuk National University
 [Transferability and Configuration Sensitivity of Clinical Prediction Models across Imaging, Time-Series, and Tabular Data](project-transferability.qmd){.pub-title}
 
 ::: {.pub-authors}
-*N. Y. Kim*
+*N. Kim*
 :::
 
 ::: {.pub-row}
