@@ -66,12 +66,4 @@ airway up 7 to 11 and lung volume up 3 to 6.
 Similar accuracy, in other words, did not guarantee similar explanations — which
 family a model credits depended on both the predictor set and the model.
 
-## Materials
-
-Presented as a poster, *Explainable AI under Correlated Features: Do Models Agree
-on Why? An Application to Airflow Limitation Detection from Quantitative Chest
-CT*, at the Korean Data and Information Science Society, Busan, November 2026.
-
-[Poster PDF](files/poster-airway-ct-2026.pdf){.research-btn target="_blank"}
-
 [← All research](research.qmd){.back-link}

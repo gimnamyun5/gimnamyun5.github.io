@@ -106,13 +106,4 @@ in every domain, the later and more expensive stages of adaptation bought almost
 nothing in two of three tasks, and any gain smaller than the configuration's own
 spread should not be read as a gain at all.
 
-## Materials
-
-Manuscript in preparation. Presented as a poster, *Assessing the Reliability of
-Clinical AI: Reproducibility of Transfer Learning across Three Medical
-Modalities*, at the Korean Data and Information Science Society, Busan, November
-2026, where it received an Honorable Mention Award.
-
-[Poster PDF](files/poster-reproducibility-2026.pdf){.research-btn target="_blank"}
-
 [← All research](research.qmd){.back-link}

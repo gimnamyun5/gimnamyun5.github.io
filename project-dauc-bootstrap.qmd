@@ -4,7 +4,7 @@ body-classes: project-page
 ---
 
 ::: {.project-meta}
-Manuscript in preparation · Aug 2026 – present · Department of Statistics, Jeonbuk National University
+Under review · Aug 2026 – present · Department of Statistics, Jeonbuk National University
 :::
 
 When two diagnostic tests are compared across published studies, the quantity of
@@ -47,10 +47,5 @@ no such dependence exists, the two procedures behave alike.
 
 Three published diagnostic meta-analyses are reanalysed to illustrate the
 procedure.
-
-## Materials
-
-Manuscript in preparation. The R code for the simulations will be linked here
-once the repository is public.
 
 [← All research](research.qmd){.back-link}

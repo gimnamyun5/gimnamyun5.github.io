@@ -125,7 +125,7 @@ extraction and the pooled analysis of cognitive and depressive outcomes.
 Korean Data and Information Science Society 2026
 :::
 
-[Assessing the Reliability of Clinical AI: Reproducibility of Transfer Learning across Three Medical Modalities](project-transferability.qmd){.research-title}
+[Assessing the Reliability of Clinical AI: Reproducibility of Transfer Learning across Three Medical Modalities](files/poster-reproducibility-2026.pdf){.research-title target="_blank"}
 
 ::: {.research-authors}
 *N. Y. Kim*, H. Choi, H. Kim, G. Kim, S. Hwang · November 2026, Busan
@@ -137,7 +137,7 @@ country or cohort. The direction of the gain held across all three domains; its
 size did not.
 
 ::: {.research-links}
-[Project page](project-transferability.qmd){.research-btn}
+[Poster PDF](files/poster-reproducibility-2026.pdf){.research-btn target="_blank"}
 :::
 
 :::
@@ -148,7 +148,7 @@ size did not.
 Korean Data and Information Science Society 2026
 :::
 
-[Explainable AI under Correlated Features: Do Models Agree on Why? An Application to Airflow Limitation Detection from Quantitative Chest CT](project-airway-ct.qmd){.research-title}
+[Explainable AI under Correlated Features: Do Models Agree on Why? An Application to Airflow Limitation Detection from Quantitative Chest CT](files/poster-airway-ct-2026.pdf){.research-title target="_blank"}
 
 ::: {.research-authors}
 H. Kim, *N. Y. Kim*, Y. Lee, K. Chae, S. Hwang · November 2026, Busan
@@ -159,7 +159,7 @@ asked what they used. Once the correlated measures were reduced they stopped
 agreeing, while AUROC barely moved.
 
 ::: {.research-links}
-[Project page](project-airway-ct.qmd){.research-btn}
+[Poster PDF](files/poster-airway-ct-2026.pdf){.research-btn target="_blank"}
 :::
 
 :::
@@ -170,7 +170,7 @@ agreeing, while AUROC barely moved.
 IC-KDA + ASAD 2025 · Best Poster Award
 :::
 
-[Effectiveness of Digital Cognitive Training Interventions for Dementia: A Systematic Review and Meta-analysis](project-dementia-meta.qmd){.research-title}
+[Effectiveness of Digital Cognitive Training Interventions for Dementia: A Systematic Review and Meta-analysis](files/poster-dementia-2025.pdf){.research-title target="_blank"}
 
 ::: {.research-authors}
 J. Sung, *N. Y. Kim* · May 2025, Seoul
@@ -180,7 +180,7 @@ Eleven randomized trials pooled for cognitive and depressive outcomes. Remotely
 delivered cognitive training improved both, on a small evidence base.
 
 ::: {.research-links}
-[Project page](project-dementia-meta.qmd){.research-btn}
+[Poster PDF](files/poster-dementia-2025.pdf){.research-btn target="_blank"}
 [PROSPERO](https://www.crd.york.ac.uk/prospero/display_record.php?RecordID=631806){.research-btn}
 :::
 
@@ -192,7 +192,7 @@ delivered cognitive training improved both, on a small evidence base.
 Korean Statistical Society Summer Conference 2025
 :::
 
-[Deep Learning-based Neural Granger Causality for Solar Radiation Time Series](project-granger.qmd){.research-title}
+[Deep Learning-based Neural Granger Causality for Solar Radiation Time Series](files/poster-granger-2025.pdf){.research-title target="_blank"}
 
 ::: {.research-authors}
 M. Lee, S. Lee, Y. Cho, *N. Y. Kim*, G. Kim, Y. Lee · June 2025, Gyeongju
@@ -203,7 +203,7 @@ a linear vector autoregression misses. It does so for the variables that behave
 least like continuous measurements.
 
 ::: {.research-links}
-[Project page](project-granger.qmd){.research-btn}
+[Poster PDF](files/poster-granger-2025.pdf){.research-btn target="_blank"}
 :::
 
 :::

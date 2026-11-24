@@ -48,13 +48,4 @@ scores, with moderate heterogeneity in both. The evidence base is small — elev
 trials, and only three to four contributing to each pooled estimate — so the
 effects are best read as supportive rather than conclusive.
 
-## Materials
-
-Presented as a poster at IC-KDA + ASAD 2025, Seoul, May 2025, where it received
-the Best Poster Award. The protocol is registered with PROSPERO
-(CRD42025631806).
-
-[Poster PDF](files/poster-dementia-2025.pdf){.research-btn target="_blank"}
-[PROSPERO record](https://www.crd.york.ac.uk/prospero/display_record.php?RecordID=631806){.research-btn target="_blank"}
-
 [← All research](research.qmd){.back-link}

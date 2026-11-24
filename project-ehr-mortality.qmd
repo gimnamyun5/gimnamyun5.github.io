@@ -56,8 +56,4 @@ The comparison is limited to a single cohort, and external validation on an
 independent dataset was identified as the necessary next step rather than
 completed.
 
-## Materials
-
-PLACEHOLDER: GitHub repository · presentation slides (internal)
-
 [← All research](research.qmd){.back-link}

@@ -54,12 +54,4 @@ nonlinear structure in continuous variables, but the results come from a single
 lag setting and these models are sensitive to hyperparameters, so their
 robustness is not established.
 
-## Materials
-
-Presented as a poster, *Deep Learning-based Neural Granger Causality for Solar
-Radiation Data*, at the Korean Statistical Society Summer Conference, Gyeongju,
-June 2025.
-
-[Poster PDF](files/poster-granger-2025.pdf){.research-btn target="_blank"}
-
 [← All research](research.qmd){.back-link}

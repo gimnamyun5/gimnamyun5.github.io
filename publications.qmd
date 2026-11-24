@@ -7,28 +7,7 @@ body-classes: serif-page
 ::: {.pub-card}
 
 ::: {.pub-tags}
-[Manuscript in preparation]{.pub-tag .tag-status}
-:::
-
-[Transferability and Configuration Sensitivity of Clinical Prediction Models across Imaging, Time-Series, and Tabular Data](project-transferability.qmd){.pub-title}
-
-::: {.pub-authors}
-*N. Y. Kim*, H. Choi, H. Kim, G. Kim, S. Hwang
-:::
-
-::: {.pub-row}
-::: {.pub-status}
-S-LAB, Jeonbuk National University
-:::
-[Project page →](project-transferability.qmd){.pub-link}
-:::
-
-:::
-
-::: {.pub-card}
-
-::: {.pub-tags}
-[Manuscript in preparation]{.pub-tag .tag-status}
+[Under review]{.pub-tag .tag-status}
 :::
 
 [A Bootstrap Algorithm for Comparing Diagnostic Test Accuracy in Meta-Analysis with Within-Study Correlation](project-dauc-bootstrap.qmd){.pub-title}
@@ -42,6 +21,27 @@ S. Hwang, J. Kim, *N. Y. Kim*, H. Choi
 Department of Statistics, Jeonbuk National University
 :::
 [Project page →](project-dauc-bootstrap.qmd){.pub-link}
+:::
+
+:::
+
+::: {.pub-card}
+
+::: {.pub-tags}
+[Manuscript in preparation]{.pub-tag .tag-status}
+:::
+
+[Transferability and Configuration Sensitivity of Clinical Prediction Models across Imaging, Time-Series, and Tabular Data](project-transferability.qmd){.pub-title}
+
+::: {.pub-authors}
+*N. Y. Kim*
+:::
+
+::: {.pub-row}
+::: {.pub-status}
+S-LAB, Jeonbuk National University
+:::
+[Project page →](project-transferability.qmd){.pub-link}
 :::
 
 :::
