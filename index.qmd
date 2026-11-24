@@ -87,9 +87,8 @@ Research interests
 Teaching
 :::
 - Assistant instructor · Introduction to Data Analysis with AI and Python,
-  Rural Development Administration, Oct 2026
-- Assistant instructor · AI-Based Data Science, Rural Development
-  Administration, Jun 2026
+  Oct 2026
+- Assistant instructor · AI-Based Data Science, Jun 2026
 - TA · Introduction to Big Data, Fall 2025
 - TA · Understanding and Application of Big Data, Spring 2025
 - TA · Statistical Thinking and Society, Fall 2024
