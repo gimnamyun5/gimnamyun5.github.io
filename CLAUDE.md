@@ -147,7 +147,7 @@ Search for `PLACEHOLDER`:
 grep -rn "PLACEHOLDER" --include="*.qmd" .
 ```
 
-- **`files/NamYoon_Kim_CV.pdf`** is copied from the user's `CV_final.pdf`
+- **`files/NamYoon_Kim_CV.pdf`** is copied from the user's `CV.pdf`
   (under `OneDrive\Desktop\유학 관련 서류\CV\`). Replace it there when the CV
   changes, keeping the filename.
 - **ICU manuscript author list** — unknown, on `research.qmd`,
